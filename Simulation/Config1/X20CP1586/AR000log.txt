@@ -1,0 +1,28 @@
+
+
+Mon Sep 12 11:32:50 2022
+No ARsim registration found!
+  Bernecker & Rainer 
+
+
+
+Mon Sep 12 11:32:50 2022
+COMMAND_COLDSTART
+InstanceName : 01d8c68aa0616624
+
+WorkingPath :
+Z:\home\marc7636\OneDrive\Skole\SDU\3. Semester\Semesterprojekt\Simulation\Config1\X20CP1586\
+
+
+
+Mon Sep 12 11:32:50 2022
+COMMAND_COLDSTART
+Version : E4.34
+
+
+
+Mon Sep 12 12:01:44 2022
+COMMAND_TERMINATE
+
+
+Mon Sep 12 12:01:45 2022

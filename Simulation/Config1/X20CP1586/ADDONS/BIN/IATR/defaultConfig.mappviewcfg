@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
+    <Group ID="Server">
+      <Selector ID="WebServerProtocol" Value="1">
+        <Property ID="WebServerPort" Value="81" />
+      </Selector>
+      <Property ID="MaxBRClientConnections" Value="0" />
+      <Selector ID="ClientConnectionsLicensingMode" Value="LicensingModeConfiguredMaxClients" />
+      <Property ID="MaxSystemVisuClientConnections" Value="5" />
+      <Property ID="SystemMaxClientConnections" Value="16" />
+      <Property ID="ClientConnectionTimeout" Value="30000" />
+      <Property ID="FileHandlerBufferSize" Value="32768" />
+      <Property ID="HttpRequestTimeout" Value="120000" />
+    </Group>
+    <Group ID="OpcUa">
+      <Property ID="ServerConnectionTimeout" Value="5000" />
+      <Property ID="ServerConnectionWatchdogIntervall" Value="1000" />
+      <Group ID="SamplingRates">
+        <Property ID="default" Value="200" />
+        <Property ID="slow" Value="1000" />
+        <Property ID="fast" Value="100" />
+      </Group>
+      <Group ID="PlatformLayer">
+        <Group ID="SerializerSettings">
+          <Property ID="MaxArrayLength" Value="2097152" />
+        </Group>
+      </Group>
+    </Group>
+    <Group ID="Mapp">
+      <Property ID="IPAddress" Value="127.0.0.1" />
+      <Property ID="Port" Value="4213" />
+      <Property ID="RPCSocketTimeout" Value="2000" />
+    </Group>
+    <Group ID="Client">
+      <Group ID="ContentCaching" >
+        <Property ID="cachingSlots" Value="200" />
+        <Property ID="preserveOldValues" Value="TRUE" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>
