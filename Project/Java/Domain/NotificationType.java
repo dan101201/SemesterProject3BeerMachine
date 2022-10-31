@@ -1,7 +1,7 @@
 package Domain;
 
 public enum NotificationType {
-    warning,
-    error,
-    information
+    WARNING,
+    ERROR,
+    INFORMATIVE
 }
