@@ -1,5 +1,7 @@
 package Domain;
 
+import Data.Machine;
+
 public class Notification {
     private NotificationType notificationType;
     private String description;
