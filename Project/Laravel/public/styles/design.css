@@ -1,0 +1,31 @@
+.navbar {
+    margin: 0;
+    overflow: hidden;
+    background-color: aqua;
+}
+.navbar li {
+    display: inline;
+    float: left;
+    padding: 1% 2%;
+
+}
+.navbar li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+}
+
+.sections{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-right: 0.5%;
+}
+
+.sections #inventory progress{
+    margin-top: 15%;
+    transform: rotate(-90deg);
+    ;
+
+}
