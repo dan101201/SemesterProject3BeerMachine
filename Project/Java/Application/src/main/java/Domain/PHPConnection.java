@@ -20,12 +20,15 @@ public class PHPConnection {
 		}
 		System.exit(0);*/
 		
-		get("/hello", (req, res) -> {
+		get("/hello", (request, response) -> {
+			System.out.println("GET");
 			return "Hello World";
 		});
 		
-		post("/hello", (req, res) -> {
-			return req.body();
+		post("/hello", (request, response) -> {
+			System.out.println("POST");
+			System.out.println(request.body());
+			return response;
 		});
 		
 		//init();
