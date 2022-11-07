@@ -1,40 +1,70 @@
+body{
+    margin: 0%;
+}
 .navbar {
     margin: 0;
     overflow: hidden;
     background-color: aqua;
 }
+
 .navbar li {
     display: inline;
     float: left;
     padding: 1% 2%;
 
 }
+.navbar #logo {
+    float: right;
+    width: 15%;
+}
+
 .navbar li a {
     display: block;
     text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-decoration: none;
     color: black;
 
 }
 
-.sections{
+.sections {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 7% 68% 25%;
     padding-right: 0.5%;
 }
-
-.sections #button_group button{
-    margin: 5%;
-    min-width: 5%;
+ #button_group {
+    margin: 10%;
 }
 
-.sections #inventory progress{
-    margin-top: 15%;
+ #button_group button {
+    margin: 15%;
+}
+
+#inventory {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+#inventory progress {
+    height: 50%;
+    width: 10vw;
     transform: rotate(-90deg);
-    height: 25%;
-
 }
 
-table, td {
+#warning_table #scroll_table table {
+    min-width: 100%;
+}
+
+#warning_table #scroll_table table
+thead td {
     border: 1px solid black;
-  }
+    background-color: lightgrey;
+    width: auto;
+}
+
+#warning_table #scroll_table table tbody td {
+    border: 1px solid black;
+}
