@@ -13,12 +13,12 @@ public class PHPConnection {
 	static final JavaBridgeRunner runner = JavaBridgeRunner.getInstance(JAVABRIDGE_PORT);
 	
 	public static void main(String args[]) throws Exception {
-		/*try {
+		try {
 			runner.waitFor();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.exit(0);*/
+		System.exit(0);
 		
 		get("/hello", (request, response) -> {
 			System.out.println("GET");
