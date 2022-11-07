@@ -2,6 +2,8 @@ package Domain;
 
 import php.java.bridge.http.JavaBridgeRunner;
 
+import static spark.Spark.*;
+
 public class PHPConnection {
 	public static final String JAVABRIDGE_PORT="8087";
 	static final JavaBridgeRunner runner = JavaBridgeRunner.getInstance(JAVABRIDGE_PORT);
