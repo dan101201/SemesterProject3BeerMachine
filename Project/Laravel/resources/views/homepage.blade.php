@@ -15,19 +15,28 @@
     </ul>
     <main class="sections">
         <div id="button_group">
-            <button>Start</button>
-            <button>Stop</button>
-            <button>Abort</button>
-            <button>Clear</button>
+            <button>Start</button><br>
+            <button>Stop</button> <br>
+            <button>Abort</button><br>
+            <button>Clear</button><br>
         </div>
         <div id="inventory">
             <progress id="barley" value="50" max="100"></progress>
-            <progress id="hops" value="50" max="100"></progress>
+            <progress id="hops" value="25" max="100"></progress>
             <progress id="malt" value="50" max="100"></progress>
-            <progress id="wheat" value="50" max="100"></progress>
-            <progress id="yeast" value="50" max="100"></progress>
+            <progress id="wheat" value="70" max="100"></progress>
+            <progress id="yeast" value="99" max="100"></progress>
         </div>
-        
+        <div id="warning_table">
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>Warning</td>
+                    <td>Timestamp</td>
+                    <td>Machine number</td>
+                </tr>
+            </table>
+        </div>
     </main>
 </body>
 </html>
