@@ -1,33 +1,4 @@
-body{
-    margin: 0%;
-}
-.navbar {
-    margin: 0;
-    overflow: hidden;
-    background-color: aqua;
-}
 
-.navbar li {
-    display: inline;
-    float: left;
-    padding: 1% 2%;
-
-}
-.navbar #logo {
-    float: right;
-    width: 15%;
-}
-
-.navbar li a {
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    text-decoration: none;
-    color: black;
-
-}
 
 .sections {
     display: grid;

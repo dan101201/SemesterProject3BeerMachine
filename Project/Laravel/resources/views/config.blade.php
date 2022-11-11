@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('styles/design.css') }}" />
+    <link rel="stylesheet" href="{{ asset('styles/primary_design.css') }}" />
     <script src="{{ asset('js/speedLimit.js') }}" defer></script> 
     <title>Config</title>
 </head>
