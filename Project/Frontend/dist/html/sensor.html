@@ -2,32 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/primary_design.css" />
-    <link rel="stylesheet" href="../css/sensorpage_design.css">
-    <!--<link rel="stylesheet" href="{{ asset('styles/sensorpage_design.css') }}" /> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/Chart.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../js/sensorplot.js"defer></script>
-    <script src="../js/jquery.js"></script>
-    <title>Sensor data</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/primary_design.css" />
+  <link rel="stylesheet" href="../css/sensorpage_design.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/Chart.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/temperaturSensorPlot.js" defer></script>
+  <script src="../js/humiditySensorPlot.js" defer></script>
+  <script src="../js/vibrationSensorPlot.js" defer></script>
+  <script src="../js/jquery.js"></script>
+  <title>Sensor data</title>
 </head>
 
 <body>
-    <div id="navbar">
+  <div id="navbar">
 
-    </div>
-    <script>
-        $(function(){
-          $("#navbar").load("navbar.html");
-        });
-    </script>
-        <div class="chartBox">
-          <canvas id="tempChart"></canvas>
-        </div>
-        <button onclick="addData(tempChart, Math.random()*5)">Click</button>
-    
+  </div>
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+  </script>
+  <div class="chartBox">
+    <canvas id="tempChart"></canvas>
+  </div>
+  <button onclick="addDataT(tempChart, Math.random()*5)">Temperature</button>
+  <div class="chartBox">
+    <canvas id="humidChart"></canvas>
+  </div>
+  <button onclick="addDataH(humidChart, Math.random()*5)">Humidity</button>
+  <div class="chartBox">
+    <canvas id="vibraChart"></canvas>
+  </div>
+  <button onclick="addDataV(vibraChart, Math.random()*5)">Vibration</button>
+  
+
 </body>
 
 </html>
