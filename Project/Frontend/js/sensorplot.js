@@ -22,8 +22,8 @@ const data = {
     datasets: [{
       label: 'Temperatur Sensor',
       data: datatest,
-      borderColor:"rgb(198, 14, 234)",
-      backgroundColor:"rgb(198, 14, 234,0.5)",
+      borderColor:"rgb(194, 13, 13)",
+      backgroundColor:"rgba(194, 13, 13, 0.621)",
       borderWidth: 1
     }]
   };
