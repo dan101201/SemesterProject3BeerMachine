@@ -1,3 +1,7 @@
-#sensorPlot{
-    width: 100%;
+.plot{
+    max-width: 100px;
+}
+#sensors{
+    display: grid;
+    grid-template-columns: 100%;
 }

@@ -8,7 +8,8 @@
     <title>Config</title>
 </head>
 <body>
-    <ul class="navbar">
+<ul class="navbar">
+        <img src="{{ asset('img/sdu_logo_uwu.png') }}" alt="LOGO" id="logo">
         <li id="navList"><a href="/">Home</a></li>
         <li id="navList"><a href="config">Config</a></li>
         <li id="navList"><a href="sensor">Sensors</a></li>
