@@ -10,4 +10,8 @@ public class Machine {
         this.machineAddress=machineAddress;
         this.name=name;
     }
+
+    public String getName() {
+        return name;
+    }
 }
