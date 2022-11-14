@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/primary_design.css" />
+    <link rel="stylesheet" href="../css/sensorpage_design.css">
     <!--<link rel="stylesheet" href="{{ asset('styles/sensorpage_design.css') }}" /> -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="{{ asset('js/sensorplot.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/Chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/sensorplot.js"defer></script>
     <title>Sensor data</title>
 </head>
 
@@ -19,6 +21,11 @@
         <li id="navList"><a href="sensor.html">Sensors</a></li>
         <li id="navList"><a href="batch.html">Batch</a></li>
     </ul>
+        <div class="chartBox">
+          <canvas id="myChart"></canvas>
+        </div>
+        <button onclick="addData(myChart, Math.random()*100)">Click</button>
+      </div>
     
 </body>
 
