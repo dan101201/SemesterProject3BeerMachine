@@ -8,17 +8,19 @@
     <!--<link rel="stylesheet" href="{{ asset('styles/sensorpage_design.css') }}" /> -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="{{ asset('js/sensorplot.js') }}" defer></script>
+    <script src="../js/jquery.js"></script>
     <title>Sensor data</title>
 </head>
 
 <body>
-    <ul class="navbar">
-        <img src="../img/logo.png" alt="LOGO" id="logo">
-        <li id="navList"><a href="homepage.html">Home</a></li>
-        <li id="navList"><a href="config.html">Config</a></li>
-        <li id="navList"><a href="sensor.html">Sensors</a></li>
-        <li id="navList"><a href="batch.html">Batch</a></li>
-    </ul>
+    <div id="navbar">
+
+    </div>
+    <script>
+        $(function(){
+          $("#navbar").load("navbar.html");
+        });
+    </script>
     
 </body>
 
