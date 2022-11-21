@@ -3,12 +3,15 @@ package Data;
 import org.eclipse.milo.opcua.sdk.client.OpcUaClient;
 import org.eclipse.milo.opcua.sdk.client.api.config.OpcUaClientConfigBuilder;
 import org.eclipse.milo.opcua.stack.client.DiscoveryClient;
+import org.eclipse.milo.opcua.stack.core.types.builtin.DataValue;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
+import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 import org.eclipse.milo.opcua.stack.core.types.structured.EndpointDescription;
 import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
 
 import java.net.URI;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class Machine {
     URI machineAddress;
@@ -49,8 +52,18 @@ public class Machine {
 
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
-
-        return;
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med getTemp-funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med getTemp-funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float)value.getValue().getValue();
     }
 
     public String getName() {
