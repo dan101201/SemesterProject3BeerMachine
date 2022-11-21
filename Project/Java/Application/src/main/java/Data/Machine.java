@@ -65,6 +65,36 @@ public class Machine {
         assert value != null;
         return (float)value.getValue().getValue();
     }
+    public int getHumidity() {
+        NodeId nodeId = new NodeId(6, "::Program:Data.Value.RelHumidity");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med getHumid-funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med getHumid-funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (int)value.getValue().getValue();
+    }
+    public int getVibration() {
+        NodeId nodeId = new NodeId(6, "::Program:Data.Value.Vibration");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med getVibra-funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med getVibra-funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (int)value.getValue().getValue();
+    }
 
     public String getName() {
         return name;
