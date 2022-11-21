@@ -32,6 +32,13 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			return "machine: " + machineId;
 		});
+
+		get("/machine/:id/temperature", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return "machine: " + backend.getTemperature(machineId);
+		});
 		
 		post("/hello", (request, response) -> {
 			System.out.println("POST");
