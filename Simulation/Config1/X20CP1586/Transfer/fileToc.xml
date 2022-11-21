@@ -36,69 +36,69 @@
 			</Folder>
 		</Class>
 		<Class Name="AddonsData">
-			<Folder Name="IAT_Data" IsGroup="1">
-				<Folder Name="server">
+			<Folder Name="IAT_Data">
+				<Folder Name="server" IsGroup="1">
 					<File Name="__SystemVariables.sessionVar" HashValue="A3073004B5332C8B915ADF59A6443247" ProjectDependent="1"/>
 					<File Name="binding_0.binding" HashValue="FF4FFC61F2A06A21799DFC4F1ED5C8F3" ProjectDependent="1"/>
 					<File Name="Config.mappviewcfg" HashValue="B7A216766A798BDF7939C6949BC48ED3" ProjectDependent="1"/>
 					<File Name="eventbinding_0.eventbinding" HashValue="342D5D67566C5AE3BDDD29E851407650" ProjectDependent="1"/>
 					<File Name="visu.vis" HashValue="AB9CA6752948EA9B309459F48FEDE493" ProjectDependent="1"/>
 				</Folder>
-				<Folder Name="wwwRoot">
+				<Folder Name="wwwRoot" IsGroup="1">
 					<File Name="favicon.ico" HashValue="B3D2122594565CE5AF565BE898EF539A" ProjectDependent="1"/>
 					<File Name="index.html" HashValue="156B3D0195366FBB14FC17EBF5AECB98" ProjectDependent="1"/>
 					<File Name="visu.json" HashValue="5418210B08A39ACC8C6B786E5856A463" ProjectDependent="1"/>
-					<Folder Name="BRVisu">
+					<Folder Name="BRVisu" IsGroup="1">
 						<File Name="bootstrapper.min.js" HashValue="69AF74E48A1913D67D33C505009609D6" ProjectDependent="1"/>
-						<File Name="jquery.js" HashValue="AACC43D6F308FA362AC85E3F4FB2B30C" ProjectDependent="1"/>
+						<File Name="jquery.js" HashValue="22695C99BF7B0929F1ED3FA34373B237" ProjectDependent="1"/>
 						<File Name="require_config.js" HashValue="80425CF9377A553811B8F5D08C1A289F" ProjectDependent="1"/>
 						<File Name="TPVersion.txt" HashValue="FF6018EB483570311897EE22482E4F88" ProjectDependent="1"/>
-						<Folder Name="assets">
+						<Folder Name="assets" IsGroup="1">
 							<File Name="browser-test.html" HashValue="4D9C98841F0DC5718EB1531A74EBF1C3" ProjectDependent="1"/>
 							<File Name="connection.json" HashValue="10FCDFBADA6743720F798A491616261B" ProjectDependent="1"/>
 							<File Name="log.html" HashValue="A6477BC08F98792BA7D590D6125A0751" ProjectDependent="1"/>
-							<Folder Name="css">
-								<File Name="bootstrap.min.css" HashValue="58A49B3689D699CB72FFDA7252D99FCB" ProjectDependent="1"/>
+							<Folder Name="css" IsGroup="1">
+								<File Name="bootstrap.min.css" HashValue="C3D736F4400B9451E591FF09606D7AF0" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="img">
+							<Folder Name="img" IsGroup="1">
 								<File Name="br_logo.png" HashValue="C546E2DC2BA3739AADAA89ABB589A049" ProjectDependent="1"/>
 								<File Name="icon.gif" HashValue="BD4DD6861469A7542F974B5A967CBE1B" ProjectDependent="1"/>
 								<File Name="trans.png" HashValue="1A3B46454B7A3654B78B644D39320423" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="js">
-								<File Name="bootstrap.min.js" HashValue="046BA2B5F4CFF7D2EAAA1AF55CAA9FD8" ProjectDependent="1"/>
-								<File Name="modernizr-build.js" HashValue="C06810BB04387AA63D480DA170F1DF59" ProjectDependent="1"/>
+							<Folder Name="js" IsGroup="1">
+								<File Name="bootstrap.min.js" HashValue="834CA905C3251172E3C538CC0E043D77" ProjectDependent="1"/>
+								<File Name="modernizr-build.js" HashValue="9B95AFC97C68F569FC03A5DEC155DA47" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="monitor">
+							<Folder Name="monitor" IsGroup="1">
 								<File Name="monitor.html" HashValue="79C2680921F44E4F3ABF91B23BD59875" ProjectDependent="1"/>
 								<File Name="monitor.js" HashValue="5C45C520526185100EAF330EF9902314" ProjectDependent="1"/>
 								<File Name="profiler.html" HashValue="1645999B924A585737E11819E38F2F6C" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="performance">
+							<Folder Name="performance" IsGroup="1">
 								<File Name="automator.js" HashValue="BDDF497B3C57202B6A90F0017651B5D9" ProjectDependent="1"/>
 								<File Name="benchmarkmonitor.js" HashValue="C373FCA0762827CE2EB8AB3F6704F3F2" ProjectDependent="1"/>
-								<File Name="FileSaver.js" HashValue="44B1EBE0D888E55572EAB845D666D83E" ProjectDependent="1"/>
+								<File Name="FileSaver.js" HashValue="81DC5E72ADB08013CFA1D3EF11F7C999" ProjectDependent="1"/>
 								<File Name="gant.css" HashValue="5C03545374EB720AEDF714369B44D257" ProjectDependent="1"/>
 								<File Name="gant.js" HashValue="317D7AF6B62C373956D0576B9B8F0647" ProjectDependent="1"/>
 							</Folder>
 						</Folder>
-						<Folder Name="brease">
+						<Folder Name="brease" IsGroup="1">
 							<File Name="application.js" HashValue="57E06090925DA8361094041BEE8CA9A8" ProjectDependent="1"/>
 							<File Name="brease.js" HashValue="9E61AECAEED2EF8668CA305D2C54A29D" ProjectDependent="1"/>
 							<File Name="config.js" HashValue="0CADCC7C7CD8C1BE33092E1D971DC333" ProjectDependent="1"/>
 							<File Name="settings.js" HashValue="8D66ECDE9D538D0AA832B51C4D43BA96" ProjectDependent="1"/>
-							<Folder Name="ASHelp">
-								<File Name="config.html" HashValue="B74C3F041BF222432AD651840E24D947" ProjectDependent="1"/>
-								<File Name="datatypes.html" HashValue="BD0C4981E6D62F73299C4E6AFC0AAA2C" ProjectDependent="1"/>
-								<File Name="definitions.xml" HashValue="5E77E96DD8BA1930F5C772CCE08E475A" ProjectDependent="1"/>
-								<File Name="enum.html" HashValue="15E529E7324B751760F83674C31D9D64" ProjectDependent="1"/>
-								<File Name="types.html" HashValue="133FA75A57B9CC2893ED36D3B76904EC" ProjectDependent="1"/>
+							<Folder Name="ASHelp" IsGroup="1">
+								<File Name="config.html" HashValue="593732CBFA65060BB288D7695844BC26" ProjectDependent="1"/>
+								<File Name="datatypes.html" HashValue="BA5E68F0D180EA07E46B5846167E0C4E" ProjectDependent="1"/>
+								<File Name="definitions.xml" HashValue="69047604680B7B2510283F89F02C2FCB" ProjectDependent="1"/>
+								<File Name="enum.html" HashValue="593F2E3DB24209CE36E78A5DDE6BA0A3" ProjectDependent="1"/>
+								<File Name="types.html" HashValue="A195B01B48AE7FF2D85297D8D38F84E3" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="config">
+							<Folder Name="config" IsGroup="1">
 								<File Name="NumberFormat.js" HashValue="6FBCB75274BD850B4CC050F9D92F9FDD" ProjectDependent="1"/>
 								<File Name="SortFunctions.js" HashValue="A7BBE4E60E96075F64AA2AEA6A443527" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="controller">
+							<Folder Name="controller" IsGroup="1">
 								<File Name="ActionController.js" HashValue="09C8DF10957D5F437A426AEE0351D939" ProjectDependent="1"/>
 								<File Name="BindingController.js" HashValue="D23715E007B13085A7475C80FA04816B" ProjectDependent="1"/>
 								<File Name="BindingLoader.js" HashValue="AD23D0154D579B67386FAADC02A5B29F" ProjectDependent="1"/>
@@ -114,7 +114,7 @@
 								<File Name="WidgetController.js" HashValue="ECB165DE10AD0401659A6390BA4AC4F2" ProjectDependent="1"/>
 								<File Name="WidgetFactory.js" HashValue="57BB0003E569A0EE71611FC6C960A105" ProjectDependent="1"/>
 								<File Name="WidgetParser.js" HashValue="9086E7DEDB73A26CCA8F965CE1E719ED" ProjectDependent="1"/>
-								<Folder Name="libs">
+								<Folder Name="libs" IsGroup="1">
 									<File Name="Areas.js" HashValue="79362E0A0E040112EA967E4B9E24EC0B" ProjectDependent="1"/>
 									<File Name="Containers.js" HashValue="A47F0F11CDCB81A54BDD0051EFB9AB6F" ProjectDependent="1"/>
 									<File Name="ErrorCode.js" HashValue="5F7D8C903C02B6E420DA818C91C39744" ProjectDependent="1"/>
@@ -127,7 +127,7 @@
 									<File Name="ScrollManager.js" HashValue="595D5781D9F9D3AE2B00AA09FB9E2C7F" ProjectDependent="1"/>
 									<File Name="Themes.js" HashValue="483F64111F901B1AC83FBCBF5C591CC2" ProjectDependent="1"/>
 								</Folder>
-								<Folder Name="objects">
+								<Folder Name="objects" IsGroup="1">
 									<File Name="AssignTypes.js" HashValue="352F92E59E1A35B14332A3103BBC1909" ProjectDependent="1"/>
 									<File Name="Client.js" HashValue="ADEE901B64963FEE630E33A760EB2C2E" ProjectDependent="1"/>
 									<File Name="ContentStatus.js" HashValue="0B8CFFB2CDFF32373ED05FFAE0B7C742" ProjectDependent="1"/>
@@ -136,43 +136,43 @@
 									<File Name="WidgetItem.js" HashValue="C889D42EECE68C8631BBE5D20B267AB8" ProjectDependent="1"/>
 								</Folder>
 							</Folder>
-							<Folder Name="core">
+							<Folder Name="core" IsGroup="1">
 								<File Name="BaseWidget.html" HashValue="E945B78333FFCB5BE401BB44504AF087" ProjectDependent="1"/>
 								<File Name="BaseWidget.js" HashValue="F7D7306097078FE93AC382D8E7FEC80A" ProjectDependent="1"/>
 								<File Name="BaseWidget.style" HashValue="6B38CDC0302FE9BB4AEF35841B0DCCE1" ProjectDependent="1"/>
-								<File Name="BaseWidget.widget" HashValue="685DD17A6E29759908DBD1AAF0FB800C" ProjectDependent="1"/>
-								<File Name="BaseWidget_base.scss" HashValue="8A93D355F2293CDD71F794F4DF2DCBDA" ProjectDependent="1"/>
-								<File Name="BaseWidget_default.scss" HashValue="58410F4DEE29EB37E80FE6C9EF6E96CC" ProjectDependent="1"/>
-								<File Name="BaseWidget_EventsActions.xsd" HashValue="5B8012713207ECA8EBDBF2189852CDD9" ProjectDependent="1"/>
+								<File Name="BaseWidget.widget" HashValue="8C6C470E7C29F49049E428F084FA9910" ProjectDependent="1"/>
+								<File Name="BaseWidget_base.scss" HashValue="0D9821378C4CDC31582DAB13707BF546" ProjectDependent="1"/>
+								<File Name="BaseWidget_default.scss" HashValue="FF96862E890591E429C8F769D0FE56CC" ProjectDependent="1"/>
+								<File Name="BaseWidget_EventsActions.xsd" HashValue="F4CADAA0114768C0F76AFD27F6241332" ProjectDependent="1"/>
 								<File Name="Class.js" HashValue="26980EE62ACD4E28094B9729C7E8C4BF" ProjectDependent="1"/>
 								<File Name="ContainerWidget.js" HashValue="C579BB7B96EEF9F4A453147A56421B2B" ProjectDependent="1"/>
 								<File Name="Decorator.js" HashValue="018DB27C7C7EF5249C2D1C7F41D13776" ProjectDependent="1"/>
 								<File Name="Types.js" HashValue="B16801C4C09AF82BB547BBA97BAF9440" ProjectDependent="1"/>
 								<File Name="Utils.js" HashValue="CA07F8322A28646A3957A2E777E08D06" ProjectDependent="1"/>
-								<Folder Name="designer">
-									<Folder Name="BaseWidget">
+								<Folder Name="designer" IsGroup="1">
+									<Folder Name="BaseWidget" IsGroup="1">
 										<File Name="ClassExtension.js" HashValue="B3A029212446592707FE62ED822BB90D" ProjectDependent="1"/>
 										<File Name="ClassInfo.js" HashValue="B35C4F710F332A929AF1327D13305B79" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="Brease">
+									<Folder Name="Brease" IsGroup="1">
 										<File Name="ClassExtension.js" HashValue="EF858A998EB8F649FCDAA60B06232E95" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="ContainerWidget">
-										<File Name="ClassInfo.js" HashValue="2EFBE74389A717CF8A008098250406D0" ProjectDependent="1"/>
+									<Folder Name="ContainerWidget" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="E669B1842080B10823F3BF6EDE908366" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="libs">
+								<Folder Name="libs" IsGroup="1">
 									<File Name="Deferred.js" HashValue="D7A54778B58CE31BEDE2F57A84632A79" ProjectDependent="1"/>
 									<File Name="Extensions.js" HashValue="82B848859CFA80581D8C86CF02B07756" ProjectDependent="1"/>
 									<File Name="jquery.extensions.js" HashValue="D3FEBAD88DE3D09C195A05236266BADD" ProjectDependent="1"/>
 								</Folder>
 							</Folder>
-							<Folder Name="datatype">
+							<Folder Name="datatype" IsGroup="1">
 								<File Name="ArrayNode.js" HashValue="9AB81A8AAF24EB2EC9FC67D875953BE3" ProjectDependent="1"/>
 								<File Name="Node.js" HashValue="17F235E06F0EE90CFF2819001D8D73EB" ProjectDependent="1"/>
 								<File Name="Notification.js" HashValue="5E56FF7C2C34C080E03FC4B85060A6BE" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="decorators">
+							<Folder Name="decorators" IsGroup="1">
 								<File Name="CultureDependency.js" HashValue="6AA891F271E5D21B6BCED5E34B8EC4F0" ProjectDependent="1"/>
 								<File Name="LanguageDependency.js" HashValue="6D51B1697EEF293B891ED881E34276DA" ProjectDependent="1"/>
 								<File Name="MeasurementSystemDependency.js" HashValue="DDC5C15B7A508CA44834150CC3E71140" ProjectDependent="1"/>
@@ -180,11 +180,11 @@
 								<File Name="UserDependency.js" HashValue="4658604847584B222F4BD3D591E2C9C2" ProjectDependent="1"/>
 								<File Name="VisibilityDependency.js" HashValue="508BBD1000F55073B9564A63906D209F" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="enum">
+							<Folder Name="enum" IsGroup="1">
 								<File Name="Enum.js" HashValue="BC6FC3EA37B32E4B14B821FD77C21B51" ProjectDependent="1"/>
 								<File Name="IAT_Enum.js" HashValue="C18293BE106C0B4F06A3E83A87DB1C3E" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="events">
+							<Folder Name="events" IsGroup="1">
 								<File Name="BreaseEvent.js" HashValue="6BB02D83DB47F598D63597EFC98075BA" ProjectDependent="1"/>
 								<File Name="ClientSystemEvent.js" HashValue="A0BD8924B04F42CFB6D4ABC15585C3B1" ProjectDependent="1"/>
 								<File Name="DummyEvent.js" HashValue="CFDA78F379DF6D60120D65C798C1A2D0" ProjectDependent="1"/>
@@ -194,7 +194,7 @@
 								<File Name="Swipe.js" HashValue="7F31655D474D0730520FB675D9E97D60" ProjectDependent="1"/>
 								<File Name="VirtualEvents.js" HashValue="CA5D9F1EC2D5E6F414BE34E5D3F71607" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="helper">
+							<Folder Name="helper" IsGroup="1">
 								<File Name="DateFormatter.js" HashValue="6C9EA12A6A383AF6C66ED50358F145F4" ProjectDependent="1"/>
 								<File Name="Messenger.js" HashValue="3C807F14E29A3A9D74D01FCAB6132CA2" ProjectDependent="1"/>
 								<File Name="NumberFormatter.js" HashValue="03B38C86F04BA40F60A20B63BBCD37BF" ProjectDependent="1"/>
@@ -204,30 +204,24 @@
 								<File Name="Timer.js" HashValue="182EF3FEEF0C5EE0B65256E254DDCB0C" ProjectDependent="1"/>
 								<File Name="XHR.js" HashValue="3AFFE14B30EF8CF72AEAD4FD6782983D" ProjectDependent="1"/>
 								<File Name="XHRPool.js" HashValue="3696426FDCD06F6D71D8CA83B520FB44" ProjectDependent="1"/>
-								<Folder Name="stubs">
+								<Folder Name="stubs" IsGroup="1">
 									<File Name="RuntimeService.js" HashValue="53E56C603FFADF119F4B61CCA1663FDE" ProjectDependent="1"/>
 									<File Name="Server.js" HashValue="56985833CA47551932400C124AD57E6C" ProjectDependent="1"/>
 									<File Name="ServiceBridge.js" HashValue="7E426C958F96F30F35C71BC69AC6D2DB" ProjectDependent="1"/>
 									<File Name="WebSocket.js" HashValue="85634367D902A2EBCE2025CCC7334494" ProjectDependent="1"/>
 								</Folder>
 							</Folder>
-							<Folder Name="iat">
-								<Folder Name="build"></Folder>
-							</Folder>
-							<Folder Name="iatc">
-								<Folder Name="brvisu"></Folder>
-							</Folder>
-							<Folder Name="model">
+							<Folder Name="model" IsGroup="1">
 								<File Name="BindingModel.js" HashValue="443C130F5287DBD4BDABBF96C9AE73DB" ProjectDependent="1"/>
 								<File Name="VisuModel.js" HashValue="83E1C8225829BFD9F6F92F9949449559" ProjectDependent="1"/>
 								<File Name="WidgetModel.js" HashValue="93634BFD21CE434C196737903B179105" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="objects">
+							<Folder Name="objects" IsGroup="1">
 								<File Name="Objects.js" HashValue="009265B109BB459A7E5881BF16486430" ProjectDependent="1"/>
 								<File Name="Response.js" HashValue="56ECB802DBA6797150098508F7B02CFF" ProjectDependent="1"/>
 								<File Name="Subscription.js" HashValue="EFCFCD80D9D8B9FEA1CD56067E841CA1" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="services">
+							<Folder Name="services" IsGroup="1">
 								<File Name="Configuration.js" HashValue="EEAF461502C7357255EF90348037C33D" ProjectDependent="1"/>
 								<File Name="Culture.js" HashValue="87CC9F0A0E0CFAE89DE8AAD0AF9129ED" ProjectDependent="1"/>
 								<File Name="Language.js" HashValue="D8D396EE69FFB634ED6631E320290939" ProjectDependent="1"/>
@@ -241,82 +235,82 @@
 								<File Name="WebSocket.js" HashValue="D33B6FF8DDE7A95215F99C81D1EF29DD" ProjectDependent="1"/>
 							</Folder>
 						</Folder>
-						<Folder Name="libs">
-							<File Name="globalize.js" HashValue="F4825012810A1C56DBDCE4AF9686D47B" ProjectDependent="1"/>
-							<File Name="hammer.min.js" HashValue="DEB120E036463F68A4CCF8C797BDCB2E" ProjectDependent="1"/>
-							<File Name="iscroll-probe.js" HashValue="E386D9E15944A1E2901EDECB30E2B1E0" ProjectDependent="1"/>
+						<Folder Name="libs" IsGroup="1">
+							<File Name="globalize.js" HashValue="C5E3519684D9A72A753E198B3EC477B8" ProjectDependent="1"/>
+							<File Name="hammer.min.js" HashValue="E10006004403A79DCD24E8A6A87C8CAD" ProjectDependent="1"/>
+							<File Name="iscroll-probe.js" HashValue="6D3AA41251C16A48E7DE3C47FCF5FDCE" ProjectDependent="1"/>
 							<File Name="iscroll-update-attention.txt" HashValue="C27B4C8457D67E275E7BE8AA809D0E68" ProjectDependent="1"/>
-							<File Name="iscroll.js" HashValue="0AB3E002B9DD64566155E34241109D92" ProjectDependent="1"/>
+							<File Name="iscroll.js" HashValue="92F9122F8698B5853C3BA27D3D406F6F" ProjectDependent="1"/>
 							<File Name="jasmine-beforeAll.js" HashValue="F087AE72FE36C3170A2C47C0D6A3A0D4" ProjectDependent="1"/>
 							<File Name="jasmine-jquery.js" HashValue="276FA8AD26F214C3DE71BE981A5997A8" ProjectDependent="1"/>
-							<File Name="lodash.core.js" HashValue="98C5E1574DDBD1ED3B288D38F1819D97" ProjectDependent="1"/>
-							<File Name="lodash.js" HashValue="1DDC0AB0ED40971755B3D52A130AEC77" ProjectDependent="1"/>
-							<File Name="pdfobject.js" HashValue="1826BF8AEE422B2DC895FB3597A947E2" ProjectDependent="1"/>
+							<File Name="lodash.core.js" HashValue="DA636C478F78C1A8152DBEB6CC91C382" ProjectDependent="1"/>
+							<File Name="lodash.js" HashValue="53A7121B59C0D45E1F0676E7BBA3C847" ProjectDependent="1"/>
+							<File Name="pdfobject.js" HashValue="85315740B8A8B0C27E3E0E501758E0E6" ProjectDependent="1"/>
 							<File Name="polyfill.js" HashValue="8B669BB2DC0ACDD77809B89513D1B3FF" ProjectDependent="1"/>
-							<File Name="require.js" HashValue="7DD71725C8ACF80CFE0A4C45341FDF09" ProjectDependent="1"/>
-							<File Name="sinon.js" HashValue="B53B6EE79E2568DC68166087370FCC64" ProjectDependent="1"/>
-							<Folder Name="cultures">
-								<File Name="globalize.culture.ar.js" HashValue="03B4D1F3B6D4CC9065C89C7F1E4A1375" ProjectDependent="1"/>
-								<File Name="globalize.culture.be.js" HashValue="577F003BF42874533D047A549F51B5AB" ProjectDependent="1"/>
-								<File Name="globalize.culture.bg.js" HashValue="28C895D80A3DDA9FE86C35CEED997709" ProjectDependent="1"/>
-								<File Name="globalize.culture.bs.js" HashValue="C18CD5372C52B88A87DF02FC68DEF8A2" ProjectDependent="1"/>
-								<File Name="globalize.culture.cs.js" HashValue="A3C3D50150E446086CC5C8419C84140C" ProjectDependent="1"/>
-								<File Name="globalize.culture.da.js" HashValue="56DD85649A8905E98ED2DB613E85FCCE" ProjectDependent="1"/>
-								<File Name="globalize.culture.de.js" HashValue="8BAA62D44988D1A240655933D7EA4F76" ProjectDependent="1"/>
-								<File Name="globalize.culture.el.js" HashValue="A1E8A9AA4E8A32C18F55D7B170381B99" ProjectDependent="1"/>
-								<File Name="globalize.culture.en.js" HashValue="2F4AF9DCB55F64B8062B2B159108E08A" ProjectDependent="1"/>
-								<File Name="globalize.culture.es.js" HashValue="1DA3FA0322607FD6A2CF60ABBEDA5A14" ProjectDependent="1"/>
-								<File Name="globalize.culture.et.js" HashValue="6FEACA7A131E046125F6DD6B6A95E6EA" ProjectDependent="1"/>
-								<File Name="globalize.culture.fa.js" HashValue="A466593525FD8A4AF3B8467F13125E5B" ProjectDependent="1"/>
-								<File Name="globalize.culture.fi.js" HashValue="67F472EF59A159CC77BD1B11A4B26A4A" ProjectDependent="1"/>
-								<File Name="globalize.culture.fr.js" HashValue="A6797A6BC3F884ED00E8269D2FC5E669" ProjectDependent="1"/>
-								<File Name="globalize.culture.he.js" HashValue="2711F12BC5D68FBFF999AE19CE3D3F54" ProjectDependent="1"/>
-								<File Name="globalize.culture.hi.js" HashValue="D5F26AFB011E3CCAD2940A4B5293FBD7" ProjectDependent="1"/>
-								<File Name="globalize.culture.hr.js" HashValue="471C51E973F36D735F2725D343350825" ProjectDependent="1"/>
-								<File Name="globalize.culture.hu.js" HashValue="F5E6640995BDAD6D23584EA1B58167F5" ProjectDependent="1"/>
-								<File Name="globalize.culture.id.js" HashValue="5CC5FC02FB785C581F2C3A1031EC9A0F" ProjectDependent="1"/>
-								<File Name="globalize.culture.is.js" HashValue="73856E7FD931AD81311C0313A5F09C00" ProjectDependent="1"/>
-								<File Name="globalize.culture.it.js" HashValue="9F0924BAEE6B3114423E3AD84464A3E7" ProjectDependent="1"/>
-								<File Name="globalize.culture.ja.js" HashValue="B60C8BC33AC80B2AAECA0A7C0499F2FF" ProjectDependent="1"/>
-								<File Name="globalize.culture.kk.js" HashValue="4712703D3EDE38AB4A5162B3A97502FB" ProjectDependent="1"/>
-								<File Name="globalize.culture.ko.js" HashValue="3DD3798130AC052FFDD059979CC84901" ProjectDependent="1"/>
-								<File Name="globalize.culture.lt.js" HashValue="8B66E13F3C12A76ABC0901257CC39C23" ProjectDependent="1"/>
-								<File Name="globalize.culture.lv.js" HashValue="B99C77CE396BE7F5AA8129A1740B4B8C" ProjectDependent="1"/>
-								<File Name="globalize.culture.mk.js" HashValue="BEE0A8BB3449DCBC968602A7CC8AF4C5" ProjectDependent="1"/>
-								<File Name="globalize.culture.ms.js" HashValue="C0D59C517AD57D408A15B6B489B6909E" ProjectDependent="1"/>
-								<File Name="globalize.culture.nl.js" HashValue="66D8F61E6280DA3B261888B408D63AAC" ProjectDependent="1"/>
-								<File Name="globalize.culture.no.js" HashValue="A0B9B24E726D3AEC66F1879B6F98ED42" ProjectDependent="1"/>
-								<File Name="globalize.culture.pa.js" HashValue="A49298FEF4CC580C92436AB2E931E38F" ProjectDependent="1"/>
-								<File Name="globalize.culture.pl.js" HashValue="1CA3375AC5AA5FEFD3805C8BE77AD081" ProjectDependent="1"/>
-								<File Name="globalize.culture.pt.js" HashValue="AE8E1E571BC2E7715EC82FCEACE6805E" ProjectDependent="1"/>
-								<File Name="globalize.culture.ro.js" HashValue="B12E3A6C8485630D80034544E8BE0CC9" ProjectDependent="1"/>
-								<File Name="globalize.culture.ru.js" HashValue="1CC19A1CB98224FE4E7DC4DB2707BC59" ProjectDependent="1"/>
-								<File Name="globalize.culture.sa.js" HashValue="063E9034E522F1DDCE8C60AD983E0761" ProjectDependent="1"/>
-								<File Name="globalize.culture.sk.js" HashValue="E904AB45656821A85E9AFC7CA4C8E3C6" ProjectDependent="1"/>
-								<File Name="globalize.culture.sl.js" HashValue="E1770FDA6C30B0B0D711210A1590982F" ProjectDependent="1"/>
-								<File Name="globalize.culture.sr.js" HashValue="CC47A305AAF602616A75A712F72C68B0" ProjectDependent="1"/>
-								<File Name="globalize.culture.sv.js" HashValue="9935AE55D15B7991A1A1FD2D8583D5B8" ProjectDependent="1"/>
-								<File Name="globalize.culture.ta.js" HashValue="DAC7E9FC6BABAC5B19D0F215360921B8" ProjectDependent="1"/>
-								<File Name="globalize.culture.th.js" HashValue="7EC8E60F13834C96C4D855E8DE9DE441" ProjectDependent="1"/>
-								<File Name="globalize.culture.tr.js" HashValue="FEFD57FDDB2FC2C58FB1EC8956B5DA00" ProjectDependent="1"/>
-								<File Name="globalize.culture.uk.js" HashValue="F4AF8F4E9DD045365B02D6401C6AAE8B" ProjectDependent="1"/>
-								<File Name="globalize.culture.vi.js" HashValue="9873D551A5D6CA0CDBB4C890D4F6CC8F" ProjectDependent="1"/>
-								<File Name="globalize.culture.zh.js" HashValue="61108D643C589D3C21CD897DEE2BEDC0" ProjectDependent="1"/>
+							<File Name="require.js" HashValue="0AFE4EF184A0D424E183C2E850D10203" ProjectDependent="1"/>
+							<File Name="sinon.js" HashValue="E81182DD031B4738D8AF73A1ADC1276D" ProjectDependent="1"/>
+							<Folder Name="cultures" IsGroup="1">
+								<File Name="globalize.culture.ar.js" HashValue="4AA8B0D6A40009D6FB028302C691A2DC" ProjectDependent="1"/>
+								<File Name="globalize.culture.be.js" HashValue="C08C8BFC42DB0CA4EBA8A43EA2A1512B" ProjectDependent="1"/>
+								<File Name="globalize.culture.bg.js" HashValue="78925C0238BF75BA8A293F87202F3DCB" ProjectDependent="1"/>
+								<File Name="globalize.culture.bs.js" HashValue="41A0F820704C7B1239D228F304A6FB0B" ProjectDependent="1"/>
+								<File Name="globalize.culture.cs.js" HashValue="43E719D40657100F450044B366207598" ProjectDependent="1"/>
+								<File Name="globalize.culture.da.js" HashValue="40A6934DF26C2D3E0BA8274BBEE1825F" ProjectDependent="1"/>
+								<File Name="globalize.culture.de.js" HashValue="929B81CDF8CC9EB07AD1783600CA2E2F" ProjectDependent="1"/>
+								<File Name="globalize.culture.el.js" HashValue="BF11A0B1CDE640E99D6F5A4C178BDFBD" ProjectDependent="1"/>
+								<File Name="globalize.culture.en.js" HashValue="6804C4E377A65E8D110018A28B97C035" ProjectDependent="1"/>
+								<File Name="globalize.culture.es.js" HashValue="9F440FF1647AA321C6B8CA5C3E011AE8" ProjectDependent="1"/>
+								<File Name="globalize.culture.et.js" HashValue="74E849668169A618DCAC729DBECC206F" ProjectDependent="1"/>
+								<File Name="globalize.culture.fa.js" HashValue="DB924EBE591FC553872ED6DB461C9393" ProjectDependent="1"/>
+								<File Name="globalize.culture.fi.js" HashValue="292A0B7B4E07A4DB6B223F849A918079" ProjectDependent="1"/>
+								<File Name="globalize.culture.fr.js" HashValue="4E5379255FEC273C46CF77823DCDA6A4" ProjectDependent="1"/>
+								<File Name="globalize.culture.he.js" HashValue="3E34710EF15EF86DB5DB08069ED1FDF8" ProjectDependent="1"/>
+								<File Name="globalize.culture.hi.js" HashValue="96E0E24811862F8B2028AA762E83728A" ProjectDependent="1"/>
+								<File Name="globalize.culture.hr.js" HashValue="8E1853EEAF15CD1976A3E87244FA1633" ProjectDependent="1"/>
+								<File Name="globalize.culture.hu.js" HashValue="46E118D40E2403A9A185FC1BA010FDE6" ProjectDependent="1"/>
+								<File Name="globalize.culture.id.js" HashValue="73725684506E9A07FC8F4A91FC0428AB" ProjectDependent="1"/>
+								<File Name="globalize.culture.is.js" HashValue="1E156E94357F32786273EC034D69F7F6" ProjectDependent="1"/>
+								<File Name="globalize.culture.it.js" HashValue="48A0E85912440F5166E56474018575CA" ProjectDependent="1"/>
+								<File Name="globalize.culture.ja.js" HashValue="F4C2AA3832A12C08074B716DC3952F65" ProjectDependent="1"/>
+								<File Name="globalize.culture.kk.js" HashValue="59975487F94EFF117959EC8E5CA161E9" ProjectDependent="1"/>
+								<File Name="globalize.culture.ko.js" HashValue="0CC3A0CE8C11FF3135A03DCE617C401C" ProjectDependent="1"/>
+								<File Name="globalize.culture.lt.js" HashValue="9DCB9BB41AD7049D68417E9E83894443" ProjectDependent="1"/>
+								<File Name="globalize.culture.lv.js" HashValue="B0685520A25958A7C89EB087F65886C9" ProjectDependent="1"/>
+								<File Name="globalize.culture.mk.js" HashValue="BFE3B51D156F26905D29858FC2D366EE" ProjectDependent="1"/>
+								<File Name="globalize.culture.ms.js" HashValue="34B53BB9DEB9EAB693AC1CC15DFE8E2F" ProjectDependent="1"/>
+								<File Name="globalize.culture.nl.js" HashValue="2BB5F2F9261FB34BBECD6F5088FC9B79" ProjectDependent="1"/>
+								<File Name="globalize.culture.no.js" HashValue="92C781DC4D816CC766B575064670B2BA" ProjectDependent="1"/>
+								<File Name="globalize.culture.pa.js" HashValue="40DC9B70D889FD3AB976846D3524D7BF" ProjectDependent="1"/>
+								<File Name="globalize.culture.pl.js" HashValue="7A0DA84E9246FD7774794C1C1B8F926C" ProjectDependent="1"/>
+								<File Name="globalize.culture.pt.js" HashValue="DB1464BA3379DA1DFECBE717AC02C703" ProjectDependent="1"/>
+								<File Name="globalize.culture.ro.js" HashValue="B69DD1BFB617B86E07A1E48D4ED11E94" ProjectDependent="1"/>
+								<File Name="globalize.culture.ru.js" HashValue="AA5C835367379EB4A5E1FAE27D0C16D2" ProjectDependent="1"/>
+								<File Name="globalize.culture.sa.js" HashValue="3D65CF5562303C8B8C081A7AB08F1EAA" ProjectDependent="1"/>
+								<File Name="globalize.culture.sk.js" HashValue="9F71949E25A3DC3147C47E01ABA474DD" ProjectDependent="1"/>
+								<File Name="globalize.culture.sl.js" HashValue="C621486DF35960DCE5B3912AF22AE1CA" ProjectDependent="1"/>
+								<File Name="globalize.culture.sr.js" HashValue="3B5F75FA78BAB5D047053F7AD68008AB" ProjectDependent="1"/>
+								<File Name="globalize.culture.sv.js" HashValue="47BC5DD878F64B7C649AAF420A422157" ProjectDependent="1"/>
+								<File Name="globalize.culture.ta.js" HashValue="5C12838B8BB264A897A62D8E541FFB14" ProjectDependent="1"/>
+								<File Name="globalize.culture.th.js" HashValue="D23E47D3C95A0B4B157F4A55905F618B" ProjectDependent="1"/>
+								<File Name="globalize.culture.tr.js" HashValue="164E2166168C26D4FB0AA03B1408BA45" ProjectDependent="1"/>
+								<File Name="globalize.culture.uk.js" HashValue="D37E0E0E8F6E34E2D21FDCC3D8D9930B" ProjectDependent="1"/>
+								<File Name="globalize.culture.vi.js" HashValue="FD6B94934C73C14555A8E89878264B91" ProjectDependent="1"/>
+								<File Name="globalize.culture.zh.js" HashValue="FF187A8FA192A5D5552E0A18D6C43358" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="d3">
-								<File Name="d3.js" HashValue="8D0B54630D8C3D82CBDA966ADA8F9A1B" ProjectDependent="1"/>
-								<File Name="d3.min.js" HashValue="33A4640A0FC7E2A0AB47EC00B506F4C7" ProjectDependent="1"/>
-								<File Name="d3.v2.js" HashValue="EA5E4F8A2E2589B9CE2B8C3AF5E3C0BB" ProjectDependent="1"/>
-								<File Name="d3.v2.min.js" HashValue="FC2E9A00493C7D5938ED22B5F3DFEA92" ProjectDependent="1"/>
-								<File Name="d3.v3.js" HashValue="F70ECD54F6039AC3EAA8944501E47378" ProjectDependent="1"/>
-								<File Name="nv.d3.css" HashValue="A36E441AE333C8FE085D74A847C97330" ProjectDependent="1"/>
-								<File Name="nv.d3.js" HashValue="AE58930C2DE210BABC24BE60745E6B43" ProjectDependent="1"/>
+							<Folder Name="d3" IsGroup="1">
+								<File Name="d3.js" HashValue="882697830C453DF2C6BB096D8F1D6FDE" ProjectDependent="1"/>
+								<File Name="d3.min.js" HashValue="4FE3866D1C23C42671E9B96A2C6F1045" ProjectDependent="1"/>
+								<File Name="d3.v2.js" HashValue="423EC5CBF74D6F6825FAFA94D27E65D5" ProjectDependent="1"/>
+								<File Name="d3.v2.min.js" HashValue="2F1DF3EDE8C3BFF7451C1C4597F62B58" ProjectDependent="1"/>
+								<File Name="d3.v3.js" HashValue="A08F3F50CF576FBE97CE09973A153BEA" ProjectDependent="1"/>
+								<File Name="nv.d3.css" HashValue="0AAAC79E2EFFB3B5030D5AC79D6348BF" ProjectDependent="1"/>
+								<File Name="nv.d3.js" HashValue="84F5352DDDF51A2BC9509F8DC77CED0F" ProjectDependent="1"/>
 							</Folder>
-							<Folder Name="jquery">
-								<File Name="jquery-ui-1.10.3.custom.css" HashValue="2DC6F7885C18829838C1A90536465D2E" ProjectDependent="1"/>
-								<File Name="jquery-ui-1.10.3.custom.js" HashValue="566C59D863285B7395F2F9315E087C0C" ProjectDependent="1"/>
-								<File Name="jquery-ui-1.10.4.custom.js" HashValue="EF9151E9E548EB3B1127B91F0192571E" ProjectDependent="1"/>
-								<Folder Name="images">
+							<Folder Name="jquery" IsGroup="1">
+								<File Name="jquery-ui-1.10.3.custom.css" HashValue="EAC88F8E4AC2C696223454726612B066" ProjectDependent="1"/>
+								<File Name="jquery-ui-1.10.3.custom.js" HashValue="A68B04643E9A1B36C8D22D9C6ECCA649" ProjectDependent="1"/>
+								<File Name="jquery-ui-1.10.4.custom.js" HashValue="28BBFBEF05CA22DC634BF409FF1AC485" ProjectDependent="1"/>
+								<Folder Name="images" IsGroup="1">
 									<File Name="animated-overlay.gif" HashValue="2B912F7C0653008CA28EBACDA49025E7" ProjectDependent="1"/>
 									<File Name="ui-bg_diagonals-thick_18_b81900_40x40.png" HashValue="3B680CE67CFE37A722D89D979A25C254" ProjectDependent="1"/>
 									<File Name="ui-bg_diagonals-thick_20_666666_40x40.png" HashValue="42B9B1C1A36D29A1226C85E3822196A6" ProjectDependent="1"/>
@@ -345,151 +339,151 @@
 									<File Name="ui-icons_ffffff_256x240.png" HashValue="E3F4748B19B87AADAA924D85F0882432" ProjectDependent="1"/>
 								</Folder>
 							</Folder>
-							<Folder Name="require_plugins">
-								<File Name="css-build.js" HashValue="FC04A587667C2F311C0E69BD8C86049C" ProjectDependent="1"/>
-								<File Name="css.js" HashValue="182251EC20083110282A53FB10B10EE2" ProjectDependent="1"/>
-								<File Name="text.js" HashValue="B061E680DC483CAC81AD9EEDAFEB0171" ProjectDependent="1"/>
+							<Folder Name="require_plugins" IsGroup="1">
+								<File Name="css-build.js" HashValue="BFD4CF3B71D00991B4803C159758C6DF" ProjectDependent="1"/>
+								<File Name="css.js" HashValue="0E36521237038EA1D206CA87C302CF3E" ProjectDependent="1"/>
+								<File Name="text.js" HashValue="039CF277AE6B0EA0EA28F808B2EDC7A2" ProjectDependent="1"/>
 							</Folder>
 						</Folder>
-						<Folder Name="Media">
-							<File Name="accept.svg" HashValue="360523273738006FB14D43EF3CC082EA" ProjectDependent="1"/>
+						<Folder Name="Media" IsGroup="1">
+							<File Name="accept.svg" HashValue="72ABFA7C9E03B9C5E2F8FB8365C0AA86" ProjectDependent="1"/>
 							<File Name="beer.svg" HashValue="1EC746738F7CB831B2F99C4CEF019B69" ProjectDependent="1"/>
 							<File Name="beertap.svg" HashValue="DD33794711C260C2F68467D9572B025D" ProjectDependent="1"/>
 							<File Name="BRLOGO.png" HashValue="E5154E8FC0A4C68F1B1536EEBB6F499E" ProjectDependent="1"/>
-							<File Name="can.svg" HashValue="ABDC2FC16B4EE37EE997AB49D2D65652" ProjectDependent="1"/>
-							<File Name="defect.svg" HashValue="41BE58DEAE51FEFF0D52B23BA55267BB" ProjectDependent="1"/>
+							<File Name="can.svg" HashValue="30AF40E09C8D75CE4782885B4C3B89E6" ProjectDependent="1"/>
+							<File Name="defect.svg" HashValue="064423B535AA1ECB57A48848492C9507" ProjectDependent="1"/>
 							<File Name="humidity.png" HashValue="E0F0D3392D833E82AA2C9C4E6B8DF397" ProjectDependent="1"/>
-							<File Name="maintenance.svg" HashValue="AF41503F2182C741DD60870645E8FE2C" ProjectDependent="1"/>
+							<File Name="maintenance.svg" HashValue="38059DC3E3004D48C531359BEF9D075B" ProjectDependent="1"/>
 							<File Name="Package.pkg" HashValue="B86CE2774ABEF1271242E3CC02278CD1" ProjectDependent="1"/>
 							<File Name="package.svg" HashValue="2D5088C92CC8FDBC45096CA5B1B1FCF7" ProjectDependent="1"/>
 							<File Name="power.svg" HashValue="CBAFDD28AB0F879DDF436E68D270F1F8" ProjectDependent="1"/>
 							<File Name="SDU_LOGO.png" HashValue="9A50A367AE7A0CE279F75918F11FAD2B" ProjectDependent="1"/>
 							<File Name="speedometer.svg" HashValue="75C41EB07BBE528CFCAD69533FA43C77" ProjectDependent="1"/>
-							<File Name="spin.svg" HashValue="73E0A33BA4CB06082CCE7B491652BAC8" ProjectDependent="1"/>
+							<File Name="spin.svg" HashValue="C1979255265F84C609213C055A45C231" ProjectDependent="1"/>
 							<File Name="thermometer.svg" HashValue="6517963F9AF48810B120FB2F937CED54" ProjectDependent="1"/>
-							<File Name="vibration.svg" HashValue="7A8DA07A4AD546FA5507C2CC63EEA5BC" ProjectDependent="1"/>
+							<File Name="vibration.svg" HashValue="0505CDAD3B44AB0F9A4A3AD17CCDEDB4" ProjectDependent="1"/>
 						</Folder>
-						<Folder Name="release">
-							<File Name="brease.js" HashValue="020AA68CD86FDF36D48A98548E05084D" ProjectDependent="1"/>
+						<Folder Name="release" IsGroup="1">
+							<File Name="brease.js" HashValue="4B2ECFBD4F278B6E7C82EB07026FA491" ProjectDependent="1"/>
 							<File Name="brease_core.min.css" HashValue="76BA4DDBD67DFB6E45852696A24EC35B" ProjectDependent="1"/>
 						</Folder>
-						<Folder Name="system">
-							<Folder Name="brease">
-								<Folder Name="Content">
-									<Folder Name="designer">
+						<Folder Name="system" IsGroup="1">
+							<Folder Name="brease" IsGroup="1">
+								<Folder Name="Content" IsGroup="1">
+									<Folder Name="designer" IsGroup="1">
 										<File Name="ClassInfo.js" HashValue="6B2A870FAC825F7D7880441950D598E2" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
 							</Folder>
-							<Folder Name="widgets">
-								<Folder Name="ContentLoader">
+							<Folder Name="widgets" IsGroup="1">
+								<Folder Name="ContentLoader" IsGroup="1">
 									<File Name="ContentLoader.html" HashValue="7D2BF0CFE2C8838D40187752AAF947EE" ProjectDependent="1"/>
 									<File Name="ContentLoader.js" HashValue="1AD55438EE3DA1B4A759D6C580E62235" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="ContentLoader.sass.css" HashValue="CDF0611B0F041ABB449C026BAB34710C" ProjectDependent="1"/>
-										<File Name="ContentLoader.scss" HashValue="83DBACC2EDE2D31883F9429125AB883A" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="ContentLoader.sass.css" HashValue="0F4FCBEED60B1DC2D05F27CA56C4164C" ProjectDependent="1"/>
+										<File Name="ContentLoader.scss" HashValue="0A142727A98C79F0F6CB783967217CD6" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="61A0734522B077A19D900668429ED619" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="356B94E43345923F152E7CEB17D7B551" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="ContentLoader.json" HashValue="EA065E0F2858281C13CAA461F913434A" ProjectDependent="1"/>
 										<File Name="ContentLoader.style" HashValue="9F4784C6D316A60D66EA73503D1B76E0" ProjectDependent="1"/>
-										<File Name="ContentLoader.widget" HashValue="630829D7EA9BAC1ACFAE04446CF21FDB" ProjectDependent="1"/>
-										<File Name="ContentLoader.xsd" HashValue="402EAD61B78754BBFB93C599CAE126DD" ProjectDependent="1"/>
-										<File Name="ContentLoader_base.scss" HashValue="7B20B7A869D08E65B92A8A2D100C1F30" ProjectDependent="1"/>
-										<File Name="ContentLoader_default.scss" HashValue="512A816CD9B1D1CBA3876392C0872442" ProjectDependent="1"/>
-										<File Name="ContentLoader_EventsActions.xsd" HashValue="0AE941DF43B36C466E57438A0B22E3E2" ProjectDependent="1"/>
+										<File Name="ContentLoader.widget" HashValue="03478127556ECF645DAC873198B49A56" ProjectDependent="1"/>
+										<File Name="ContentLoader.xsd" HashValue="BA462970A3587D910D1C62161DD71095" ProjectDependent="1"/>
+										<File Name="ContentLoader_base.scss" HashValue="B394DC32EF20410E354433721501B5BC" ProjectDependent="1"/>
+										<File Name="ContentLoader_default.scss" HashValue="E98BAEF5C0180D89FB1ECE8938960C88" ProjectDependent="1"/>
+										<File Name="ContentLoader_EventsActions.xsd" HashValue="7C49F60D71D5B8814D5EC5A70AABA301" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
 							</Folder>
 						</Folder>
-						<Folder Name="widgets">
-							<Folder Name="brease">
-								<Folder Name="BarChart">
+						<Folder Name="widgets" IsGroup="1">
+							<Folder Name="brease" IsGroup="1">
+								<Folder Name="BarChart" IsGroup="1">
 									<File Name="BarChart.html" HashValue="47A9DD2BB6EED0AFC66A37A8F128D658" ProjectDependent="1"/>
 									<File Name="BarChart.js" HashValue="EE307F60FE92BC5D541D0F13723C46F3" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="BarChart.sass.css" HashValue="BC6A2276BF9B5B11D3B955CA8CE58108" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="BarChart.sass.css" HashValue="2A673E704AD289531A4601C9CED83534" ProjectDependent="1"/>
 										<File Name="BarChart.scss" HashValue="6FD42C62B99141C0789B99A2E05C70D4" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="7D4A8D15D49C2A66ECE09ECE5F54D069" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="0B49AB453E729E5201B51FD541B146BE" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="EditorHandles.js" HashValue="94CCD72DBA44BBCCE3DE72603056C6A1" ProjectDependent="1"/>
 										<File Name="Renderer.js" HashValue="F8CEEF61D21824581B0C3F2B3138C39C" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="BarChart.json" HashValue="33DD930B4237C677F775B1B82AF06A7E" ProjectDependent="1"/>
 										<File Name="BarChart.style" HashValue="62E771D6D325421AB6BA7A63A13CC243" ProjectDependent="1"/>
-										<File Name="BarChart.widget" HashValue="937EAAA27E516745CE347692C7F5E1B8" ProjectDependent="1"/>
-										<File Name="BarChart.xsd" HashValue="138FB1A8CA17165B31EF1932F6F884F1" ProjectDependent="1"/>
-										<File Name="BarChart_base.scss" HashValue="28EB86E62F4F91327E74D19A2B552048" ProjectDependent="1"/>
+										<File Name="BarChart.widget" HashValue="83BA780A1D1C0E72B036CE8C29938AB4" ProjectDependent="1"/>
+										<File Name="BarChart.xsd" HashValue="EB4F953D476D96D3AB3F530AA14E7E0D" ProjectDependent="1"/>
+										<File Name="BarChart_base.scss" HashValue="C2081049EA850E136C87C06E22922734" ProjectDependent="1"/>
 										<File Name="BarChart_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="BarChart_default.sass.css" HashValue="6E4D5DD45860E43B59111F1209BA4572" ProjectDependent="1"/>
-										<File Name="BarChart_default.scss" HashValue="3B55A91F530E8D11CF9F2CD2B4F6B0CC" ProjectDependent="1"/>
-										<File Name="BarChart_EventsActions.xsd" HashValue="149C210AB041F3D28C92F24A422E9E7D" ProjectDependent="1"/>
-										<File Name="BarChart_Styles.xsd" HashValue="45BAED7D94EFCC29BA26732A96C597BA" ProjectDependent="1"/>
+										<File Name="BarChart_default.sass.css" HashValue="A850C5133287C58ECB8D832FF92655A1" ProjectDependent="1"/>
+										<File Name="BarChart_default.scss" HashValue="876159DB2802AC3DCFCE9BD1DE8A71B6" ProjectDependent="1"/>
+										<File Name="BarChart_EventsActions.xsd" HashValue="F2762ABB3D355F0E901A4E2166EF8B3A" ProjectDependent="1"/>
+										<File Name="BarChart_Styles.xsd" HashValue="44377A0203C5DF370399315EEA692406" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="BarChartItem">
+								<Folder Name="BarChartItem" IsGroup="1">
 									<File Name="BarChartItem.html" HashValue="A063F89F703316C9E2F7C9F2611E766E" ProjectDependent="1"/>
 									<File Name="BarChartItem.js" HashValue="6C944D4A2F8A9B7AC13551CAEA18A798" ProjectDependent="1"/>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="F90FABE03D93E1D553C99B2E23ABFA4F" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="A95037247514D6134EDEA33C32C48676" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="EditorHandles.js" HashValue="73F3583DD7D3C4A28166CC747C75EA25" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="BarChartItem.json" HashValue="70122154E44DD14CE590DC1513ABE9A6" ProjectDependent="1"/>
 										<File Name="BarChartItem.style" HashValue="627C92383BA8A11D7CB3872DB4BE87CA" ProjectDependent="1"/>
-										<File Name="BarChartItem.widget" HashValue="F5A011F3FB23B9137E9D6FE9F1E56CCC" ProjectDependent="1"/>
-										<File Name="BarChartItem.xsd" HashValue="62BAA25D97FB324697B529CE14A890F2" ProjectDependent="1"/>
-										<File Name="BarChartItem_base.scss" HashValue="CA93D34BF7AC41D33ADB27989E7CFF29" ProjectDependent="1"/>
+										<File Name="BarChartItem.widget" HashValue="5A76AD49D6FD923F3AB0B2060B161256" ProjectDependent="1"/>
+										<File Name="BarChartItem.xsd" HashValue="6491C69C2976A8469343CFED0F3E59AD" ProjectDependent="1"/>
+										<File Name="BarChartItem_base.scss" HashValue="E7B8A0F52B729C2EDE133FFE2A605A7A" ProjectDependent="1"/>
 										<File Name="BarChartItem_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="BarChartItem_default.sass.css" HashValue="54585E1E8C085E61502505187C15BFEE" ProjectDependent="1"/>
-										<File Name="BarChartItem_default.scss" HashValue="040E1E13957434A6D3F1C6D23152B8CC" ProjectDependent="1"/>
-										<File Name="BarChartItem_EventsActions.xsd" HashValue="FF889DB3FE6E483142587A2E9CFC6173" ProjectDependent="1"/>
-										<File Name="BarChartItem_Styles.xsd" HashValue="03A061C9BA04704412E76AB5C31F641C" ProjectDependent="1"/>
+										<File Name="BarChartItem_default.sass.css" HashValue="D016AC7043B522342116697FB46E8F09" ProjectDependent="1"/>
+										<File Name="BarChartItem_default.scss" HashValue="BB75C54B0FBF3CC169994E5401C7C641" ProjectDependent="1"/>
+										<File Name="BarChartItem_EventsActions.xsd" HashValue="A8ACE60ABFD27BE5F7C7DAB1E408E287" ProjectDependent="1"/>
+										<File Name="BarChartItem_Styles.xsd" HashValue="7123EE0EE112A048856A64008ED7F837" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="Button">
+								<Folder Name="Button" IsGroup="1">
 									<File Name="Button.html" HashValue="92F7FB66518A853A5AD3CDA8B6A2F658" ProjectDependent="1"/>
 									<File Name="Button.js" HashValue="E235111C28A80DA3E3598748B5EB8820" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="Button.sass.css" HashValue="EAC2C29295B9BCA9F4F4586A79B364B4" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="Button.sass.css" HashValue="E640EAC13A6D65ED8224D8212B8983BB" ProjectDependent="1"/>
 										<File Name="Button.scss" HashValue="67B364ADC635CB8D41B58491B0C23220" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="E72D17B900E451463365B9FC7BF52F8B" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="CF35ED5FEA85DB09669CA57E08FDBA3F" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="Button.json" HashValue="F8636879E1D117852D80E8619631CE4B" ProjectDependent="1"/>
 										<File Name="Button.style" HashValue="01B1FAE8427A0B76EFA8484BB6DCE1E4" ProjectDependent="1"/>
-										<File Name="Button.widget" HashValue="5FF86AAFDAAFEE424DC6378496D083FD" ProjectDependent="1"/>
-										<File Name="Button.xsd" HashValue="0FD63BAF98DB2555F33466FEAD2E0891" ProjectDependent="1"/>
-										<File Name="Button_base.scss" HashValue="5337FEC9FED8B5F34151EFA245C578A8" ProjectDependent="1"/>
+										<File Name="Button.widget" HashValue="2A1DC85BC37D5A0C21D92602847ED377" ProjectDependent="1"/>
+										<File Name="Button.xsd" HashValue="8C474AF3DF83AD2799E488BC85EA0D6D" ProjectDependent="1"/>
+										<File Name="Button_base.scss" HashValue="2044926266D6E92BD62767BDDD96AC05" ProjectDependent="1"/>
 										<File Name="Button_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="Button_default.sass.css" HashValue="A73EC0E62943047F801E971862011D1C" ProjectDependent="1"/>
-										<File Name="Button_default.scss" HashValue="6DCEEAFE1C37E4F0CC0945796E084D9B" ProjectDependent="1"/>
-										<File Name="Button_EventsActions.xsd" HashValue="F7E0FDB1928E9FCFF78BDB4AFED75CEE" ProjectDependent="1"/>
-										<File Name="Button_Styles.xsd" HashValue="A716D258CA8998ADF83AD0686DA7F7C5" ProjectDependent="1"/>
+										<File Name="Button_default.sass.css" HashValue="555319196A4FBBFEE8A0019F9FB108BE" ProjectDependent="1"/>
+										<File Name="Button_default.scss" HashValue="2B63975E75B448BB5B4C41C8ED883BD0" ProjectDependent="1"/>
+										<File Name="Button_EventsActions.xsd" HashValue="AFEF6DE4F7D53C44E8D55286FF68F1D1" ProjectDependent="1"/>
+										<File Name="Button_Styles.xsd" HashValue="E59FB384A097C703BECDF8148FB30007" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="common">
-									<Folder Name="css">
-										<File Name="boxLayout.sass.css" HashValue="24E0078122F754E1AD11E324D2659747" ProjectDependent="1"/>
+								<Folder Name="common" IsGroup="1">
+									<Folder Name="css" IsGroup="1">
+										<File Name="boxLayout.sass.css" HashValue="485C5B68BF111123D59F4063C69051B1" ProjectDependent="1"/>
 										<File Name="boxLayout.scss" HashValue="9276FE113E126AAD361A6835D23F4D75" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="DragDropHandler">
-										<Folder Name="doc">
+									<Folder Name="DragDropHandler" IsGroup="1">
+										<Folder Name="doc" IsGroup="1">
 											<File Name="example.html" HashValue="005AE41C60E8F48D4DBD8F138D349BA5" ProjectDependent="1"/>
 											<File Name="example.js" HashValue="BBE7A739D90D032B7289824DE1B75575" ProjectDependent="1"/>
 											<File Name="ReadMe.md" HashValue="319259775400BBB6C74426C41BA35090" ProjectDependent="1"/>
 										</Folder>
-										<Folder Name="libs">
+										<Folder Name="libs" IsGroup="1">
 											<File Name="dragDropArgs.js" HashValue="A2937379935CC882A00AE1FFF422408A" ProjectDependent="1"/>
 											<File Name="dragDropBase.js" HashValue="DF1ED72448C89CD0D81B06F6A70DB7CA" ProjectDependent="1"/>
 											<File Name="dragDropHandler.js" HashValue="CADC0CB58DE2AAED7CC65CC130BE01B9" ProjectDependent="1"/>
@@ -503,12 +497,12 @@
 											<File Name="utils.js" HashValue="A0031FD568D4E48713D141E9119F645D" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
-									<Folder Name="ErrorHandling">
-										<Folder Name="libs">
+									<Folder Name="ErrorHandling" IsGroup="1">
+										<Folder Name="libs" IsGroup="1">
 											<File Name="CommissioningErrorHandler.js" HashValue="1105FF36B1FF0EE6FEA9389B4134B66A" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="BindingSync.js" HashValue="CF0B0CAF8ABB716C79D509694FC4E787" ProjectDependent="1"/>
 										<File Name="BoxLayout.js" HashValue="6EDB3D47C8AEA08363148EDEB89AD306" ProjectDependent="1"/>
 										<File Name="ChartUtils.js" HashValue="E2237CA7054CD00F00C57563487E1883" ProjectDependent="1"/>
@@ -517,212 +511,212 @@
 										<File Name="EditorHandlesSquare.js" HashValue="37E0D3C1CF4725FAF2080B2C1E362B96" ProjectDependent="1"/>
 										<File Name="Renderer.js" HashValue="2D6E80B6142F2DB84E6744BBD76A79E0" ProjectDependent="1"/>
 										<File Name="WebSocket.js" HashValue="CBDCB7EA119B13D1A49F1435599B65A1" ProjectDependent="1"/>
-										<Folder Name="external">
-											<File Name="dataTables.select.js" HashValue="286F4F3E93223659E50A954D4E490D5F" ProjectDependent="1"/>
-											<File Name="jquery.dataTables.js" HashValue="351928F86A744816F6800A6527D4ADFD" ProjectDependent="1"/>
-											<File Name="redux.js" HashValue="BD26D59A8741D90E4F31C64D6F483D52" ProjectDependent="1"/>
+										<Folder Name="external" IsGroup="1">
+											<File Name="dataTables.select.js" HashValue="8FF18463D623EAAD2AA9EC95CA92FD92" ProjectDependent="1"/>
+											<File Name="jquery.dataTables.js" HashValue="CF88DAC7F2A0F08C11C0C0CB2179AF5C" ProjectDependent="1"/>
+											<File Name="redux.js" HashValue="AD56F3627861360FA2369C9DD6F1AE6A" ProjectDependent="1"/>
 										</Folder>
-										<Folder Name="redux">
-											<Folder Name="reducers">
-												<Folder Name="Image">
+										<Folder Name="redux" IsGroup="1">
+											<Folder Name="reducers" IsGroup="1">
+												<Folder Name="Image" IsGroup="1">
 													<File Name="ImageActions.js" HashValue="462BA28BC2C2A75CD016FF3465BF72D6" ProjectDependent="1"/>
 													<File Name="ImageReducer.js" HashValue="1AC59142CC8E8BEA3DD28CD03D851F1D" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="List">
+												<Folder Name="List" IsGroup="1">
 													<File Name="ListActions.js" HashValue="3B62459FFF79075EE5D90666792DFFED" ProjectDependent="1"/>
 													<File Name="ListReducer.js" HashValue="9D27992FEB92F8F7B7FBE17417D7B3A4" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="Size">
+												<Folder Name="Size" IsGroup="1">
 													<File Name="SizeActions.js" HashValue="840D8C784A3D78132E41E6961709A7D4" ProjectDependent="1"/>
 													<File Name="SizeReducer.js" HashValue="32180FFE23899235CDCF8F3EDF848A5F" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="Status">
+												<Folder Name="Status" IsGroup="1">
 													<File Name="StatusActions.js" HashValue="1DC0C7DBEA7958D41CA065C87A90B9C8" ProjectDependent="1"/>
 													<File Name="StatusReducer.js" HashValue="04F4694A27898F2ED6F2F3BF2696AB14" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="Style">
+												<Folder Name="Style" IsGroup="1">
 													<File Name="StyleActions.js" HashValue="7F65E6F8D7C37EE1C3DDE63FE5D25C11" ProjectDependent="1"/>
 													<File Name="StyleReducer.js" HashValue="3369C8431743D617010B23DC1AA88D1C" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="Text">
+												<Folder Name="Text" IsGroup="1">
 													<File Name="TextActions.js" HashValue="F2B26796A0B198228FA648DA8EB69709" ProjectDependent="1"/>
 													<File Name="TextReducer.js" HashValue="FD9C2AF59A7C2EF9242A9CC34C6B770C" ProjectDependent="1"/>
 												</Folder>
 											</Folder>
-											<Folder Name="utils">
+											<Folder Name="utils" IsGroup="1">
 												<File Name="UtilsImage.js" HashValue="EB5CF6A876444401A4F345045BCF6F8A" ProjectDependent="1"/>
 												<File Name="UtilsList.js" HashValue="0A206C87471AD7354D4F465A2976A665" ProjectDependent="1"/>
 												<File Name="UtilsStyle.js" HashValue="69E65CCC1050681A7E21FF555ED1DFFC" ProjectDependent="1"/>
 												<File Name="UtilsText.js" HashValue="7C180E05705A674D116F3F4C39B8D659" ProjectDependent="1"/>
 											</Folder>
-											<Folder Name="view">
-												<Folder Name="ImageView">
+											<Folder Name="view" IsGroup="1">
+												<Folder Name="ImageView" IsGroup="1">
 													<File Name="ImageView.js" HashValue="F05ADC42D3AAB5034C95FA8FA2BE16FD" ProjectDependent="1"/>
 													<File Name="ImageView.scss" HashValue="A28B150F0086E357F0A42C3C8A2AE96A" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="ItemView">
+												<Folder Name="ItemView" IsGroup="1">
 													<File Name="ItemView.js" HashValue="7D7701316310ACD2440895D313474DD4" ProjectDependent="1"/>
 													<File Name="ItemView.scss" HashValue="C03A6B31C4B3736CD15433C4E90839F6" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="ListView">
+												<Folder Name="ListView" IsGroup="1">
 													<File Name="ListView.js" HashValue="E14973AC65DD077A1CCB44E9C492288F" ProjectDependent="1"/>
 													<File Name="ListView.scss" HashValue="7AD02A2D6BE27919D2FECB1F3D9754A6" ProjectDependent="1"/>
 												</Folder>
-												<Folder Name="TextView">
+												<Folder Name="TextView" IsGroup="1">
 													<File Name="TextView.js" HashValue="A65B852DA20386CB8E427150116F2AFF" ProjectDependent="1"/>
 													<File Name="TextView.scss" HashValue="E03280738BB7A4A0BDE4A8B885C35048" ProjectDependent="1"/>
 												</Folder>
 											</Folder>
 										</Folder>
-										<Folder Name="wfUtils">
-											<File Name="broken.svg" HashValue="2D6B4549FF7E2907C7345C94EDC7AC7D" ProjectDependent="1"/>
+										<Folder Name="wfUtils" IsGroup="1">
+											<File Name="broken.svg" HashValue="309A711A0ED4F46CB29EC35B74541CDF" ProjectDependent="1"/>
 											<File Name="Utils_FileTransfer.js" HashValue="2464AD6EAABA17A5BF5EEEF5D86B68AD" ProjectDependent="1"/>
 											<File Name="UtilsImage.js" HashValue="A065AC290644D74FDD7C10122DE085A8" ProjectDependent="1"/>
 											<File Name="UtilsLocalize.js" HashValue="B54CAC83E18DF682ACF55D0CDB8E0F14" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
 								</Folder>
-								<Folder Name="DataHandlerWidget">
+								<Folder Name="DataHandlerWidget" IsGroup="1">
 									<File Name="DataHandlerWidget.html" HashValue="036F2666250CB32421A70EE4CA8E901D" ProjectDependent="1"/>
 									<File Name="DataHandlerWidget.js" HashValue="7D388EA19C82321D95769CD1DE80E043" ProjectDependent="1"/>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="75829444F8D0A8A06850C26EECFEB3E5" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="D181842AA2C9772BF99107E94B015AEF" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="DataHandlerWidget.json" HashValue="FF15B60F540738FB296B3BA2B834E4CD" ProjectDependent="1"/>
 										<File Name="DataHandlerWidget.style" HashValue="28F9B347E0E7DA3D2167018FAD03557D" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget.widget" HashValue="C6DD8A0A1A0286FF26950EA8E3D702D1" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget.xsd" HashValue="5C9361F1FFE51F74C59E9CEF05B7AF56" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget_base.scss" HashValue="6A8FD65AD722B87C3DCDE57D558703F0" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget.widget" HashValue="0B9E9956F00E18A283D3F93D2E616328" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget.xsd" HashValue="AAAD501851D914B034AC7C28B2051CCC" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget_base.scss" HashValue="B6E6C3AB340CB22341D6E71B647AAF2A" ProjectDependent="1"/>
 										<File Name="DataHandlerWidget_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget_default.sass.css" HashValue="B00431BCBE8C8172AED892B4B84126A4" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget_default.scss" HashValue="62FDE0DCDEEB75021AEE188E02CC8B31" ProjectDependent="1"/>
-										<File Name="DataHandlerWidget_EventsActions.xsd" HashValue="C0C5882D79432D550DC4703285EF4C03" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget_default.sass.css" HashValue="CFCEA9EB3F06AD72A051089FCEF5A830" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget_default.scss" HashValue="537B6B2165C6B1351AA4289827F834B5" ProjectDependent="1"/>
+										<File Name="DataHandlerWidget_EventsActions.xsd" HashValue="B66C578EDD500CB05968980076606DB2" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="DateTimePicker">
+								<Folder Name="DateTimePicker" IsGroup="1">
 									<File Name="DateTimePicker.html" HashValue="C08991CAE109DF1DF92C436B3408818A" ProjectDependent="1"/>
 									<File Name="DateTimePicker.js" HashValue="03599C6CC31436B2128763FEFA89A9BD" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="DateTimePicker.sass.css" HashValue="A181F49F775B986A41459D8EA9C10DD2" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="DateTimePicker.sass.css" HashValue="83A1EB4794175744EDC7742BDD3B0538" ProjectDependent="1"/>
 										<File Name="DateTimePicker.scss" HashValue="FE4876F6BEF9FC87AA9BC5666298FC0F" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="F8A303E0AC5F1B6A5967912A57CD43DC" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="CA6427ADC9366C068534380EB5C44552" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="SliderWheel.js" HashValue="F73D13B4F8D6A1E5BB72C51CEE937661" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="DateTimePicker.json" HashValue="46922ACF004C187128988C1A75673BD1" ProjectDependent="1"/>
 										<File Name="DateTimePicker.style" HashValue="E3A6542D760CFE6CA3599933395F20B4" ProjectDependent="1"/>
-										<File Name="DateTimePicker.widget" HashValue="FE75120538AB058069B065AA2628DBFA" ProjectDependent="1"/>
-										<File Name="DateTimePicker.xsd" HashValue="3178498C7A1DFBF0ECBAE86CD576DB00" ProjectDependent="1"/>
-										<File Name="DateTimePicker_base.scss" HashValue="9C6B2C23359912C32B3913EA01B32765" ProjectDependent="1"/>
+										<File Name="DateTimePicker.widget" HashValue="032B0FDCE0D8042FDA7B352C4F61EC2D" ProjectDependent="1"/>
+										<File Name="DateTimePicker.xsd" HashValue="309F3584151717689A41EC140207624F" ProjectDependent="1"/>
+										<File Name="DateTimePicker_base.scss" HashValue="C2CCF911025C22F427201992B19BE616" ProjectDependent="1"/>
 										<File Name="DateTimePicker_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="DateTimePicker_default.sass.css" HashValue="50BAD50676D638CCC39B57903974049D" ProjectDependent="1"/>
-										<File Name="DateTimePicker_default.scss" HashValue="67E69A44525AF27ACA28ABA32B59AB18" ProjectDependent="1"/>
-										<File Name="DateTimePicker_EventsActions.xsd" HashValue="9AF9F90D7BCA6FBBD014F5F1A407461C" ProjectDependent="1"/>
-										<File Name="DateTimePicker_Styles.xsd" HashValue="F8441D680C4069894591B7462774086A" ProjectDependent="1"/>
+										<File Name="DateTimePicker_default.sass.css" HashValue="5219B19F1571EE8CAB807F170090C738" ProjectDependent="1"/>
+										<File Name="DateTimePicker_default.scss" HashValue="0BFF9C0B371F327CFA74B947F33314E8" ProjectDependent="1"/>
+										<File Name="DateTimePicker_EventsActions.xsd" HashValue="7A063045B586DC064276416167D8852C" ProjectDependent="1"/>
+										<File Name="DateTimePicker_Styles.xsd" HashValue="5F77C05F38A16D2184FE8C88933E6E6A" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="DialogWindow">
+								<Folder Name="DialogWindow" IsGroup="1">
 									<File Name="DialogWindow.html" HashValue="476D2C63D0B337AFC031E2EC71174FE6" ProjectDependent="1"/>
 									<File Name="DialogWindow.js" HashValue="42B29E688399C247457D8EFCE02BAAEE" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="DialogWindow.sass.css" HashValue="EE273E2998A066771B072FB446B3945C" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="DialogWindow.sass.css" HashValue="54C9E0170771650B31820866F32F228E" ProjectDependent="1"/>
 										<File Name="DialogWindow.scss" HashValue="5275FACA038D757DDA1D1B4A57ED3198" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="C469CB9E9241A5157E194D8CAD9EFF8D" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="19FB2F41948EE7D955D344D34F9E6CB2" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="DialogWindow.json" HashValue="3D66B4DA7CEBA3607F64DBDD48CE61F1" ProjectDependent="1"/>
 										<File Name="DialogWindow.style" HashValue="14F0CC18AD369A123366F6FDEF150920" ProjectDependent="1"/>
-										<File Name="DialogWindow.widget" HashValue="41DEA694DDCC68B164FD1DF6289B0231" ProjectDependent="1"/>
-										<File Name="DialogWindow.xsd" HashValue="659083396B741DC530CC63797DB8B830" ProjectDependent="1"/>
-										<File Name="DialogWindow_base.scss" HashValue="B0DCBC9FC2E3378469DE52E68E697B4D" ProjectDependent="1"/>
+										<File Name="DialogWindow.widget" HashValue="8EF9739C824F70DAFCE79F95A90E69F8" ProjectDependent="1"/>
+										<File Name="DialogWindow.xsd" HashValue="C64CF63947EBF3969E2FF25C3587D36F" ProjectDependent="1"/>
+										<File Name="DialogWindow_base.scss" HashValue="4EFC97150AD7CABDCF5E5D8490E8EE06" ProjectDependent="1"/>
 										<File Name="DialogWindow_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
 										<File Name="DialogWindow_default.sass.css" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="DialogWindow_default.scss" HashValue="055AD95DA632AFACAF4878579F39058A" ProjectDependent="1"/>
-										<File Name="DialogWindow_EventsActions.xsd" HashValue="1267E276C8C9C83A299FE6995BC84279" ProjectDependent="1"/>
+										<File Name="DialogWindow_default.scss" HashValue="5AF3E51B90010E9F04C7966E20B745B4" ProjectDependent="1"/>
+										<File Name="DialogWindow_EventsActions.xsd" HashValue="870DAC300F261180464BFCE326EF5507" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="FlexBox">
+								<Folder Name="FlexBox" IsGroup="1">
 									<File Name="FlexBox.html" HashValue="041EE9858A4B62D5CB910A7E30908CC9" ProjectDependent="1"/>
 									<File Name="FlexBox.js" HashValue="868BB495404E65396AF9216266EF80A6" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="FlexBox.sass.css" HashValue="7BD4573D5B89408C11AC2ABDE4CACB75" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="FlexBox.sass.css" HashValue="8402A6644E419749238825C4A6E32F5F" ProjectDependent="1"/>
 										<File Name="FlexBox.scss" HashValue="629473A2124118FA58019FEE8748CBED" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="F170B9ACA99A710C052FE7024280D4A2" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="ECF49EDFA7049C08518DC160EDE96B69" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="EditorHandles.js" HashValue="7711FCDA8624480B71986184D5DD9F43" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="FlexBox.json" HashValue="9F7C8B94453ABD5484B07D937C09148F" ProjectDependent="1"/>
 										<File Name="FlexBox.style" HashValue="976B1D68C5F1808959830B9B0634489D" ProjectDependent="1"/>
-										<File Name="FlexBox.widget" HashValue="07113A0C1BCC0280E305CDEDB4FA7411" ProjectDependent="1"/>
-										<File Name="FlexBox.xsd" HashValue="C79E9D035ECEBA53C980C3A7860C5ACF" ProjectDependent="1"/>
-										<File Name="FlexBox_base.scss" HashValue="A5302ECEF4C211C42D50199306B28102" ProjectDependent="1"/>
+										<File Name="FlexBox.widget" HashValue="FF53BAFFAA9B624163B2B6220E070012" ProjectDependent="1"/>
+										<File Name="FlexBox.xsd" HashValue="8C16098B59372283BA0B8C1F1E109E09" ProjectDependent="1"/>
+										<File Name="FlexBox_base.scss" HashValue="DCF5B4C6544FBB2C4A50B1A9C1B3CA8E" ProjectDependent="1"/>
 										<File Name="FlexBox_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="FlexBox_default.sass.css" HashValue="CBF6AE8053ADE75D4ED3126CB36C6C45" ProjectDependent="1"/>
-										<File Name="FlexBox_default.scss" HashValue="E768BBE0A1A566575F6A764CE1C745E4" ProjectDependent="1"/>
-										<File Name="FlexBox_EventsActions.xsd" HashValue="36EFF99429BF738FFC4F1F9DDDC8E5AC" ProjectDependent="1"/>
-										<File Name="FlexBox_Styles.xsd" HashValue="73D8EB837D4284708C9D0872C50D41AC" ProjectDependent="1"/>
+										<File Name="FlexBox_default.sass.css" HashValue="96B23F6AF309D629729DAA79FF0C894D" ProjectDependent="1"/>
+										<File Name="FlexBox_default.scss" HashValue="A95B96C7C88D7529BDF9431A6A2CF039" ProjectDependent="1"/>
+										<File Name="FlexBox_EventsActions.xsd" HashValue="7F0A5D42A9DB30C47209A83117315234" ProjectDependent="1"/>
+										<File Name="FlexBox_Styles.xsd" HashValue="B4BD573CA245C18A554E8BD8E2BE9AF9" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="FragmentLoader">
+								<Folder Name="FragmentLoader" IsGroup="1">
 									<File Name="FragmentLoader.html" HashValue="E5F82A26A753ADFB61E323F530010320" ProjectDependent="1"/>
 									<File Name="FragmentLoader.js" HashValue="6CEF9433CD61FA3EF4AA67FF1BDE381C" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="FragmentLoader.sass.css" HashValue="DC2EC926555E8113970B8287D553A87A" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="FragmentLoader.sass.css" HashValue="F4E5C250D2BC9215285A109B9D340B89" ProjectDependent="1"/>
 										<File Name="FragmentLoader.scss" HashValue="480596C88036344EDA02BF5BE988133F" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="B537876318913287F30678B192E6A4BF" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="A4A002DDF3B189493FC4A17717F43631" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="FragmentLoader.json" HashValue="116643DCAC18CCD9459BE13BB91DE4E0" ProjectDependent="1"/>
 										<File Name="FragmentLoader.style" HashValue="02F591710A591BC01B41F10054DB6DDE" ProjectDependent="1"/>
-										<File Name="FragmentLoader.widget" HashValue="E320D308C5BC3544CABA500C77D25784" ProjectDependent="1"/>
-										<File Name="FragmentLoader.xsd" HashValue="ED59A395D7AB0481E5A929CAAF821515" ProjectDependent="1"/>
-										<File Name="FragmentLoader_base.scss" HashValue="C77188857ACA0DB742A0AA57F073BAAE" ProjectDependent="1"/>
+										<File Name="FragmentLoader.widget" HashValue="EE7E8BB9DA96C0640776EFB12AA4E4A8" ProjectDependent="1"/>
+										<File Name="FragmentLoader.xsd" HashValue="86EB0E8C4CD870C88B577F6A84682F25" ProjectDependent="1"/>
+										<File Name="FragmentLoader_base.scss" HashValue="234453741DBBECF4C0DEBFA702292D7C" ProjectDependent="1"/>
 										<File Name="FragmentLoader_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="FragmentLoader_default.sass.css" HashValue="7B9925413F6F020D99B806F1B3F769F6" ProjectDependent="1"/>
-										<File Name="FragmentLoader_default.scss" HashValue="5FF7FF1047B75858EAF1CACC9F9B4D8B" ProjectDependent="1"/>
-										<File Name="FragmentLoader_EventsActions.xsd" HashValue="C4CF71210F8D328D0F69FE6DC96F0FFF" ProjectDependent="1"/>
+										<File Name="FragmentLoader_default.sass.css" HashValue="048EA59EDCFE7640B95BEC9BE88D3D28" ProjectDependent="1"/>
+										<File Name="FragmentLoader_default.scss" HashValue="CED295A6EC4A078EEA5A0B3212AEA691" ProjectDependent="1"/>
+										<File Name="FragmentLoader_EventsActions.xsd" HashValue="BC1B95476A0445425935A9A89B3F0E74" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="Image">
+								<Folder Name="Image" IsGroup="1">
 									<File Name="Image.html" HashValue="3B70DFE890613C44412FCD9C0B31A91E" ProjectDependent="1"/>
 									<File Name="Image.js" HashValue="1D1DDC4AA58983D9534CA4D2FC607012" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="Image.sass.css" HashValue="47708BAE5B368877CD54AFDD7AB24DFF" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="Image.sass.css" HashValue="D60EF59EDEC3FBA7B0AFD8248D6C22E6" ProjectDependent="1"/>
 										<File Name="Image.scss" HashValue="40133A5EFEB45FD6B1BE18CE510ABB17" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="F838639778F3175F3F191A05E112B991" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="E6C5355928BBC2F4DCE1389E86E87A77" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="Image.json" HashValue="8FA0261181CD96285178669CCC1C7F9A" ProjectDependent="1"/>
 										<File Name="Image.style" HashValue="CF5412ED72A4DFB3E3EC2B3F1CD8AC45" ProjectDependent="1"/>
-										<File Name="Image.widget" HashValue="CB13032EB8ACFE860855CCCF72C593C1" ProjectDependent="1"/>
-										<File Name="Image.xsd" HashValue="A3D6D891DEDCBBCA70D97C288EA87B64" ProjectDependent="1"/>
-										<File Name="Image_base.scss" HashValue="FAF14EFCDBBAF2A6CE16496E01CB1D3A" ProjectDependent="1"/>
+										<File Name="Image.widget" HashValue="BC344B9F781038B075267D48BED37C43" ProjectDependent="1"/>
+										<File Name="Image.xsd" HashValue="9B9C2A8FBCC21A0D26828A6216999112" ProjectDependent="1"/>
+										<File Name="Image_base.scss" HashValue="085A2CC19C2A0C33304AA80D6E220807" ProjectDependent="1"/>
 										<File Name="Image_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="Image_default.sass.css" HashValue="172840773D83620DE641EB2259AA43F3" ProjectDependent="1"/>
-										<File Name="Image_default.scss" HashValue="38D3EC7745F0EB57D9A69C1B6C8666C9" ProjectDependent="1"/>
-										<File Name="Image_EventsActions.xsd" HashValue="0FB941E9C6489B1D5B92E4FECD80BD72" ProjectDependent="1"/>
-										<File Name="Image_Styles.xsd" HashValue="4D56BC0F48391B2D6D4AA61C6ED0F6AB" ProjectDependent="1"/>
+										<File Name="Image_default.sass.css" HashValue="89C577159DA150684429C85740990D85" ProjectDependent="1"/>
+										<File Name="Image_default.scss" HashValue="A642F7C82E4CC436E13206BBCA745C70" ProjectDependent="1"/>
+										<File Name="Image_EventsActions.xsd" HashValue="AB4AE8544DDC258111FF17D82557D99B" ProjectDependent="1"/>
+										<File Name="Image_Styles.xsd" HashValue="FB60DAF66222466CBE9B29EBCEC300FA" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="KeyBoard">
+								<Folder Name="KeyBoard" IsGroup="1">
 									<File Name="KeyBoard.html" HashValue="1DE29E49C4F61DFA114FABCC1036AA39" ProjectDependent="1"/>
 									<File Name="KeyBoard.js" HashValue="21D93772B97E081FB623C5A8E9A1B6B2" ProjectDependent="1"/>
-									<Folder Name="assets">
+									<Folder Name="assets" IsGroup="1">
 										<File Name="KeyBoardAr.html" HashValue="62465FF1DDFC257A9962EAC060A1C179" ProjectDependent="1"/>
 										<File Name="KeyBoardBg.html" HashValue="7DA3756EF2C07821B595506793A5DF89" ProjectDependent="1"/>
 										<File Name="KeyBoardCs.html" HashValue="C9DCAA94DBCAE7616D0182F6DE110871" ProjectDependent="1"/>
@@ -746,71 +740,71 @@
 										<File Name="KeyBoardSl.html" HashValue="6D0435A22C8D76BC7A073F04684E22FF" ProjectDependent="1"/>
 										<File Name="KeyBoardSv.html" HashValue="461ABE26DC82FD2338EC893472DBB9BE" ProjectDependent="1"/>
 										<File Name="KeyBoardZh.html" HashValue="2993B85CF8766BEAD7583B793315DDF0" ProjectDependent="1"/>
-										<Folder Name="img">
+										<Folder Name="img" IsGroup="1">
 											<File Name="icon-keyboarddown.png" HashValue="E1AF1D13976C2F7CB5A10EB60AEE400F" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
-									<Folder Name="css">
-										<File Name="KeyBoard.sass.css" HashValue="D9C4D8FCD82E319E3BF008688F558755" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="KeyBoard.sass.css" HashValue="3CE13EEA39CBC35BAF2DD21688E1AB34" ProjectDependent="1"/>
 										<File Name="KeyBoard.scss" HashValue="7D6F31A56416BD34BABB3381EF09DA6E" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="5641C699F21DC5FC7022A0171248AB05" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="DF3160E633D18EDE4A1C6E9EAEADDCE8" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="PluginProto.js" HashValue="4FFBBE772E64A3DBB8A6BB490D0CE0FF" ProjectDependent="1"/>
-										<Folder Name="external">
-											<File Name="hangul.js" HashValue="AF3D687C5AF6566957B5377B22A514F0" ProjectDependent="1"/>
+										<Folder Name="external" IsGroup="1">
+											<File Name="hangul.js" HashValue="3A15B4BA287210165E11C18951B198D0" ProjectDependent="1"/>
 											<File Name="PluginHangul.js" HashValue="5D6FC5F9B89E543C27EFC1BCE71EC34D" ProjectDependent="1"/>
 											<File Name="PluginPinyin.js" HashValue="C51D03687829EC7FB7E6B9D52C6F97C1" ProjectDependent="1"/>
 											<File Name="PluginWanaKana.js" HashValue="69A7FD01A10E9156AD9001FEC7D70DA0" ProjectDependent="1"/>
-											<File Name="wanakana.js" HashValue="D3534214DA9DC94A51B797B864BA3B43" ProjectDependent="1"/>
+											<File Name="wanakana.js" HashValue="81F11BE12C386C6C550086ED570A1258" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="KeyBoard.json" HashValue="DA3CEACB93C4C862D8F2B72CE34B623F" ProjectDependent="1"/>
 										<File Name="KeyBoard.style" HashValue="B023523BF163B110AE298DCE9929BBA7" ProjectDependent="1"/>
-										<File Name="KeyBoard.widget" HashValue="AD8AB1671C4B3C94A169031866CCAA77" ProjectDependent="1"/>
-										<File Name="KeyBoard.xsd" HashValue="E87ABC283F52699BFBB4B33BBEC6D1A5" ProjectDependent="1"/>
-										<File Name="KeyBoard_base.scss" HashValue="EA82BFB662801B1295A60D70F9FD3771" ProjectDependent="1"/>
+										<File Name="KeyBoard.widget" HashValue="AFB9F70FDC0152AEE3F5489BF035D0AD" ProjectDependent="1"/>
+										<File Name="KeyBoard.xsd" HashValue="F3FA54617950EBF45D7AE64302F002E1" ProjectDependent="1"/>
+										<File Name="KeyBoard_base.scss" HashValue="087A491A3DE6248E974551A97647E9F0" ProjectDependent="1"/>
 										<File Name="KeyBoard_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="KeyBoard_default.sass.css" HashValue="538EFC688F04E9309603AE06CD859A4C" ProjectDependent="1"/>
-										<File Name="KeyBoard_default.scss" HashValue="6F0080FCC089613E274F950CE4C2048A" ProjectDependent="1"/>
-										<File Name="KeyBoard_EventsActions.xsd" HashValue="F18D44558E7C460DA2D75A3C996562F2" ProjectDependent="1"/>
-										<File Name="KeyBoard_Styles.xsd" HashValue="D04B0A3633190ACCBD3C797EF000398F" ProjectDependent="1"/>
+										<File Name="KeyBoard_default.sass.css" HashValue="2591196776911BCA2A6E90337F97C7C4" ProjectDependent="1"/>
+										<File Name="KeyBoard_default.scss" HashValue="AD87AA9D31438EDBCFACBCFEF3303EC6" ProjectDependent="1"/>
+										<File Name="KeyBoard_EventsActions.xsd" HashValue="A3B5D1F1575ABB85014EC3AA6DB9A62D" ProjectDependent="1"/>
+										<File Name="KeyBoard_Styles.xsd" HashValue="5519D4018D3B75FFABF65FD1B65DFD82" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="Label">
+								<Folder Name="Label" IsGroup="1">
 									<File Name="Label.html" HashValue="D3076440461E772F59C543D5A6C3FA87" ProjectDependent="1"/>
 									<File Name="Label.js" HashValue="EC94E8BC5C3A1DB3046D5DA8CC2A0663" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="Label.sass.css" HashValue="257C63CCB785A8889EFFF0AFC696D36D" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="Label.sass.css" HashValue="301EBB7F01F141516439F90ECA091EAD" ProjectDependent="1"/>
 										<File Name="Label.scss" HashValue="E9A225B16605B895EC0535C31F5685C8" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="A49B207FED2E6807232F6ED99EBD38FA" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="EB921CF28D6ABB9FF030617346F5B9A1" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="EditorHandles.js" HashValue="FA2267C759481814267A1141D87781AB" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="Label.json" HashValue="B7F7C745FAC168336C749B18FE618459" ProjectDependent="1"/>
 										<File Name="Label.style" HashValue="655744F5CCF080B87567257565DD14D7" ProjectDependent="1"/>
-										<File Name="Label.widget" HashValue="2B4283D248B4FA445B8857E13E7A9C0E" ProjectDependent="1"/>
-										<File Name="Label.xsd" HashValue="9C1DDB6BA8375E5CDF728EE90A4A2433" ProjectDependent="1"/>
-										<File Name="Label_base.scss" HashValue="EF89C2BE125541176C21E7FB39008920" ProjectDependent="1"/>
+										<File Name="Label.widget" HashValue="6967FE09198505F950709C2BFE548A11" ProjectDependent="1"/>
+										<File Name="Label.xsd" HashValue="5205FC94FE14BF91260744351FAE1923" ProjectDependent="1"/>
+										<File Name="Label_base.scss" HashValue="6CC82E149B9559875D61EC593C278C9D" ProjectDependent="1"/>
 										<File Name="Label_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="Label_default.sass.css" HashValue="708766875DAAFCB6D29FAE5DD93E3C86" ProjectDependent="1"/>
-										<File Name="Label_default.scss" HashValue="0351D91FC2D34B8DBAF4ECDB3D3B9213" ProjectDependent="1"/>
-										<File Name="Label_EventsActions.xsd" HashValue="49E4C30EE9D76FA30BD1D1FB0F73F2D9" ProjectDependent="1"/>
-										<File Name="Label_Styles.xsd" HashValue="01A9C9D34115D3D49B5D7980D0818E50" ProjectDependent="1"/>
+										<File Name="Label_default.sass.css" HashValue="C1487A1B50199BC1CC31A538137EFCDB" ProjectDependent="1"/>
+										<File Name="Label_default.scss" HashValue="2ED2CAC01087A44DB4BF8BBEC1C8C6FD" ProjectDependent="1"/>
+										<File Name="Label_EventsActions.xsd" HashValue="F03FD02C3F6FD8F4497F56351F144149" ProjectDependent="1"/>
+										<File Name="Label_Styles.xsd" HashValue="1A2990CA2CFD4F979F1D8597407592C2" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="MessageBox">
+								<Folder Name="MessageBox" IsGroup="1">
 									<File Name="MessageBox.html" HashValue="79F94D47F208EFE46B23CD16CD6BCACF" ProjectDependent="1"/>
 									<File Name="MessageBox.js" HashValue="40B320F3BBBF0B224DC59CD59A751C06" ProjectDependent="1"/>
-									<Folder Name="assets">
-										<Folder Name="img">
+									<Folder Name="assets" IsGroup="1">
+										<Folder Name="img" IsGroup="1">
 											<File Name="Asterisk.png" HashValue="C0B24BBFD1BE7FB7F707DC225F3FA77F" ProjectDependent="1"/>
 											<File Name="Asterisk64.png" HashValue="CF778DBB8E329B56BDB991A29926A7F3" ProjectDependent="1"/>
 											<File Name="Error.png" HashValue="3D2CB918FE2AB5144F41310EE57F494E" ProjectDependent="1"/>
@@ -829,167 +823,167 @@
 											<File Name="Warning64.png" HashValue="D9DA0B996463AFA644C464BC91C3012F" ProjectDependent="1"/>
 										</Folder>
 									</Folder>
-									<Folder Name="css">
-										<File Name="MessageBox.sass.css" HashValue="8E101B5B96B5AC94A325F1AC3AC98285" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="MessageBox.sass.css" HashValue="9310F9219A86AE51A3A76168172EDDFB" ProjectDependent="1"/>
 										<File Name="MessageBox.scss" HashValue="391B2762E31164518743D98F65DCC535" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="1501B6CB6462220C7B2AED233B3CA273" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="A6998949D447719A8A0314ED86BBF442" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="ButtonManager.js" HashValue="A2D66E42491AC9F5C872942A094BDFC1" ProjectDependent="1"/>
 										<File Name="Buttons.js" HashValue="AF63B902AAF744E1250309F1B9D72700" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="MessageBox.json" HashValue="1FC2DD238A7A9B8F802516F977604AC7" ProjectDependent="1"/>
 										<File Name="MessageBox.style" HashValue="A66A5F12799EF84AA9BF51F440D2EBDD" ProjectDependent="1"/>
-										<File Name="MessageBox.widget" HashValue="E2C0CD182282851B0AF65F33C46CD92F" ProjectDependent="1"/>
-										<File Name="MessageBox.xsd" HashValue="E79926C77FC56D06AE9327687A937FBA" ProjectDependent="1"/>
-										<File Name="MessageBox_base.scss" HashValue="F1F1490DD0E3F568394FA3F019973FF9" ProjectDependent="1"/>
+										<File Name="MessageBox.widget" HashValue="960AD2DBB422942BE8E8D1102D1F66B7" ProjectDependent="1"/>
+										<File Name="MessageBox.xsd" HashValue="5F0B8A0498211110EB334E486BD0BE06" ProjectDependent="1"/>
+										<File Name="MessageBox_base.scss" HashValue="67817E8729EEB818A91BA7CC9A202299" ProjectDependent="1"/>
 										<File Name="MessageBox_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="MessageBox_default.sass.css" HashValue="0CECF3AC6E269B05D8670778D49B6E2F" ProjectDependent="1"/>
-										<File Name="MessageBox_default.scss" HashValue="14E82FD3D87DB6CA0E30391D12980233" ProjectDependent="1"/>
-										<File Name="MessageBox_EventsActions.xsd" HashValue="A53DAC6720A8BD6414C66CFDC51D8A06" ProjectDependent="1"/>
-										<File Name="MessageBox_Styles.xsd" HashValue="C80338C9B8A2826023177AF9CF68E144" ProjectDependent="1"/>
+										<File Name="MessageBox_default.sass.css" HashValue="5906B2FF6D9190FAF8ED383D74AE0836" ProjectDependent="1"/>
+										<File Name="MessageBox_default.scss" HashValue="D9016FAC430844D65E059B0FBA4116D7" ProjectDependent="1"/>
+										<File Name="MessageBox_EventsActions.xsd" HashValue="87AA46926507A47C09E19E7BFE5415B1" ProjectDependent="1"/>
+										<File Name="MessageBox_Styles.xsd" HashValue="1D679CCF8DA74CF2E7ABC17176EE71D8" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="NumericInput">
+								<Folder Name="NumericInput" IsGroup="1">
 									<File Name="NumericInput.html" HashValue="EA4C3AD285AFC7F9BBF77457C2E4ACDE" ProjectDependent="1"/>
 									<File Name="NumericInput.js" HashValue="A0B14DF0F3866D3DDD4B22A4573EF94E" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="NumericInput.sass.css" HashValue="21BE5C06D8543FEAB5DF33E812323DDF" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="NumericInput.sass.css" HashValue="210DBE40EFE2CB11773ACC447123CFC7" ProjectDependent="1"/>
 										<File Name="NumericInput.scss" HashValue="E30EA368CA9312A4FC62542469CC38CC" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="B37E71724E798B9D8039F62B7A4FBF63" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="F5174C0965F955B0D6BDBCF284E7C893" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="Config.js" HashValue="028B7949D9F2900F093AAAEC58FACF7E" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="NumericInput.json" HashValue="900C18DE5489C90D6D69A0B75EA8C9D8" ProjectDependent="1"/>
 										<File Name="NumericInput.style" HashValue="540EC1F68B5C40C558A04D80D9344A1C" ProjectDependent="1"/>
-										<File Name="NumericInput.widget" HashValue="D3CAB0FFECB8B8BA2D3B164BEBC5812A" ProjectDependent="1"/>
-										<File Name="NumericInput.xsd" HashValue="83AB285DAD316F33A509FF091BC58AFD" ProjectDependent="1"/>
-										<File Name="NumericInput_base.scss" HashValue="58B98592C78AB19CF7018B662A3606EF" ProjectDependent="1"/>
+										<File Name="NumericInput.widget" HashValue="A72167A4A5937A6E4C2A9E4474A6D489" ProjectDependent="1"/>
+										<File Name="NumericInput.xsd" HashValue="7CBB45531269282E82886814EC5FD271" ProjectDependent="1"/>
+										<File Name="NumericInput_base.scss" HashValue="0F1459FB72D5C89363BCB0B5388BE391" ProjectDependent="1"/>
 										<File Name="NumericInput_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="NumericInput_default.sass.css" HashValue="2AD766555A9EB5414D1BBB1B981A4060" ProjectDependent="1"/>
-										<File Name="NumericInput_default.scss" HashValue="9F98276B26EAEF758DC9AA64F657505A" ProjectDependent="1"/>
-										<File Name="NumericInput_EventsActions.xsd" HashValue="3AFE0C7B8938C2C8FFD254F54556DEF4" ProjectDependent="1"/>
-										<File Name="NumericInput_Styles.xsd" HashValue="0BDFB81322BAC499864A723B0CB98233" ProjectDependent="1"/>
+										<File Name="NumericInput_default.sass.css" HashValue="4ED0149CB4FB7FAF20BEA685614F3117" ProjectDependent="1"/>
+										<File Name="NumericInput_default.scss" HashValue="3B31910E3AB37F4B8E3A0D0F82EAFF16" ProjectDependent="1"/>
+										<File Name="NumericInput_EventsActions.xsd" HashValue="F3CDC280D6DC30D5E1AD4497F9A0F46F" ProjectDependent="1"/>
+										<File Name="NumericInput_Styles.xsd" HashValue="8F140892FBC08AB722BA71BDA78B94C8" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="NumericOutput">
+								<Folder Name="NumericOutput" IsGroup="1">
 									<File Name="NumericOutput.html" HashValue="81E8174788ED113209C1FC3E6285E3B4" ProjectDependent="1"/>
 									<File Name="NumericOutput.js" HashValue="5A09216FBE1BD8A3897FDB3F69DD7913" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="NumericOutput.sass.css" HashValue="5862E8EC42B4989D5D2DBE8DEB95990C" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="NumericOutput.sass.css" HashValue="3C748D1BE9A4DE2A9921F0B090AAC91B" ProjectDependent="1"/>
 										<File Name="NumericOutput.scss" HashValue="09140E77E292DBCBDAB5089D23C5BCC0" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="A47E9BD7FE7F60E3120E17CD8C58F328" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="B00A675BF41D6B20841BB52ECBD50026" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="config.js" HashValue="D553B5B6D12649986A3A699455648FBA" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="NumericOutput.json" HashValue="2988A40B00A45DD6E4F0F31917BF3332" ProjectDependent="1"/>
 										<File Name="NumericOutput.style" HashValue="C64FF78C41C907CF367C739C29035413" ProjectDependent="1"/>
-										<File Name="NumericOutput.widget" HashValue="6849761F8E0AE1D9DD996E443F7A3853" ProjectDependent="1"/>
-										<File Name="NumericOutput.xsd" HashValue="542FB0FA7EA317033009EB298B7E89A9" ProjectDependent="1"/>
-										<File Name="NumericOutput_base.scss" HashValue="FAC721E23B66E24DCAAAE27BC19832EA" ProjectDependent="1"/>
+										<File Name="NumericOutput.widget" HashValue="F1969829678F6F5B32F424AB10EB302E" ProjectDependent="1"/>
+										<File Name="NumericOutput.xsd" HashValue="DF265C713074F13760FCC643031E77AE" ProjectDependent="1"/>
+										<File Name="NumericOutput_base.scss" HashValue="6030FB474D4F972515E0F4C3D8B0B7F6" ProjectDependent="1"/>
 										<File Name="NumericOutput_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="NumericOutput_default.sass.css" HashValue="37A5F747B926FD56E64873C37A787F72" ProjectDependent="1"/>
-										<File Name="NumericOutput_default.scss" HashValue="7BBB91C29D4FD7840AA74EA01570F25C" ProjectDependent="1"/>
-										<File Name="NumericOutput_EventsActions.xsd" HashValue="17A41D920522A22AE77ADFBCD3429754" ProjectDependent="1"/>
-										<File Name="NumericOutput_Styles.xsd" HashValue="33FF521426878CBD700DA8893778AEA0" ProjectDependent="1"/>
+										<File Name="NumericOutput_default.sass.css" HashValue="2806377F868EE7F33FD70DAEF88B6740" ProjectDependent="1"/>
+										<File Name="NumericOutput_default.scss" HashValue="52DF6EC64621C25F3953D3537A223A78" ProjectDependent="1"/>
+										<File Name="NumericOutput_EventsActions.xsd" HashValue="1E55A7B9DF796901AF2F624EAE1AE3DC" ProjectDependent="1"/>
+										<File Name="NumericOutput_Styles.xsd" HashValue="6626F0C1201F27EEC3207D3B571FC727" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="NumPad">
+								<Folder Name="NumPad" IsGroup="1">
 									<File Name="NumPad.html" HashValue="637724D10B089BC7DCE10FAAE00B3053" ProjectDependent="1"/>
 									<File Name="NumPad.js" HashValue="DA8DDAE365108BA8AF044018FFC9E154" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="NumPad.sass.css" HashValue="D449D4ED67700BBD9439873269611529" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="NumPad.sass.css" HashValue="A102ED56F2B415043CB52C6856E37A5E" ProjectDependent="1"/>
 										<File Name="NumPad.scss" HashValue="8B310D4FB2BFBBA7E7AA6D675F665704" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="719CB83B035CDBE55657925245446579" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="B044BA791CDF42E7314A2F03EF52FF38" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="NumPadSlider.js" HashValue="4C109CE5613E9A24211E08172F37206B" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="NumPad.json" HashValue="F4CEC1857FCB4F5F03F514CBCEAB0518" ProjectDependent="1"/>
 										<File Name="NumPad.style" HashValue="D0B18315FF69D020E8D62616611A4718" ProjectDependent="1"/>
-										<File Name="NumPad.widget" HashValue="24A01363063C0A149BC6D9C14AF5FF97" ProjectDependent="1"/>
-										<File Name="NumPad.xsd" HashValue="FBE47413B3579992D0781EF48C0611EC" ProjectDependent="1"/>
-										<File Name="NumPad_base.scss" HashValue="8AEE417CFFD2E026EE7DEAA14C560E3F" ProjectDependent="1"/>
+										<File Name="NumPad.widget" HashValue="73BBA40BFA8E41433CBCBB35AD87FA50" ProjectDependent="1"/>
+										<File Name="NumPad.xsd" HashValue="06E45E0B800B7D9F101BFE4C55CD8A05" ProjectDependent="1"/>
+										<File Name="NumPad_base.scss" HashValue="0DD0EB833553D8F376DD8CD45C87126E" ProjectDependent="1"/>
 										<File Name="NumPad_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="NumPad_default.sass.css" HashValue="4DE765C7E5393534F44DDBCAF2F1E4A6" ProjectDependent="1"/>
-										<File Name="NumPad_default.scss" HashValue="94D7C7119138203EFC3CF2E26658B8C5" ProjectDependent="1"/>
-										<File Name="NumPad_EventsActions.xsd" HashValue="A35045F6D99914BB8253BEF3F6D07453" ProjectDependent="1"/>
-										<File Name="NumPad_Styles.xsd" HashValue="45C29FF294C0C56E797BC9BD0EBB8F3A" ProjectDependent="1"/>
+										<File Name="NumPad_default.sass.css" HashValue="9F689D068C6C86CA02FB713D55EA1D28" ProjectDependent="1"/>
+										<File Name="NumPad_default.scss" HashValue="8BB26BC65AA5A9D87C03290DCD2FF3DE" ProjectDependent="1"/>
+										<File Name="NumPad_EventsActions.xsd" HashValue="8F2C1E21364E8D03FA165958EA4D0E4C" ProjectDependent="1"/>
+										<File Name="NumPad_Styles.xsd" HashValue="6FD1806C905561C08A80CE2224D90C09" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="Paper">
+								<Folder Name="Paper" IsGroup="1">
 									<File Name="Paper.html" HashValue="1CB12499DA6ADC18F7161A4F5FC49BFA" ProjectDependent="1"/>
 									<File Name="Paper.js" HashValue="12449871FFA077996D673E8550A7E849" ProjectDependent="1"/>
-									<Folder Name="assets">
+									<Folder Name="assets" IsGroup="1">
 										<File Name="PaperPlaceholder.svg" HashValue="1BCE3667B3CD44445851B833C38A067E" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="css">
-										<File Name="Paper.sass.css" HashValue="BA49C59DEF48623DFD823F391D0E0E49" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="Paper.sass.css" HashValue="602F1DC1747EF6DF8685B7A87929CC89" ProjectDependent="1"/>
 										<File Name="Paper.scss" HashValue="47ACA3C0E4E4EB5981EC85802271AB66" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="F46CB049C9493E3365D2412EFC29C93D" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="86C0AC5D91B0CBE7AC3813BB3E2BDDD5" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="Renderer.js" HashValue="DCD61BD247CE70BD3BEB472720D8DA47" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="Paper.json" HashValue="ABF38F43A3C81F10BC288C3D1A77B6B0" ProjectDependent="1"/>
 										<File Name="Paper.style" HashValue="0E68447582B09E21517D254DBD549FEB" ProjectDependent="1"/>
-										<File Name="Paper.widget" HashValue="A7ECBBA03D8A8E9FF331B4FBE4DB8DF2" ProjectDependent="1"/>
-										<File Name="Paper.xsd" HashValue="3ACBF0FC8BBEB2E4781D67426E222CA5" ProjectDependent="1"/>
-										<File Name="Paper_base.scss" HashValue="0C06001665FEAF283F219F0FE1CFBA41" ProjectDependent="1"/>
+										<File Name="Paper.widget" HashValue="436F33B927C2B5E4AB11CCBF80C57BAB" ProjectDependent="1"/>
+										<File Name="Paper.xsd" HashValue="BE7D4C1E326F94F9D2A196250B84C302" ProjectDependent="1"/>
+										<File Name="Paper_base.scss" HashValue="B4638C238991C19571AC784C5CAC9F2B" ProjectDependent="1"/>
 										<File Name="Paper_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="Paper_default.sass.css" HashValue="E93A4DA515B49E9DE72DB069D474F994" ProjectDependent="1"/>
-										<File Name="Paper_default.scss" HashValue="2E9CE297F561A74D49AE610BF0EAD720" ProjectDependent="1"/>
-										<File Name="Paper_EventsActions.xsd" HashValue="8D68B22038231EAE703D0EFFE9A77478" ProjectDependent="1"/>
-										<File Name="Paper_Styles.xsd" HashValue="20C612C6AD4743BC030847A3F60B8864" ProjectDependent="1"/>
+										<File Name="Paper_default.sass.css" HashValue="445B018E9DABFE17E37E5D6B6F6BCF1E" ProjectDependent="1"/>
+										<File Name="Paper_default.scss" HashValue="A8D6D4663651B8233A7C3BEDDBC436C4" ProjectDependent="1"/>
+										<File Name="Paper_EventsActions.xsd" HashValue="BC13C996C4DBF9FCC86EDDE85778103E" ProjectDependent="1"/>
+										<File Name="Paper_Styles.xsd" HashValue="2740E638AA8889DA1E6C3DE4D1A700E7" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
-								<Folder Name="Window">
+								<Folder Name="Window" IsGroup="1">
 									<File Name="Window.html" HashValue="91A5BB93C585D543BF44F8C3E4CB8B52" ProjectDependent="1"/>
 									<File Name="Window.js" HashValue="C79FE2E64178950BF40A91ADB5CC8C70" ProjectDependent="1"/>
-									<Folder Name="css">
-										<File Name="Window.sass.css" HashValue="B73D34936D98ACDCD57EFD5268134ABE" ProjectDependent="1"/>
-										<File Name="Window.scss" HashValue="F2FF94F20742024F4DDF05C403EC60F9" ProjectDependent="1"/>
+									<Folder Name="css" IsGroup="1">
+										<File Name="Window.sass.css" HashValue="0B19E49970052C21778B97B6F13D7A0E" ProjectDependent="1"/>
+										<File Name="Window.scss" HashValue="A54D425CFB0A797B12056D2F176672EB" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="designer">
-										<File Name="ClassInfo.js" HashValue="092914EA59885154BAF2EDD0CE7614CA" ProjectDependent="1"/>
+									<Folder Name="designer" IsGroup="1">
+										<File Name="ClassInfo.js" HashValue="12E32F7438CFE2C6A2547D3718DFC6F3" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="libs">
+									<Folder Name="libs" IsGroup="1">
 										<File Name="Config.js" HashValue="F237F6DFDCC76CC6FD5C8BBE10F529BE" ProjectDependent="1"/>
 									</Folder>
-									<Folder Name="meta">
+									<Folder Name="meta" IsGroup="1">
 										<File Name="Window.json" HashValue="07503D57E216A5A371EE255926C64AD9" ProjectDependent="1"/>
 										<File Name="Window.style" HashValue="831BC8742E538D8B381DD9CBFB0E8E4D" ProjectDependent="1"/>
-										<File Name="Window.widget" HashValue="976B63DB7F869BDA3F76D965951C1705" ProjectDependent="1"/>
-										<File Name="Window.xsd" HashValue="961F38C66B45E1284AB0C25C3344C835" ProjectDependent="1"/>
-										<File Name="Window_base.scss" HashValue="BEF169FFBA80E8D0900560D4F3FB1BF1" ProjectDependent="1"/>
+										<File Name="Window.widget" HashValue="8FB3B05325624E2CEB18D4B0465325EB" ProjectDependent="1"/>
+										<File Name="Window.xsd" HashValue="3E4188910D4F593D2B4CDDC660245052" ProjectDependent="1"/>
+										<File Name="Window_base.scss" HashValue="90B7183C8B26455B0E05A53E7FEF9D62" ProjectDependent="1"/>
 										<File Name="Window_Copied.markerFile" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
 										<File Name="Window_default.sass.css" HashValue="D41D8CD98F00B204E9800998ECF8427E" ProjectDependent="1"/>
-										<File Name="Window_default.scss" HashValue="9784E6F2DECC8AEFA5E04D3A5FD2844A" ProjectDependent="1"/>
-										<File Name="Window_EventsActions.xsd" HashValue="1AE144FEBA1A076969448F30B5FDD01E" ProjectDependent="1"/>
+										<File Name="Window_default.scss" HashValue="82D1FC22DA9E7B4E6F4A781384295EF1" ProjectDependent="1"/>
+										<File Name="Window_EventsActions.xsd" HashValue="9FFD51750C89090D387666CF706B67F4" ProjectDependent="1"/>
 									</Folder>
 								</Folder>
 							</Folder>
 						</Folder>
 					</Folder>
-					<Folder Name="contents">
-						<Folder Name="mappView">
+					<Folder Name="contents" IsGroup="1">
+						<Folder Name="mappView" IsGroup="1">
 							<File Name="leftContent.html" HashValue="18B58790EFD216B0ABC0DD6E8796714E" ProjectDependent="1"/>
 							<File Name="mainContent.html" HashValue="E72D079ED1D2999092D0FE177108163A" ProjectDependent="1"/>
 							<File Name="rightContent.html" HashValue="8FDF7897215886C10FFC19870B45BB15" ProjectDependent="1"/>
@@ -998,13 +992,13 @@
 					</Folder>
 				</Folder>
 			</Folder>
-			<Folder Name="OPCUA" IsGroup="1">
-				<Folder Name="NodeSet">
-					<Folder Name="Vendor">
-						<File Name="plc.aprol.uanodeset" HashValue="45C262C5FB0AC7AF91C4E0AF79544FE7" ProjectDependent="1"/>
-						<File Name="plc.br.pv.uanodeset" HashValue="DDAEDF25B973C16F115C7AD5DB276C13" ProjectDependent="1"/>
-						<File Name="plc.plcopen.pv.uanodeset" HashValue="F7992BEE72225A497855C573933B07A8" ProjectDependent="1"/>
-						<File Name="plc.uanodeset" HashValue="0BCCB98A68083B5C99D3E1006F6E6389" ProjectDependent="1"/>
+			<Folder Name="OPCUA">
+				<Folder Name="NodeSet" IsGroup="1">
+					<Folder Name="Vendor" IsGroup="1">
+						<File Name="plc.aprol.uanodeset" HashValue="56DAAC3222189656D7F5F8148E6E6A62" ProjectDependent="1"/>
+						<File Name="plc.br.pv.uanodeset" HashValue="81892159A322D0CB4BF1F36B973730AC" ProjectDependent="1"/>
+						<File Name="plc.plcopen.pv.uanodeset" HashValue="D8DE44283F813E53D2944E1400B95207" ProjectDependent="1"/>
+						<File Name="plc.uanodeset" HashValue="746AEF283691BAE671929775AD17949C" ProjectDependent="1"/>
 					</Folder>
 				</Folder>
 			</Folder>
