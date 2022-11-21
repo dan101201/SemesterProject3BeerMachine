@@ -6,6 +6,10 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import spark.Filter;
+import spark.Request;
+import spark.Response;
+
 public class PHPConnection {
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
@@ -58,7 +62,13 @@ public class PHPConnection {
 			System.out.println(request.body());
 			return response;
 		});
-		
+
+		after((Filter) (request, response) -> {
+			response.header("Access-Control-Allow-Origin", "*");
+			response.header("Access-Control-Allow-Methods", "GET");
+		});
+
+
 		//init();
 	}
 	
