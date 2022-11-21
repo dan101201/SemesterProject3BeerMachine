@@ -40,5 +40,5 @@ public class Record {
     public void setNotifications(LinkedList<Notifications> notifications) { this.notifications = notifications; }
 
     public LinkedList<Notifications> getNotifications() { return  this.notifications; }
-    
+
 }
