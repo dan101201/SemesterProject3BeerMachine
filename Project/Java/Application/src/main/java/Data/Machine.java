@@ -63,6 +63,16 @@ public class Machine {
 
         }, 0, 120000);
     }
+    
+    public float[] getInventory() {
+        float[] resArr = new float[5];
+        resArr[0] = inventory.getBarley();
+        resArr[1] = inventory.getMalt();
+        resArr[2] = inventory.getHops();
+        resArr[3] = inventory.getWheat();
+        resArr[4] = inventory.getYeast();
+        return resArr;
+    }
 
 
     public float getTemperature() {
