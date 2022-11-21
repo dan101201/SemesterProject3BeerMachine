@@ -3,6 +3,7 @@ counterV = 0
 MAX_DATA_POINTS = 20;
 
 function addDataV(chart, data) {
+  document.getElementById('currentValVibra').innerHTML = ""+data+" °C"
   chart.data.datasets.forEach((dataset) => {
     if (counterT > MAX_DATA_POINTS) {
       chart.data.labels.shift();

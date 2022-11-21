@@ -3,6 +3,7 @@ counterT = 0
 MAX_DATA_POINTS = 20;
 
 function addDataT(chart, data) {
+  document.getElementById('currentValTemp').innerHTML = ""+data+" °C"
   chart.data.datasets.forEach((dataset) => {
     if (counterT > MAX_DATA_POINTS) {
       chart.data.labels.shift();
