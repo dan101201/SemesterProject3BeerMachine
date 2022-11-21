@@ -10,8 +10,14 @@ public class Machine {
         this.machineAddress=machineAddress;
         this.name=name;
     }
+    public Machine () {
+    }
 
     public String getName() {
         return name;
+    }
+
+    public float getTemperature() {
+        return 0;
     }
 }
