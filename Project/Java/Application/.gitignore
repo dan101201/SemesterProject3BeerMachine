@@ -8,7 +8,7 @@
 *.ctxt
 
 # Fucking intelij
-.idea/
+#.idea/
 *.iml
 
 # Mobile Tools for Java (J2ME)

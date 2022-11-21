@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaBridge">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/JavaBridge.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
