@@ -1,16 +1,15 @@
 // setup 
-counterT = 0
+counter = 0
 labelArr = []
 dataArr = []
 MAX_DATA_POINTS = 120;
 
-function addDataT(chart, data) {
-    if(labelArr.length > MAX_DATA_POINTS){
-        console.log("test");
+function addData(chart, data) {
+    if(labeltest.length > MAX_DATA_POINTS){
         labelArr.shift();
         dataArr.shift();
     }
-    chart.data.labels.push(++counterT);
+    chart.data.labels.push(++counter);
     chart.data.datasets.forEach((dataset) => {
         dataset.data.push(data);
     });
@@ -19,10 +18,10 @@ function addDataT(chart, data) {
 }   
 
 const data = {
-    labels: labelArr,
+    labels: labeltest,
     datasets: [{
-      label: 'Temperature Sensor',
-      data: dataArr,
+      label: 'Temperatur Sensor',
+      data: datatest,
       borderColor:"rgb(194, 13, 13)",
       backgroundColor:"rgba(194, 13, 13, 0.621)",
       borderWidth: 1
@@ -30,7 +29,7 @@ const data = {
   };
 
   // config 
-  const configt = {
+  const config = {
     type: 'line',
     data,
     options: {
@@ -45,5 +44,5 @@ const data = {
   // render init block
   const tempChart = new Chart(
     document.getElementById('tempChart'),
-    configt
+    config
   );
