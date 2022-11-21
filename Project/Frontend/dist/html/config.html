@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/primary_design.css" />
+    <script src="../js/speedLimit.js" defer></script> 
+    <script src="../js/jquery.js"></script>
+    <title>Config</title>
+</head>
+<body>
+
+    <div id="navbar">
+    </div>
+    <script>
+        $(function(){
+          $("#navbar").load("navbar.html");
+        });
+    </script>
+
+
+    <main class="ConfigurationTab">
+    <div id="inputValues">  
+ 
+ <label for="recipeChanger">Pick a Recipe</label>  
+
+ <select onchange="maxLimit()" id="recipeChanger">  
+
+     <option value="pilsner" >Pilsner</option>  
+
+     <option value="wheat">Wheat</option>  
+
+     <option value="ipa">IPA</option>  
+
+     <option value="stout">Stout</option>
+
+     <option value="ale">Ale</option>
+
+     <option value="alcoholFree">Alcohol Free</option>
+
+ </select>
+
+    <Label for="speed"> Pick speed</label> 
+    <input id="speed" type="number" min="0" max="600" value="0"/>
+
+    <Label for="delay"> Choose Delay if needed</label> 
+    <input id="delay" type="number" min="0" value="0"/>
+    
+    <div id="button_group">
+        <button>Start</button><br>
+        <button>Stop</button> <br>
+        <button>Abort</button><br>
+        <button>Clear</button><br>
+    </div>
+
+</div>  
+</main>
+
+</body>
+</html>

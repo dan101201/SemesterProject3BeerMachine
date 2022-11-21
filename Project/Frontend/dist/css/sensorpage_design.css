@@ -1,0 +1,22 @@
+  .chartBox {
+
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+    margin-right: 0;
+    float: left;
+  }
+
+  canvas {
+    max-width: 75%;
+    max-height: 69%;
+  }
+
+  #charts{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #temp { /* #temp is not final, in the final product the it would just be a h1 udating with current data */
+    float: right;
+  }

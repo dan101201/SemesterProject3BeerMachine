@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/primary_design.css" />
+  <link rel="stylesheet" href="../css/sensorpage_design.css">
+  <script src="../js/chart.js"></script>
+  <script src="../js/temperaturSensorPlot.js" defer></script>
+  <script src="../js/humiditySensorPlot.js" defer></script>
+  <script src="../js/vibrationSensorPlot.js" defer></script>
+  <script src="../js/jquery.js"></script>
+  <title>Sensor data</title>
+
+</head>
+
+<body>
+  <div id="navbar">
+
+  </div>
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+  </script>
+  <main id="charts">
+    <div class="chartBox">
+      <canvas id="tempChart"></canvas>
+      <div id="temp">
+        <h1 id="currentValTemp" class="currentVal">23 C</h1>
+        <button onclick="addDataT(tempChart, Math.random()*5)">Temperature</button>
+      </div>
+    </div>
+
+    <div class="chartBox">
+      <canvas id="humidChart"></canvas>
+      <div id="temp">
+        <!-- See the CSS file for info-->
+        <h1 id="currentValHumid" class="currentVal">23 C</h1>
+        <button onclick="addDataH(humidChart, Math.random()*5)">Humidity</button>
+      </div>
+    </div>
+
+    <div class="chartBox">
+      <canvas id="vibraChart"></canvas>
+      <div id="temp">
+        <h1 id="currentValVibra" class="currentVal"></h1>
+        <button onclick="addDataV(vibraChart, Math.random()*5)">Vibration</button>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
