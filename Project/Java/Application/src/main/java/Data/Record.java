@@ -9,14 +9,14 @@ public class Record {
 
     private UUID recordId;
     private Machine machine;
-    public LinkedList<Batch> dataBatch;
+    public LinkedList<Batch> batchData;
     public LinkedList<SensorData> sensorData;
     public LinkedList<Notifications> notifications;
 
-    public Record (UUID recordId, Machine machine, LinkedList<Batch> dataBatch, LinkedList<SensorData> sensorData, LinkedList<Notifications> notifications) {
+    public Record (UUID recordId, Machine machine, LinkedList<Batch> batchData, LinkedList<SensorData> sensorData, LinkedList<Notifications> notifications) {
         this.recordId = recordId;
         this.machine = machine;
-        this.dataBatch = dataBatch;
+        this.batchData = batchData;
         this.sensorData = sensorData;
         this.notifications = notifications;
     };
@@ -29,9 +29,9 @@ public class Record {
 
     public Machine getMachine() { return this.machine; }
 
-    public void setDataBatch(LinkedList<Batch> dataBatch) { this.dataBatch = dataBatch; }
+    public void setBatchData(LinkedList<Batch> batchData) { this.batchData = batchData; }
 
-    public LinkedList<Batch> getDataBatch() { return this.dataBatch; }
+    public LinkedList<Batch> getBatchData() { return this.batchData; }
 
     public void setSensorData(LinkedList<SensorData> sensorData) { this.sensorData = sensorData; }
 
