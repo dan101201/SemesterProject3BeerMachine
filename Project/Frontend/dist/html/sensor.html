@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/primary_design.css" />
   <link rel="stylesheet" href="../css/sensorpage_design.css">
   <script src="../js/chart.js"></script>
+  <script src="../js/sensorRead.js"></script>
   <script src="../js/temperaturSensorPlot.js" defer></script>
   <script src="../js/humiditySensorPlot.js" defer></script>
   <script src="../js/vibrationSensorPlot.js" defer></script>
@@ -29,7 +30,7 @@
     <div class="chartBox">
       <canvas id="tempChart"></canvas>
       <div id="temp">
-        <h1 id="currentValTemp" class="currentVal">23 C</h1>
+        <h1 id="currentValTemp" class="currentVal"></h1>
         <button onclick="addDataT(tempChart, Math.random()*5)">Temperature</button>
       </div>
     </div>
@@ -38,7 +39,7 @@
       <canvas id="humidChart"></canvas>
       <div id="temp">
         <!-- See the CSS file for info-->
-        <h1 id="currentValHumid" class="currentVal">23 C</h1>
+        <h1 id="currentValHumid" class="currentVal"></h1>
         <button onclick="addDataH(humidChart, Math.random()*5)">Humidity</button>
       </div>
     </div>
