@@ -20,6 +20,10 @@ public class Backend {
 		}
 		return strings.toArray(new String[0]);
 	}
+	
+	public Object getInventory(int machineId) {
+		return machines.get(machineId).getInventory();
+	}
 
 	public float getTemperature(int machineId) {
 		return machines.get(machineId).getTemperature();
