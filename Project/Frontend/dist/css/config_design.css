@@ -1,0 +1,11 @@
+#inventory {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+#inventory progress {
+    height: 50%;
+    width: 10vw;
+    transform: rotate(-90deg);
+}
