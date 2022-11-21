@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Machine {
     URI machineAddress;
-    String name;
+    String name = "";
 
     public Machine (URI machineAddress, String name) {
         this.machineAddress=machineAddress;
