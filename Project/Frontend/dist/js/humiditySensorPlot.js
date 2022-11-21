@@ -1,27 +1,25 @@
 // setup 
 counterH = 0
-labelArr = []
-dataArr = []
-MAX_DATA_POINTS = 120;
+MAX_DATA_POINTS = 20;
 
 function addDataH(chart, data) {
-    if (labelArr.length > MAX_DATA_POINTS) {
-        labelArr.shift();
-        dataArr.shift();
-    }
-    chart.data.labels.push(++counterH);
     chart.data.datasets.forEach((dataset) => {
+        if (counterT > MAX_DATA_POINTS) {
+          chart.data.labels.shift();
+          dataset.data.shift();
+        }
         dataset.data.push(data);
-    });
-
-    chart.update();
+      });
+      chart.data.labels.push(++counterT);
+    
+      chart.update();
 }
 
 const dataH = {
-    labels: labelArr,
+    labels: [],
     datasets: [{
         label: 'Humidity sensor',
-        data: dataArr,
+        data: [],
         borderColor: "rgb(194, 13, 13)",
         backgroundColor: "rgba(194, 13, 13, 0.621)",
         borderWidth: 1
