@@ -23,6 +23,8 @@ public class Machine {
         this.machineAddress=machineAddress;
         this.name=name;
     }
+    public Machine () {
+    }
     public static void main(String[] args) {
         String hostname = "127.0.0.1";
         int port = 4840;
@@ -48,6 +50,10 @@ public class Machine {
             ex.printStackTrace();
         }
 
+    }
+
+    public float getTemperature() {
+        return 0;
     }
 //    public static IdentityProvider getIdentityprovider() {
 //        return new UsernameProvider("username", "password");

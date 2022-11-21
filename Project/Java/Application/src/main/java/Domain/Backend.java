@@ -10,6 +10,10 @@ public class Backend {
 		System.out.println("Hello World!");
 	}
 
+	Backend() {
+		machines.add(new Machine());
+	}
+
 	List<Machine> machines = new ArrayList<>();
 
 	public String[] getMachines() {
@@ -20,4 +24,8 @@ public class Backend {
 		}
 		return strings.toArray(new String[0]);
 	}
+
+	public float getTemperature(int id) {
+		return machines.get(id).getTemperature();
+	};
 }
