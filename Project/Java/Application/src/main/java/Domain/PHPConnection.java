@@ -6,6 +6,10 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import spark.Filter;
+import spark.Request;
+import spark.Response;
+
 public class PHPConnection {
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
@@ -30,6 +34,13 @@ public class PHPConnection {
 			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return "machine: " + machineId;
+		});
+		
+		get("/machine/:id/inventory", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getInventory(machineId);
 		});
 
 		get("/machine/:id/temperature", (request, response) -> {
@@ -58,7 +69,13 @@ public class PHPConnection {
 			System.out.println(request.body());
 			return response;
 		});
-		
+
+		after((Filter) (request, response) -> {
+			response.header("Access-Control-Allow-Origin", "*");
+			response.header("Access-Control-Allow-Methods", "GET");
+		});
+
+
 		//init();
 	}
 	

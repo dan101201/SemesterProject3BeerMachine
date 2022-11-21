@@ -1,11 +1,11 @@
 package Data;
 
 public class Inventory {
-	private double barley;
-	private double malt;
-	private double hops;
-	private double wheat;
-	private double yeast;
+	private float barley;
+	private float malt;
+	private float hops;
+	private float wheat;
+	private float yeast;
 	
 	public Inventory() {
 		this.barley = 0;
@@ -15,7 +15,7 @@ public class Inventory {
 		this.yeast = 0;
 	}
 	
-	public Inventory(double barley, double malt, double hops, double wheat, double yeast) {
+	public Inventory(float barley, float malt, float hops, float wheat, float yeast) {
 		this.barley = barley;
 		this.malt = malt;
 		this.hops = hops;
@@ -23,43 +23,43 @@ public class Inventory {
 		this.yeast = yeast;
 	}
 	
-	public void setBarley(double barley) {
+	public void setBarley(float barley) {
 		this.barley = barley;
 	}
 	
-	public double getBarley() {
+	public float getBarley() {
 		return this.barley;
 	}
 	
-	public void setMalt(double malt) {
+	public void setMalt(float malt) {
 		this.malt = malt;
 	}
 	
-	public double getMalt() {
+	public float getMalt() {
 		return this.malt;
 	}
 	
-	public void setHops(double hops) {
+	public void setHops(float hops) {
 		this.hops = hops;
 	}
 	
-	public double getHops() {
+	public float getHops() {
 		return this.hops;
 	}
 	
-	public void setWheat(double wheat) {
+	public void setWheat(float wheat) {
 		this.wheat = wheat;
 	}
 	
-	public double getWheat() {
+	public float getWheat() {
 		return this.wheat;
 	}
 	
-	public void setYeast(double yeast) {
+	public void setYeast(float yeast) {
 		this.yeast = yeast;
 	}
 	
-	public double getYeast() {
+	public float getYeast() {
 		return this.yeast;
 	}
 }

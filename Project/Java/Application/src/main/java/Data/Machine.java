@@ -11,17 +11,20 @@ import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
 
 import java.net.URI;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.ExecutionException;
 
 public class Machine {
     URI machineAddress;
     String name;
     OpcUaClient client;
-
-    public Machine(URI machineAddress, String name) {
-        this.machineAddress = machineAddress;
-        this.name = name;
-    }
+    Inventory inventory = new Inventory();
+// Skal bruges hvis der er flere maskiner
+//    public Machine(URI machineAddress, String name) {
+//        this.machineAddress = machineAddress;
+//        this.name = name;
+//    }
 
     public Machine() {
         String hostname = "127.0.0.1";
@@ -43,8 +46,34 @@ public class Machine {
             System.out.println("COULD NOT CONNECT");
             ex.printStackTrace();
         }
-
+        updateValuesOnMachine();
     }
+
+    public void updateValuesOnMachine() {
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                inventory.setBarley(getBarley());
+                inventory.setMalt(getMalt());
+                inventory.setHops(getHops());
+                inventory.setWheat(getWheat());
+                inventory.setYeast(getYeast());
+            }
+
+        }, 0, 120000);
+    }
+    
+    public float[] getInventory() {
+        float[] resArr = new float[5];
+        resArr[0] = inventory.getBarley();
+        resArr[1] = inventory.getMalt();
+        resArr[2] = inventory.getHops();
+        resArr[3] = inventory.getWheat();
+        resArr[4] = inventory.getYeast();
+        return resArr;
+    }
+
 
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
@@ -61,8 +90,9 @@ public class Machine {
             return -1;
         }
         assert value != null;
-        return (float)value.getValue().getValue();
+        return (float) value.getValue().getValue();
     }
+
     public int getHumidity() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.RelHumidity");
         DataValue value = null;
@@ -78,8 +108,9 @@ public class Machine {
             return -1;
         }
         assert value != null;
-        return (int)value.getValue().getValue();
+        return (int) value.getValue().getValue();
     }
+
     public int getVibration() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Vibration");
         DataValue value = null;
@@ -95,12 +126,93 @@ public class Machine {
             return -1;
         }
         assert value != null;
-        return (int)value.getValue().getValue();
+        return (int) value.getValue().getValue();
+    }
+
+    private float getBarley() {
+        NodeId nodeId = new NodeId(6, "::Program:Inventory.Barley");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float) value.getValue().getValue();
+    }
+
+    private float getHops() {
+        NodeId nodeId = new NodeId(6, "::Program:Inventory.Hops");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float) value.getValue().getValue();
+    }
+
+    private float getMalt() {
+        NodeId nodeId = new NodeId(6, "::Program:Inventory.Malt");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float) value.getValue().getValue();
+    }
+
+    private float getWheat() {
+        NodeId nodeId = new NodeId(6, "::Program:Inventory.Wheat");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float) value.getValue().getValue();
+    }
+
+    private float getYeast() {
+        NodeId nodeId = new NodeId(6, "::Program:Inventory.Yeast");
+        DataValue value = null;
+        try {
+            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
+        } catch (InterruptedException e) {
+            System.out.println("Der er sket en fejl med funktionen");
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            System.out.println("Der er sket en anden fejl med funktionen");
+            e.printStackTrace();
+        }
+        assert value != null;
+        return (float) value.getValue().getValue();
     }
 
     public String getName() {
         return name;
     }
+    // Skal bruges hvis vi har lyst til at bruge en server med Username/password og skal udkommenteres omkring cfg-variablen.
 //    public static IdentityProvider getIdentityprovider() {
 //        return new UsernameProvider("username", "password");
 //    }
