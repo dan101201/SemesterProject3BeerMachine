@@ -10,13 +10,13 @@ public class Notification {
 public Notification evalSubscriptionInt(int integer){
     switch (integer) {
     case 0:
-        Notification notificationInstans = new Notification(NotificationType.WARNING, "Low ")   ;
-        break;
+        return new Notification(NotificationType.WARNING, "Low ")   ;
+
     case 1:
-        Notification notificationInstans = new Notification(NotificationType.ERROR, "Machine broke..");
-        break;
+        return new Notification(NotificationType.ERROR, "Machine broke..");
+
     }
-      return notificationInstans;
+      return null;
 }
 
     public Notification(NotificationType notificationType, String description) {
