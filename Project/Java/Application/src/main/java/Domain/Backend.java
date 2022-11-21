@@ -6,10 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Backend {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
-	}
-
 	Backend() {
 		machines.add(new Machine());
 	}

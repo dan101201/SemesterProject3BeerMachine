@@ -46,10 +46,6 @@ public class Machine {
 
     }
 
-    public static void main(String[] args) {
-
-    }
-
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
         DataValue value = null;

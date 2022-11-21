@@ -7,7 +7,6 @@ import spark.Response;
 import spark.Route;
 
 public class PHPConnection {
-	public static final String JAVABRIDGE_PORT="8087";
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
 
