@@ -5,13 +5,13 @@ MAX_DATA_POINTS = 20;
 function addDataV(chart, data) {
   document.getElementById('currentValVibra').innerHTML = ""+data+" °C"
   chart.data.datasets.forEach((dataset) => {
-    if (counterT > MAX_DATA_POINTS) {
+    if (counterV > MAX_DATA_POINTS) {
       chart.data.labels.shift();
       dataset.data.shift();
     }
     dataset.data.push(data);
   });
-  chart.data.labels.push(++counterT);
+  chart.data.labels.push(++counterV);
 
   chart.update();
 }   

@@ -5,13 +5,13 @@ MAX_DATA_POINTS = 20;
 function addDataH(chart, data) {
     document.getElementById('currentValHumid').innerHTML = ""+data+" °C"
     chart.data.datasets.forEach((dataset) => {
-        if (counterT > MAX_DATA_POINTS) {
+        if (counterH > MAX_DATA_POINTS) {
           chart.data.labels.shift();
           dataset.data.shift();
         }
         dataset.data.push(data);
       });
-      chart.data.labels.push(++counterT);
+      chart.data.labels.push(++counterH);
     
       chart.update();
 }
