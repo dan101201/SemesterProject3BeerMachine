@@ -73,9 +73,11 @@ public class Machine {
         } catch (InterruptedException e) {
             System.out.println("Der er sket en fejl med getTemp-funktionen");
             e.printStackTrace();
+            return -1;
         } catch (ExecutionException e) {
             System.out.println("Der er sket en anden fejl med getTemp-funktionen");
             e.printStackTrace();
+            return -1;
         }
         assert value != null;
         return (float) value.getValue().getValue();
@@ -89,9 +91,11 @@ public class Machine {
         } catch (InterruptedException e) {
             System.out.println("Der er sket en fejl med getHumid-funktionen");
             e.printStackTrace();
+            return -1;
         } catch (ExecutionException e) {
             System.out.println("Der er sket en anden fejl med getHumid-funktionen");
             e.printStackTrace();
+            return -1;
         }
         assert value != null;
         return (int) value.getValue().getValue();
@@ -105,9 +109,11 @@ public class Machine {
         } catch (InterruptedException e) {
             System.out.println("Der er sket en fejl med getVibra-funktionen");
             e.printStackTrace();
+            return -1;
         } catch (ExecutionException e) {
             System.out.println("Der er sket en anden fejl med getVibra-funktionen");
             e.printStackTrace();
+            return -1;
         }
         assert value != null;
         return (int) value.getValue().getValue();

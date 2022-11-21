@@ -7,7 +7,6 @@ import spark.Response;
 import spark.Route;
 
 public class PHPConnection {
-	public static final String JAVABRIDGE_PORT="8087";
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
 
@@ -37,7 +36,21 @@ public class PHPConnection {
 			String res = request.params("id");
 			System.out.println(res);
 			int machineId = Integer.parseInt(res);
-			return "machine: " + backend.getTemperature(machineId);
+			return backend.getTemperature(machineId);
+		});
+
+		get("/machine/:id/vibration", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getVibration(machineId);
+		});
+
+		get("/machine/:id/humidity", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getHumidity(machineId);
 		});
 		
 		post("/hello", (request, response) -> {
