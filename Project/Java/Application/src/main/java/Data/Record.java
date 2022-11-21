@@ -21,4 +21,24 @@ public class Record {
         this.notifications = notifications;
     };
 
+    public void setRecordId(UUID recordId) { this.recordId = recordId; }
+
+    public UUID getRecordId() { return this.recordId; }
+
+    public void setMachine(Machine machine) { this.machine = machine; }
+
+    public Machine getMachine() { return this.machine; }
+
+    public void setDataBatch(LinkedList<Batch> dataBatch) { this.dataBatch = dataBatch; }
+
+    public LinkedList<Batch> getDataBatch() { return this.dataBatch; }
+
+    public void setSensorData(LinkedList<SensorData> sensorData) { this.sensorData = sensorData; }
+
+    public LinkedList<SensorData> getSensorData() { return this.sensorData; }
+
+    public void setNotifications(LinkedList<Notifications> notifications) { this.notifications = notifications; }
+
+    public LinkedList<Notifications> getNotifications() { return  this.notifications; }
+    
 }
