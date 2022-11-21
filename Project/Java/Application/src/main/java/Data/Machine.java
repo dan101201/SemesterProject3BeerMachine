@@ -55,6 +55,10 @@ public class Machine {
     public float getTemperature() {
         return 0;
     }
+
+    public String getName() {
+        return name;
+    }
 //    public static IdentityProvider getIdentityprovider() {
 //        return new UsernameProvider("username", "password");
 //    }
