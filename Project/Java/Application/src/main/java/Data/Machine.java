@@ -77,84 +77,62 @@ public class Machine {
 
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med getTemp-funktionen");
-            e.printStackTrace();
-            return -1;
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med getTemp-funktionen");
-            e.printStackTrace();
-            return -1;
-        }
-        assert value != null;
-        return (float) value.getValue().getValue();
+        return getValueInt(nodeId);
     }
 
     public int getHumidity() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.RelHumidity");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med getHumid-funktionen");
-            e.printStackTrace();
-            return -1;
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med getHumid-funktionen");
-            e.printStackTrace();
-            return -1;
-        }
-        assert value != null;
-        return (int) value.getValue().getValue();
+        return getValueInt(nodeId);
     }
 
     public int getVibration() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Vibration");
+        return getValueInt(nodeId);
+    }
+    
+    private int getValueInt(NodeId nodeId) {
         DataValue value = null;
         try {
             value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
         } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med getVibra-funktionen");
+            System.out.println("Der er sket en fejl med funktionen");
             e.printStackTrace();
             return -1;
         } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med getVibra-funktionen");
+            System.out.println("Der er sket en anden fejl med funktionen");
             e.printStackTrace();
             return -1;
         }
         assert value != null;
         return (int) value.getValue().getValue();
     }
-
+    
     private float getBarley() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Barley");
-        return getValue(nodeId);
+        return getValueFloat(nodeId);
     }
 
     private float getHops() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Hops");
-        return getValue(nodeId);
+        return getValueFloat(nodeId);
     }
 
     private float getMalt() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Malt");
-        return getValue(nodeId);
+        return getValueFloat(nodeId);
     }
 
     private float getWheat() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Wheat");
-        return getValue(nodeId);
+        return getValueFloat(nodeId);
     }
 
     private float getYeast() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Yeast");
-        return getValue(nodeId);
+        return getValueFloat(nodeId);
     }
     
-    private float getValue(NodeId nodeId) {
+    private float getValueFloat(NodeId nodeId) {
         DataValue value = null;
         try {
             value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
