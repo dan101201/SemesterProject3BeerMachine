@@ -10,14 +10,14 @@ async function humidFunc(){
     const response = await fetch('http://localhost:4567/machine/0/humidity').then((res) => res.json()).catch((err) => {
         console.error(err);
 })
-    addDataH(humidFunc, response)
+    addDataH(humidChart, response)
 }
 
 async function vibraFunc(){
     const response = await fetch('http://localhost:4567/machine/0/vibration').then((res) => res.json()).catch((err) => {
         console.error(err);
 })
-    addDataV(vibraFunc, response)
+    addDataV(vibraChart, response)
 }
 setInterval(async() => tempFunc(), 1000)
 setInterval(async() => humidFunc(), 1000)
