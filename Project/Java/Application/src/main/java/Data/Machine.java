@@ -21,6 +21,8 @@ public class Machine {
     String name;
     OpcUaClient client;
     Inventory inventory = new Inventory();
+
+    int ProductID;
 // Skal bruges hvis der er flere maskiner
 //    public Machine(URI machineAddress, String name) {
 //        this.machineAddress = machineAddress;
@@ -73,6 +75,63 @@ public class Machine {
         resArr[3] = inventory.getWheat();
         resArr[4] = inventory.getYeast();
         return resArr;
+    }
+
+    //    public int setBatchNR() {
+//
+//        int batchNR;
+//        if (batchNR < 0 || batchNR > 65535)
+//            throw new IllegalArgumentException();
+//        client.writeValue(new NodeId(6, " ::Program:Cube.Command.Parameter[0]"), DataValue.valueOnly(new Variant(batchNR)));
+//
+//
+//        return batchNR;
+//    }
+    public void setProductID(int i) {
+        if (i < 0 || i > 5)
+            throw new IllegalArgumentException();
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[1]"), DataValue.valueOnly(new Variant(i)));
+    }
+
+    public void setMachSpeed(int i, float f) {
+        switch (i) {
+            case 0:
+                if (f < 0 || f > 600)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+            case 1:
+                if (f < 0 || f > 300)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+            case 2:
+                if (f < 0 || f > 150)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+            case 3:
+                if (f < 0 || f > 200)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+            case 4:
+                if (f < 0 || f > 100)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+            case 5:
+                if (f < 0 || f > 125)
+                    throw new IllegalArgumentException();
+                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
+                break;
+        }
+    }
+
+    public void setNumberOfProducedProduct(int i) {
+        if (i < 0 || i > 65535)
+            throw new IllegalArgumentException();
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[2]"), DataValue.valueOnly(new Variant(i)));
     }
 
     public void writeCommand(int i) {
