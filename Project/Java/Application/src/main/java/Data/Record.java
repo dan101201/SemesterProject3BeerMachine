@@ -1,7 +1,6 @@
 package Data;
 
 import Domain.Notifications;
-
 import java.util.LinkedList;
 import java.util.UUID;
 
