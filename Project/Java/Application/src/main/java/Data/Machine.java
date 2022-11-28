@@ -131,70 +131,30 @@ public class Machine {
 
     private float getBarley() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Barley");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med funktionen");
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med funktionen");
-            e.printStackTrace();
-        }
-        assert value != null;
-        return (float) value.getValue().getValue();
+        return getValue(nodeId);
     }
 
     private float getHops() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Hops");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med funktionen");
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med funktionen");
-            e.printStackTrace();
-        }
-        assert value != null;
-        return (float) value.getValue().getValue();
+        return getValue(nodeId);
     }
 
     private float getMalt() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Malt");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med funktionen");
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med funktionen");
-            e.printStackTrace();
-        }
-        assert value != null;
-        return (float) value.getValue().getValue();
+        return getValue(nodeId);
     }
 
     private float getWheat() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Wheat");
-        DataValue value = null;
-        try {
-            value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-        } catch (InterruptedException e) {
-            System.out.println("Der er sket en fejl med funktionen");
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            System.out.println("Der er sket en anden fejl med funktionen");
-            e.printStackTrace();
-        }
-        assert value != null;
-        return (float) value.getValue().getValue();
+        return getValue(nodeId);
     }
 
     private float getYeast() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Yeast");
+        return getValue(nodeId);
+    }
+    
+    private float getValue(NodeId nodeId) {
         DataValue value = null;
         try {
             value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
@@ -208,7 +168,7 @@ public class Machine {
         assert value != null;
         return (float) value.getValue().getValue();
     }
-
+    
     public String getName() {
         return name;
     }
