@@ -77,10 +77,6 @@ public class Machine {
         return resArr;
     }
 
-    public float getMachspeed() {
-        return 5;
-    }
-
     //    public int setBatchNR() {
 //
 //        int batchNR;
