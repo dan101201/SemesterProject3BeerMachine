@@ -1,6 +1,6 @@
 package Data;
 
-import org.eclipse.milo.opcua.stack.core.types.builtin.DateTime;
+import java.time.LocalDateTime;
 
-public record SensorData(int vibration, int humidity, int temperature, DateTime timestamp) {
+public record SensorData(int vibration, int humidity, int temperature, LocalDateTime timestamp) {
 }
