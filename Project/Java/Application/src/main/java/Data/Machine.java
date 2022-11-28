@@ -78,7 +78,7 @@ public class Machine {
     }
 
     public float getMachspeed() {
-        return "";
+        return 5;
     }
 
     //    public int setBatchNR() {
@@ -150,20 +150,20 @@ public class Machine {
 
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
-        return getValueInt(nodeId);
+        return (float) getValue(nodeId);
     }
 
-    public int getHumidity() {
+    public Short getHumidity() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.RelHumidity");
-        return getValueInt(nodeId);
+        return (Short) getValue(nodeId);
     }
 
-    public int getVibration() {
+    public float getVibration() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Vibration");
-        return getValueInt(nodeId);
+        return (float) getValue(nodeId);
     }
 
-    private int getValueInt(NodeId nodeId) {
+    private Object getValue (NodeId nodeId) {
         DataValue value = null;
         try {
             value = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
@@ -177,7 +177,7 @@ public class Machine {
             return -1;
         }
         assert value != null;
-        return (int) value.getValue().getValue();
+        return value.getValue().getValue();
     }
 
     private float getBarley() {

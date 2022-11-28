@@ -29,11 +29,11 @@ public class Backend {
 		return machines.get(machineId).getTemperature();
 	};
 
-	public Object getHumidity(int machineId) {
+	public Short getHumidity(int machineId) {
 		return machines.get(machineId).getHumidity();
 	}
 
-	public Object getVibration(int machineId) {
+	public float getVibration(int machineId) {
 		return machines.get(machineId).getHumidity();
 	}
 }
