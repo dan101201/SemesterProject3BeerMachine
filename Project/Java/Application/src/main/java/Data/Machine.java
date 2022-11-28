@@ -5,6 +5,7 @@ import org.eclipse.milo.opcua.sdk.client.api.config.OpcUaClientConfigBuilder;
 import org.eclipse.milo.opcua.stack.client.DiscoveryClient;
 import org.eclipse.milo.opcua.stack.core.types.builtin.DataValue;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
+import org.eclipse.milo.opcua.stack.core.types.builtin.Variant;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 import org.eclipse.milo.opcua.stack.core.types.structured.EndpointDescription;
 import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
@@ -63,7 +64,7 @@ public class Machine {
 
         }, 0, 120000);
     }
-    
+
     public float[] getInventory() {
         float[] resArr = new float[5];
         resArr[0] = inventory.getBarley();
@@ -74,6 +75,15 @@ public class Machine {
         return resArr;
     }
 
+    public void writeCommand(int i) {
+        if (i < 1 || i > 5)
+            throw new IllegalArgumentException();
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.CntrlCmd"), DataValue.valueOnly(new Variant(i)));
+    }
+
+    public void confirmCommand() {
+        client.writeValue(new NodeId(6, " ::Program:Cube.Command.CmdChangeRequest"), DataValue.valueOnly(new Variant(true)));
+    }
 
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
@@ -89,7 +99,7 @@ public class Machine {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Vibration");
         return getValueInt(nodeId);
     }
-    
+
     private int getValueInt(NodeId nodeId) {
         DataValue value = null;
         try {
@@ -106,7 +116,7 @@ public class Machine {
         assert value != null;
         return (int) value.getValue().getValue();
     }
-    
+
     private float getBarley() {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Barley");
         return getValueFloat(nodeId);
@@ -131,7 +141,7 @@ public class Machine {
         NodeId nodeId = new NodeId(6, "::Program:Inventory.Yeast");
         return getValueFloat(nodeId);
     }
-    
+
     private float getValueFloat(NodeId nodeId) {
         DataValue value = null;
         try {
@@ -146,7 +156,7 @@ public class Machine {
         assert value != null;
         return (float) value.getValue().getValue();
     }
-    
+
     public String getName() {
         return name;
     }
