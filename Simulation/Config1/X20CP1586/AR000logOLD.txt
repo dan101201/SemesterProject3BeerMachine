@@ -1,28 +1,41 @@
 
 
-Mon Nov 21 13:01:11 2022
+Tue Sep 06 08:46:15 2022
 No ARsim registration found!
   Bernecker & Rainer 
 
 
 
-Mon Nov 21 13:01:11 2022
+Tue Sep 06 08:46:15 2022
 COMMAND_COLDSTART
-InstanceName : 01d8fda0f2e79e90
+InstanceName : 01d8c1bc5c257240
 
 WorkingPath :
-C:\Users\mikke\OneDrive\Dokumenter\GitHub\SemesterProject3BeerMachine\Simulation\Config1\X20CP1586\
+C:\Users\thim\Documents\Beer project files\Simulation\Config1\X20CP1586\
 
 
 
-Mon Nov 21 13:01:12 2022
+Tue Sep 06 08:46:15 2022
 COMMAND_COLDSTART
 Version : E4.34
 
 
 
-Mon Nov 21 13:29:29 2022
+Tue Sep 06 08:46:34 2022
 COMMAND_TERMINATE
 
 
-Mon Nov 21 13:29:30 2022
+Tue Sep 06 08:46:36 2022
+
+
+Tue Sep 06 08:46:36 2022
+COMMAND_COLDSTART
+Version : E4.34
+
+
+
+Tue Sep 06 09:36:57 2022
+COMMAND_TERMINATE
+
+
+Tue Sep 06 09:36:58 2022
