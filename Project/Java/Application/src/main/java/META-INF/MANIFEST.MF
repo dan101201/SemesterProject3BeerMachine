@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Main-Class: Domain.PHPConnection
+Class-Path: . lib/sdk-client-0.6.8.jar lib/stack-client-0.6.8.jar lib/st
+ ack-core-0.6.8.jar lib/bcprov-jdk15on-1.69.jar lib/bcpkix-jdk15on-1.69.
+ jar lib/bcutil-jdk15on-1.69.jar lib/guava-31.0.1-jre.jar lib/failureacc
+ ess-1.0.1.jar lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-
+ guava.jar lib/netty-codec-4.1.77.Final.jar netty-handler-4.1.77.Final.j
+ ar lib/netty-resolver-4.1.77.Final.jar lib/jaxb-runtime-2.3.6.jar lib/j
+ akarta.xml.bind-api-2.3.3.jar lib/txw2-2.3.6.jar lib/istack-commons-run
+ time-3.0.12.jar lib/jakarta.activation-1.2.2.jar lib/netty-channel-fsm-
+ 0.8.jar lib/strict-machine-0.6.jar lib/netty-codec-http-4.1.77.Final.ja
+ r lib/netty-common-4.1.77.Final.jar lib/netty-buffer-4.1.77.Final.jar l
+ ib/netty-transport-4.1.77.Final.jar lib/sdk-core-0.6.8.jar lib/slf4j-ap
+ i-2.0.5.jar lib/slf4j-simple-2.0.5.jar lib/spark-core-2.9.4.jar lib/jet
+ ty-server-9.4.48.v20220622.jar lib/javax.servlet-api-3.1.0.jar lib/jett
+ y-http-9.4.48.v20220622.jar lib/jetty-util-9.4.48.v20220622.jar lib/jet
+ ty-io-9.4.48.v20220622.jar lib/jetty-webapp-9.4.48.v20220622.jar lib/je
+ tty-xml-9.4.48.v20220622.jar lib/jetty-servlet-9.4.48.v20220622.jar lib
+ /jetty-security-9.4.48.v20220622.jar lib/jetty-util-ajax-9.4.48.v202206
+ 22.jar lib/websocket-server-9.4.48.v20220622.jar lib/websocket-common-9
+ .4.48.v20220622.jar lib/websocket-client-9.4.48.v20220622.jar lib/jetty
+ -client-9.4.48.v20220622.jar lib/websocket-servlet-9.4.48.v20220622.jar
+ lib/websocket-api-9.4.48.v20220622.jar lib/one-jar-boot-0.97.4.jar
