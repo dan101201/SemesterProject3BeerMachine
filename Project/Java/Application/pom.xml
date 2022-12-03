@@ -35,7 +35,7 @@
             <artifactId>spark-core</artifactId>
             <version>2.9.4</version>
         </dependency>
-        <dependency>
+        <dependency> <!--This package autogenerates the classpath based on what our project needs-->
             <groupId>io.kevinlee</groupId>
             <artifactId>one-jar-boot</artifactId>
             <version>0.97.4</version>
@@ -109,6 +109,7 @@
                             <mainClass>Domain.PHPConnection</mainClass>
                         </manifest>
                         <manifestEntries>
+                            <!--One Jar config-->
                             <one-jar-boot-class>com.simontuffs.onejar.Boot</one-jar-boot-class>
                             <one-jar-boot-classpath>lib/one-jar-boot-0.97.4.jar</one-jar-boot-classpath>
                             <one-jar-main-class>Domain.PHPConnection</one-jar-main-class>
