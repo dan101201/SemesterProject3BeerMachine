@@ -4,6 +4,14 @@
       <settings>
         <option name="imageTag" value="beerbackend:latest" />
         <option name="containerName" value="beerbackend" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="4567" />
+              <option name="hostPort" value="4567" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
         <option name="sourceFilePath" value="Dockerfile" />
       </settings>
     </deployment>
