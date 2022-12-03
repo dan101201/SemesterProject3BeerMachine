@@ -88,7 +88,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/jar/lib</outputDirectory>
+                            <outputDirectory>${basedir}/target/jar</outputDirectory>
                             <overWriteReleases>true</overWriteReleases>
                             <overWriteSnapshots>true</overWriteSnapshots>
                             <overWriteIfNewer>true</overWriteIfNewer>
@@ -109,8 +109,9 @@
                             <mainClass>Domain.PHPConnection</mainClass>
                         </manifest>
                         <manifestEntries>
-                            <!--Hardcoded Class Path. NO TOUCH!-->
-                            <Class-Path>. lib/sdk-client-0.6.8.jar lib/stack-client-0.6.8.jar lib/stack-core-0.6.8.jar lib/bcprov-jdk15on-1.69.jar lib/bcpkix-jdk15on-1.69.jar lib/bcutil-jdk15on-1.69.jar lib/guava-31.0.1-jre.jar lib/failureaccess-1.0.1.jar lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar lib/netty-codec-4.1.77.Final.jar netty-handler-4.1.77.Final.jar lib/netty-resolver-4.1.77.Final.jar lib/jaxb-runtime-2.3.6.jar lib/jakarta.xml.bind-api-2.3.3.jar lib/txw2-2.3.6.jar lib/istack-commons-runtime-3.0.12.jar lib/jakarta.activation-1.2.2.jar lib/netty-channel-fsm-0.8.jar lib/strict-machine-0.6.jar lib/netty-codec-http-4.1.77.Final.jar lib/netty-common-4.1.77.Final.jar lib/netty-buffer-4.1.77.Final.jar lib/netty-transport-4.1.77.Final.jar lib/sdk-core-0.6.8.jar lib/slf4j-api-2.0.5.jar lib/slf4j-simple-2.0.5.jar lib/spark-core-2.9.4.jar lib/jetty-server-9.4.48.v20220622.jar lib/javax.servlet-api-3.1.0.jar lib/jetty-http-9.4.48.v20220622.jar lib/jetty-util-9.4.48.v20220622.jar lib/jetty-io-9.4.48.v20220622.jar lib/jetty-webapp-9.4.48.v20220622.jar lib/jetty-xml-9.4.48.v20220622.jar lib/jetty-servlet-9.4.48.v20220622.jar lib/jetty-security-9.4.48.v20220622.jar lib/jetty-util-ajax-9.4.48.v20220622.jar lib/websocket-server-9.4.48.v20220622.jar lib/websocket-common-9.4.48.v20220622.jar lib/websocket-client-9.4.48.v20220622.jar lib/jetty-client-9.4.48.v20220622.jar lib/websocket-servlet-9.4.48.v20220622.jar lib/websocket-api-9.4.48.v20220622.jar lib/one-jar-boot-0.97.4.jar</Class-Path>
+                            <one-jar-boot-class>com.simontuffs.onejar.Boot</one-jar-boot-class>
+                            <one-jar-boot-classpath>lib/one-jar-boot-0.97.4.jar</one-jar-boot-classpath>
+                            <one-jar-main-class>Domain.PHPConnection</one-jar-main-class>
                         </manifestEntries>
                     </archive>
                     <outputDirectory>${basedir}/target/jar</outputDirectory>
