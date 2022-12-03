@@ -3,7 +3,7 @@
     <deployment type="dockerfile">
       <settings>
         <option name="imageTag" value="beerbackend:latest" />
-        <option name="containerName" value="beerbackend" />
+        <option name="containerName" value="BeerBackend" />
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>
