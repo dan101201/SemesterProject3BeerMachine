@@ -25,6 +25,11 @@
     transform: rotate(-90deg);
 }
 
+#inventory #sensors{
+    border-style: solid;
+    color: black;
+}
+
 #warning_table #scroll_table table {
     min-width: 100%;
 }
