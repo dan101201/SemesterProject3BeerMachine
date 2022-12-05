@@ -40,13 +40,14 @@
             <progress id="maintain" value="50" max=100></progress>
         </div>
         <div id="warning_table">
+            <div id="scroll_table">
                 <table id="warningTable">
                     <thead>
                         <tr>
                             <td>ID</td>
                             <td>Warning</td>
                             <td>Timestamp</td>
-                            <td>Machine number</td>
+                            <td>Machine nr</td>
                         </tr>
                     </thead>
                     <tbody id="warningBody">
@@ -58,6 +59,7 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             <button onclick="addToWarningTable(1,'test', 'test', 0)">click</button>
         </div>
     </main>

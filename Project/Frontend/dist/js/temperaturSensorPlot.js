@@ -4,7 +4,11 @@ MAX_DATA_POINTS = 20;
 
 function addDataT(chart, data) {
   document.getElementById('currentValTemp').innerHTML = ""+data+" °C"
-  chart.data.datasets.forEach((dataset) => {
+  if(data > 22 || data < 20){
+    alert("Temperature out of threshold!");
+
+  }else{
+    chart.data.datasets.forEach((dataset) => {
     if (counterT > MAX_DATA_POINTS) {
       chart.data.labels.shift();
       dataset.data.shift();
@@ -14,6 +18,8 @@ function addDataT(chart, data) {
   chart.data.labels.push(++counterT);
 
   chart.update();
+  }
+  
 }
 
 const data = {

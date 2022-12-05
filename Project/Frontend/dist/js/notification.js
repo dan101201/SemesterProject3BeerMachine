@@ -1,8 +1,6 @@
 function addToWarningTable(id, warning, timestamp, mNumber){
 var table = document.getElementById("warningTable");
-/*if(table.row.length == 6){
-    document.getElementById("warningTable").deleteRow(5)
-}*/
+
 var row = table.insertRow(1);
 
 var idCell = row.insertCell(0);
