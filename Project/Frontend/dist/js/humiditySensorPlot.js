@@ -3,9 +3,13 @@ counterH = 0
 MAX_DATA_POINTS = 20;
 
 function addDataH(chart, data) {
-    document.getElementById('currentValHumid').innerHTML = ""+data+" °C"
-    chart.data.datasets.forEach((dataset) => {
-        if (counterH > MAX_DATA_POINTS) {
+    document.getElementById('currentValHumid').innerHTML = ""+data+" °%"
+    if(data > 22 || data < 20){
+        alert("Humidity out of threshold!");
+    
+      }else{
+        chart.data.datasets.forEach((dataset) => {
+        if (counterT > MAX_DATA_POINTS) {
           chart.data.labels.shift();
           dataset.data.shift();
         }
@@ -14,6 +18,7 @@ function addDataH(chart, data) {
       chart.data.labels.push(++counterH);
     
       chart.update();
+      }
 }
 
 const dataH = {
