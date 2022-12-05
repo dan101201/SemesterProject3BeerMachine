@@ -12,6 +12,7 @@
             </DockerPortBindingImpl>
           </list>
         </option>
+        <option name="commandLineOptions" value="--net beer-network" />
         <option name="sourceFilePath" value="Dockerfile" />
       </settings>
     </deployment>

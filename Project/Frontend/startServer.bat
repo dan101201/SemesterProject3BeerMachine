@@ -1,8 +1,5 @@
-SETLOCAL
-set /A port=8080
-
 docker build --pull --rm -f "Dockerfile" -t beerfrontend:latest "."
 
-docker run -d -p %port%:80 --rm --name HttpServer frontend:latest
+docker run -d -p 8080:80 --rm --net beer-network --name HttpServer -it frontend:latest
 
-START http://localhost:%port%
+START http://localhost:8080
