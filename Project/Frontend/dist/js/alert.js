@@ -5,6 +5,7 @@ button.addEventListener('click', () => {
 })
 
 function checkAmount(){
+
     alertNotification("barley");
     alertNotification("hops");
     alertNotification("malt");
@@ -18,6 +19,5 @@ function alertNotification(ingredient){
     let minimum = 50;
     if (amount < minimum){
         alert("Amount of " + ingredient + " is getting low! Please fix");
-    };
-
+    }
 };
