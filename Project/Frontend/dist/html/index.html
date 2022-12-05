@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/homepage_design.css" />
     <script src="../js/jquery.js"></script>
     <script src="../js/alert.js" defer></script>
+    <script src="../js/notification.js"></script>
     <title>Start</title>
 </head>
 
@@ -39,8 +40,7 @@
             <progress id="maintain" value="50" max=100></progress>
         </div>
         <div id="warning_table">
-            <div id="scroll_table">
-                <table>
+                <table id="warningTable">
                     <thead>
                         <tr>
                             <td>ID</td>
@@ -49,16 +49,16 @@
                             <td>Machine number</td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="warningBody">
                         <tr>
                             <td>0</td>
                             <td>lorem50</td>
                             <td>07-11-2022</td>
-                            <td>Machine number</td>
+                            <td>1</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            <button onclick="addToWarningTable(1,'test', 'test', 0)">click</button>
         </div>
     </main>
     

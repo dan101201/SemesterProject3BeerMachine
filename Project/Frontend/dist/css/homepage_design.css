@@ -1,3 +1,5 @@
+
+
 .sections {
     display: grid;
     grid-template-columns: 7% 68% 25%;
@@ -28,17 +30,17 @@
     color: black;
 }
 
-#warning_table #scroll_table table {
+#warning_table table {
     min-width: 100%;
 }
 
-#warning_table #scroll_table table
+#warning_table table
 thead td {
     border: 1px solid black;
     background-color: lightgrey;
     width: auto;
 }
 
-#warning_table #scroll_table table tbody td {
+#warning_table table tbody td {
     border: 1px solid black;
 }
