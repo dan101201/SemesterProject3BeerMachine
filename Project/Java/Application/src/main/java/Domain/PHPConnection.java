@@ -113,7 +113,7 @@ public class PHPConnection {
 			float speed = Float.parseFloat(request.params("speed"));
 			backend.writeCommand(machineId, 5);
 			backend.confirmCommand(machineId);
-			return "clear machine: " + machineId;
+			return "changed machine " + machineId + "batch " + batch+ " to speed " + speed;
 		});
 
 		after((Filter) (request, response) -> {
