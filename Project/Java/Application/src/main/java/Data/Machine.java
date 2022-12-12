@@ -93,7 +93,7 @@ public class Machine {
         client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[1]"), DataValue.valueOnly(new Variant(i)));
     }
 
-    public void setMachSpeed(int i, float f) {
+    public void setMachineSpeed(int i, float f) {
         switch (i) {
             case 0:
                 if (f < 0 || f > 600)
