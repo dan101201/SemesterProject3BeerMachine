@@ -30,9 +30,9 @@ public class Machine {
 //    }
 
     public Machine() {
-        String hostname = "127.0.0.1";
+        String hostname = "192.168.0.122";
         int port = 4840;
-        String endpointUrl = "opc.tcp://127.0.0.1:4840";
+        String endpointUrl = "opc.tcp://192.168.0.122:4840";
 
         try {
             List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints(endpointUrl).get();

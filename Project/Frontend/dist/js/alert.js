@@ -23,6 +23,7 @@ function alertNotification(ingredient){
     amount = amount.style.height.slice(0,-1);
     let minimum = 50;
     if (amount < minimum){
+        addToWarningTable("Amount of"+ingredient+" is getting low!", Date.now(), 1)
         alert("Amount of " + ingredient + " is getting low! Please fix");
         return false;
     }

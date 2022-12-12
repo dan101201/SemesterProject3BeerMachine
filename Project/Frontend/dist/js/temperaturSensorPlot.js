@@ -4,7 +4,7 @@ MAX_DATA_POINTS = 20;
 
 function addDataT(chart, data) {
   document.getElementById('currentValTemp').innerHTML = ""+data+" °C"
-  if(data > 22 || data < 20){
+  if(data > 45 || data < 20){
     alert("Temperature out of threshold!");
 
   }else{
