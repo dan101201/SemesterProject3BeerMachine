@@ -49,3 +49,6 @@ thead td {
 #warning_table #scroll_table table tbody td {
     border: 1px solid black;
 }
+main {
+    margin-bottom: 5%;
+}
