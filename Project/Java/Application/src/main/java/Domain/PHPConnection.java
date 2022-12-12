@@ -64,10 +64,46 @@ public class PHPConnection {
 			return backend.getHumidity(machineId);
 		});
 		
-		post("/hello", (request, response) -> {
-			System.out.println("POST");
-			System.out.println(request.body());
-			return response;
+		post("/hello", (request, response) -> "Hello World!");
+		
+		post("/machine/:id/command/reset", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			backend.writeCommand(machineId, 1);
+			backend.confirmCommand(machineId);
+			return "reset machine: " + machineId;
+		});
+		
+		post("/machine/:id/command/start", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			backend.writeCommand(machineId, 2);
+			backend.confirmCommand(machineId);
+			return "start machine: " + machineId;
+		});
+		
+		post("/machine/:id/command/stop", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			backend.writeCommand(machineId, 3);
+			backend.confirmCommand(machineId);
+			return "stop machine: " + machineId;
+		});
+		
+		post("/machine/:id/command/abort", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			backend.writeCommand(machineId, 4);
+			backend.confirmCommand(machineId);
+			return "abort machine: " + machineId;
+		});
+		
+		post("/machine/:id/command/clear", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			backend.writeCommand(machineId, 5);
+			backend.confirmCommand(machineId);
+			return "clear machine: " + machineId;
 		});
 
 		after((Filter) (request, response) -> {
@@ -77,9 +113,5 @@ public class PHPConnection {
 
 
 		//init();
-	}
-	
-	public void hello(String args[]) {
-		System.out.println("Hello World!");
 	}
 }
