@@ -36,4 +36,12 @@ public class Backend {
 	public float getVibration(int machineId) {
 		return machines.get(machineId).getHumidity();
 	}
+	
+	public void writeCommand(int machineId, int commandValue) {
+		machines.get(machineId).writeCommand(commandValue);
+	}
+	
+	public void confirmCommand(int machineId) {
+		machines.get(machineId).confirmCommand();
+	}
 }
