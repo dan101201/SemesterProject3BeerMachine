@@ -106,6 +106,16 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
+		post("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			int batch = Integer.parseInt(request.params("batch"));
+			float speed = Float.parseFloat(request.params("speed"));
+			backend.writeCommand(machineId, 5);
+			backend.confirmCommand(machineId);
+			return "clear machine: " + machineId;
+		});
+
 		after((Filter) (request, response) -> {
 			response.header("Access-Control-Allow-Origin", "*");
 			response.header("Access-Control-Allow-Methods", "GET");
