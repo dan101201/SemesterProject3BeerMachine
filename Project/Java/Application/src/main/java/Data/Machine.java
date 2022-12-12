@@ -149,6 +149,26 @@ public class Machine {
         return (float) getValue(nodeId);
     }
 
+    public int getBad() {
+        NodeId nodeId = new NodeId(6, "::Program:product.bad");
+        return (int) getValue(nodeId);
+    }
+
+    public int getGood() {
+        NodeId nodeId = new NodeId(6, "::Program:product.good");
+        return (int) getValue(nodeId);
+    }
+
+    public int getProduced() {
+        NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
+        return (int) getValue(nodeId);
+    }
+
+    public int getProduceAmount() {
+        NodeId nodeId = new NodeId(6, "::Program:product.produced");
+        return (int) getValue(nodeId);
+    }
+
     public Short getHumidity() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.RelHumidity");
         return (Short) getValue(nodeId);
