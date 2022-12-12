@@ -63,6 +63,34 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			return backend.getHumidity(machineId);
 		});
+
+		get("/machine/:id/batch/good", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getGood(machineId);
+		});
+
+		get("/machine/:id/batch/bad", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getBad(machineId);
+		});
+
+		get("/machine/:id/batch/produced", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getProduced(machineId);
+		});
+
+		get("/machine/:id/batch/produce_amount", (request, response) -> {
+			String res = request.params("id");
+			System.out.println(res);
+			int machineId = Integer.parseInt(res);
+			return backend.getProduceAmount(machineId);
+		});
 		
 		post("/hello", (request, response) -> "Hello World!");
 		
@@ -104,6 +132,16 @@ public class PHPConnection {
 			backend.writeCommand(machineId, 5);
 			backend.confirmCommand(machineId);
 			return "clear machine: " + machineId;
+		});
+
+		post("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			int batch = Integer.parseInt(request.params("batch"));
+			float speed = Float.parseFloat(request.params("speed"));
+			backend.writeCommand(machineId, 5);
+			backend.confirmCommand(machineId);
+			return "changed machine " + machineId + "batch " + batch+ " to speed " + speed;
 		});
 
 		after((Filter) (request, response) -> {

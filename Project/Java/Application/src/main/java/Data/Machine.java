@@ -93,7 +93,7 @@ public class Machine {
         client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[1]"), DataValue.valueOnly(new Variant(i)));
     }
 
-    public void setMachSpeed(int i, float f) {
+    public void setMachineSpeed(int i, float f) {
         switch (i) {
             case 0:
                 if (f < 0 || f > 600)
@@ -147,6 +147,26 @@ public class Machine {
     public float getTemperature() {
         NodeId nodeId = new NodeId(6, "::Program:Data.Value.Temperature");
         return (float) getValue(nodeId);
+    }
+
+    public int getBad() {
+        NodeId nodeId = new NodeId(6, "::Program:product.bad");
+        return (int) getValue(nodeId);
+    }
+
+    public int getGood() {
+        NodeId nodeId = new NodeId(6, "::Program:product.good");
+        return (int) getValue(nodeId);
+    }
+
+    public int getProduced() {
+        NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
+        return (int) getValue(nodeId);
+    }
+
+    public int getProduceAmount() {
+        NodeId nodeId = new NodeId(6, "::Program:product.produced");
+        return (int) getValue(nodeId);
     }
 
     public Short getHumidity() {
