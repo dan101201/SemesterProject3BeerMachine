@@ -19,7 +19,8 @@ button.addEventListener('click', () => {
 
 // Har gjort sådan at den returnere en boolean, så man også kan bruge den til at forhindre kode.
 function alertNotification(ingredient){
-    var amount = document.getElementById(ingredient).value;
+    var amount = document.getElementById(ingredient);
+    amount = amount.style.height.slice(0,-1);
     let minimum = 50;
     if (amount < minimum){
         alert("Amount of " + ingredient + " is getting low! Please fix");

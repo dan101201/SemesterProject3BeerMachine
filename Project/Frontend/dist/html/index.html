@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="../css/primary_design.css" />
     <link rel="stylesheet" href="../css/homepage_design.css" />
     <link rel="stylesheet" href="../css/batch_design.css">
@@ -18,27 +19,46 @@
 
     </div>
     <script>
-        $(function(){
-          $("#navbar").load("navbar.html");
+        $(function () {
+            $("#navbar").load("navbar.html");
         });
     </script>
-    
+
     <main class="sections">
         <div id="button_group">
-            <button id="StartButton" type ="submit">Start</button><br>
+            <button id="StartButton" type="submit">Start</button><br>
             <button>Stop</button> <br>
             <button>Abort</button><br>
             <button>Clear</button><br>
         </div>
         <div id="inventory">
             <div id="sensors">
+                <!--
                <progress id="barley" value="49" max="100"></progress>
                 <progress id="hops" value="20" max="100"></progress>
                 <progress id="malt" value="50" max="100"></progress>
                 <progress id="wheat" value="70" max="100"></progress>
-                <progress id="yeast" value="10" max="100"></progress> 
+                <progress id="yeast" value="10" max="100"></progress> -->
+
+                <div class="barcontainer">
+                    <div class="bar" id="barley" style="height: 1%;"></div>
+                </div>
+                <div class="barcontainer">
+                    <div class="bar" id="hops" style="height:70%"></div>
+                </div>
+                <div class="barcontainer">
+                    <div class="bar" id="malt" style="height:30%"></div>
+                </div>
+                <div class="barcontainer">
+                    <div class="bar" id="wheat" style="height:90%"></div>
+                </div>
+                <div class="barcontainer">
+                    <div class="bar" id="yeast" style="height:30%"></div>
+                </div>
             </div>
-            <progress id="maintain" value="50" max=100></progress>
+            <div class="barcontainer">
+                <div class="bar" id="maintain" style="height:99%"></div>
+            </div>
         </div>
         <div id="warning_table">
             <div id="scroll_table">
@@ -129,4 +149,5 @@
     </div>
 
 </body>
+
 </html>
