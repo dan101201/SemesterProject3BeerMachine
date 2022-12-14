@@ -2,7 +2,7 @@
 
 .sections {
     display: grid;
-    grid-template-columns: 7% 68% 25%;
+    grid-template-columns: 7% 58% 35%;
     padding-right: 0.5%;
 }
  #button_group {
@@ -13,23 +13,7 @@
     margin: 15%;
 }
 
-#inventory {
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-}
-
-#inventory progress {
-    height: 50%;
-    width: 10vw;
-    transform: rotate(-90deg);
-}
-
-#inventory #sensors{
-    border-style: solid;
-    border: 15%;
-}
-
+/*Warningtable css START*/
 #scroll_table  {
     height: 200px;
     overflow: auto;
@@ -49,6 +33,38 @@ thead td {
 #warning_table #scroll_table table tbody td {
     border: 1px solid black;
 }
+/*  Warningtable css SLUT*/
 main {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
+/*   Progressbar css START   */
+.barcontainer{
+    background-color: #e4e1e1;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-left: 50px;
+    width: 50px;
+    height: 320px;
+    float: left;
+  }
+    
+  .bar{
+    background-color: #4ad760;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #inventory #sensors{
+    border-style: solid;
+    border: 15%;
+}
+
+#inventory {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+/*  Progressbar css SLUT*/
