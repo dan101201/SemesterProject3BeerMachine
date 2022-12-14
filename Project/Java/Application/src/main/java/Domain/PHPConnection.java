@@ -17,7 +17,7 @@ public class PHPConnection {
 
 	static Gson gsonBuilder = new Gson();
 
-	public static void main(String args[]) throws Exception {
+	public static void main(String[] args){
 
 		get("/machine/", (request, response) -> {
 			try {
@@ -90,7 +90,7 @@ public class PHPConnection {
 			return backend.getProduceAmount(machineId);
 		});
 		
-		post("/hello", (request, response) -> "Hello World!");
+		get("/hello", (request, response) -> "Hello World!");
 		
 		get("/machine/:id/command/reset/", (request, response) -> {
 			String res = request.params("id");
@@ -137,13 +137,18 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
-		get("/machine/:id/command/speed/:recipe/:speed", (request, response) -> {
+		get("/machine/:id/command/speed/:recipe/:speed/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			int recipe = Integer.parseInt(request.params("recipe"));
 			float speed = Float.parseFloat(request.params("speed"));
-			backend.setMachineSpeed(recipe, speed);
-			return "changed machine " + machineId + "batch " + recipe+ " to speed " + speed;
+			try {
+				backend.setMachineSpeed(recipe, speed);
+			} catch (IllegalArgumentException e) {
+				response.status(400);
+				return "Speed value out of range for this recipe";
+			}
+			return "changed machine " + machineId + " recipe " + recipe + " to speed " + speed;
 		});
 
 		after((Filter) (request, response) -> {
