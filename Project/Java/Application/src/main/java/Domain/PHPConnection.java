@@ -137,14 +137,13 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
-		get("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
+		get("/machine/:id/command/speed/:recipe/:speed", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			int batch = Integer.parseInt(request.params("batch"));
+			int recipe = Integer.parseInt(request.params("recipe"));
 			float speed = Float.parseFloat(request.params("speed"));
-			backend.writeCommand(machineId, 5);
-			backend.confirmCommand(machineId);
-			return "changed machine " + machineId + "batch " + batch+ " to speed " + speed;
+			backend.setMachineSpeed(recipe, speed);
+			return "changed machine " + machineId + "batch " + recipe+ " to speed " + speed;
 		});
 
 		after((Filter) (request, response) -> {
