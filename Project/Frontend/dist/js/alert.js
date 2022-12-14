@@ -23,7 +23,7 @@ function alertNotification(ingredient){
     amount = amount.style.height.slice(0,-1);
     let minimum = 50;
     if (amount < minimum){
-        addToWarningTable("Amount of"+ingredient+" is getting low!", Date.now(), 1)
+        addToWarningTable("Amount of "+ingredient+" is getting low!", getDate(), 1)
         alert("Amount of " + ingredient + " is getting low! Please fix");
         return false;
     }
@@ -31,8 +31,10 @@ function alertNotification(ingredient){
 }
 
 function maintainanceAlert(){
-    var timer = document.getElementById("maintain").value;
-    if (timer < 20){
+    var timer = document.getElementById("maintain");
+    timer = timer.style.height.slice(0,1);
+    if (timer <= 20){
+        addToWarningTable("Machine is in need of fixing", getDate(), 1)
         alert("Machine is in need of fixing");
         return false;
     }
