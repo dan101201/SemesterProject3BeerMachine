@@ -11,8 +11,6 @@
     <script src="../js/alert.js" defer></script>
     <script src="../js/commandbuttons.js"></script>
 
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript">
         jQuery(function($) {
             $('#inventory').load('index.html #inventory');
@@ -38,13 +36,13 @@
             <label for="recipeChanger">Pick a Recipe</label>
 
             <select onchange="maxLimit()" id="recipeChanger">  
-     <option value="pilsner" >Pilsner</option>  
-     <option value="wheat">Wheat</option>  
-     <option value="ipa">IPA</option>  
-     <option value="stout">Stout</option>
-     <option value="ale">Ale</option>
-     <option value="alcoholFree">Alcohol Free</option>
- </select>
+                <option value="pilsner" >Pilsner</option>  
+                <option value="wheat">Wheat</option>  
+                <option value="ipa">IPA</option>  
+                <option value="stout">Stout</option>
+                <option value="ale">Ale</option>
+                <option value="alcoholFree">Alcohol Free</option>
+            </select>
 
             <Label for="speed"> Pick speed</label>
             <input id="speed" type="number" min="0" max="600" value="0" />
