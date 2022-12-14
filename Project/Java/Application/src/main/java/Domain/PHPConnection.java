@@ -56,12 +56,14 @@ public class PHPConnection {
 		get("/machine/:id/vibration", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("received vibration");
 			return backend.getVibration(machineId);
 		});
 
 		get("/machine/:id/humidity", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("received humidity");
 			return backend.getHumidity(machineId);
 		});
 
@@ -93,11 +95,12 @@ public class PHPConnection {
 		
 		post("/hello", (request, response) -> "Hello World!");
 		
-		get("/machine/:id/command/reset", (request, response) -> {
+		get("/machine/:id/command/reset/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 1);
 			backend.confirmCommand(machineId);
+			System.out.println("Reset Command Received");
 			return "reset machine: " + machineId;
 		});
 
@@ -115,6 +118,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 3);
 			backend.confirmCommand(machineId);
+			System.out.println("Stop Command Received");
 			return "stop machine: " + machineId;
 		});
 
@@ -123,6 +127,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 4);
 			backend.confirmCommand(machineId);
+			System.out.println("Stop Command Received");
 			return "abort machine: " + machineId;
 		});
 
@@ -131,6 +136,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 5);
 			backend.confirmCommand(machineId);
+			System.out.println("Stop Command Received");
 			return "clear machine: " + machineId;
 		});
 
