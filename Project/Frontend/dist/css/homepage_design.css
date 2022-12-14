@@ -2,7 +2,7 @@
 
 .sections {
     display: grid;
-    grid-template-columns: 7% 58% 35%;
+    grid-template-columns: 7% 50% 43%;
     padding-right: 0.5%;
 }
  #button_group {
@@ -15,7 +15,7 @@
 
 /*Warningtable css START*/
 #scroll_table  {
-    height: 200px;
+    height: 320px;
     overflow: auto;
 }
 
