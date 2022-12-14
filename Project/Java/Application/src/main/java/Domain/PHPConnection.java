@@ -14,18 +14,6 @@ public class PHPConnection {
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
 
-		before((Filter) (request, response) -> {
-			
-		});
-
-		options("/", (request, response) -> {
-			response.header("Access-Control-Allow-Origin", "*");
-			response.header("Access-Control-Allow-Methods", "POST, GET");
-			response.header("Access-Control-Allow-Credentials", "TRUE");
-			response.header("Access-Control-Allow-Headers", "origin, authorization, accept");
-			return response;
-		});
-
 		get("/machine/", (request, response) -> {
 			try {
 				return backend.getMachines();
@@ -59,6 +47,7 @@ public class PHPConnection {
 			String res = request.params("id");
 			System.out.println(res);
 			int machineId = Integer.parseInt(res);
+			System.out.println("received temperature");
 			return backend.getTemperature(machineId);
 		});
 
@@ -159,9 +148,7 @@ public class PHPConnection {
 
 		after((Filter) (request, response) -> {
 			response.header("Access-Control-Allow-Origin", "*");
-			response.header("Access-Control-Allow-Methods", "POST, GET");
-			response.header("Access-Control-Allow-Credentials", "TRUE");
-			response.header("Access-Control-Allow-Headers", "origin, authorization, accept");
+			response.header("Access-Control-Allow-Methods", "GET");
 		}) ;
 
 		//init();
