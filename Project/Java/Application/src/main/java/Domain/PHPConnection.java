@@ -14,6 +14,10 @@ public class PHPConnection {
 	static Backend backend = new Backend();
 	public static void main(String args[]) throws Exception {
 
+		before((Filter) (request, response) -> {
+			
+		});
+
 		get("/machine/", (request, response) -> {
 			try {
 				return backend.getMachines();
@@ -102,14 +106,15 @@ public class PHPConnection {
 			return "reset machine: " + machineId;
 		});
 		
-		post("/machine/:id/command/start", (request, response) -> {
+		post("/machine/:id/command/start/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 2);
 			backend.confirmCommand(machineId);
+			System.out.println("Start Command Received");
 			return "start machine: " + machineId;
 		});
-		
+
 		post("/machine/:id/command/stop", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
@@ -146,9 +151,10 @@ public class PHPConnection {
 
 		after((Filter) (request, response) -> {
 			response.header("Access-Control-Allow-Origin", "*");
-			response.header("Access-Control-Allow-Methods", "GET");
-		});
-
+			response.header("Access-Control-Allow-Methods", "POST, GET");
+			response.header("Access-Control-Allow-Credentials", "TRUE");
+			response.header("Access-Control-Allow-Headers", "origin, authorization, accept");
+		}) ;
 
 		//init();
 	}

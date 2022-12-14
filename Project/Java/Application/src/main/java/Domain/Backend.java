@@ -41,7 +41,7 @@ public class Backend {
 		return machines.get(machineId).getProduceAmount();
 	}
 
-	public Object getInventory(int machineId) {
+	public float[] getInventory(int machineId) {
 		return machines.get(machineId).getInventory();
 	}
 
