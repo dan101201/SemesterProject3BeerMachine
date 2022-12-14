@@ -8,4 +8,5 @@ function getDate(){
     let seconds =  date.getSeconds();
     month++
     return day + "-" + month + "-"+year + " " + hours+":"+minutes+";"+seconds
+
 }
