@@ -2,6 +2,8 @@ package Domain;
 
 import static spark.Spark.*;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import spark.Request;
 import spark.Response;
 import spark.Route;
@@ -12,6 +14,9 @@ import spark.Response;
 
 public class PHPConnection {
 	static Backend backend = new Backend();
+
+	static Gson gsonBuilder = new Gson();
+
 	public static void main(String args[]) throws Exception {
 
 		get("/machine/", (request, response) -> {
@@ -24,28 +29,25 @@ public class PHPConnection {
 
 		get("/machine/:id", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return "machine: " + machineId;
 		});
 
 		get("/machine/:id/data", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return "machine: " + machineId;
 		});
 		
 		get("/machine/:id/inventory", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
-			return backend.getInventory(machineId);
+
+			return gsonBuilder.toJson(backend.getInventory(machineId));
 		});
 
 		get("/machine/:id/temperature", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			System.out.println("received temperature");
 			return backend.getTemperature(machineId);
@@ -53,28 +55,24 @@ public class PHPConnection {
 
 		get("/machine/:id/vibration", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getVibration(machineId);
 		});
 
 		get("/machine/:id/humidity", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getHumidity(machineId);
 		});
 
 		get("/machine/:id/batch/good", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getGood(machineId);
 		});
 
 		get("/machine/:id/batch/bad", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getBad(machineId);
 		});
@@ -112,7 +110,7 @@ public class PHPConnection {
 			return "start machine: " + machineId;
 		});
 
-		get("/machine/:id/command/stop", (request, response) -> {
+		get("/machine/:id/command/stop/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 3);
@@ -120,7 +118,7 @@ public class PHPConnection {
 			return "stop machine: " + machineId;
 		});
 
-		get("/machine/:id/command/abort", (request, response) -> {
+		get("/machine/:id/command/abort/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 4);
@@ -128,7 +126,7 @@ public class PHPConnection {
 			return "abort machine: " + machineId;
 		});
 
-		get("/machine/:id/command/clear", (request, response) -> {
+		get("/machine/:id/command/clear/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 5);
