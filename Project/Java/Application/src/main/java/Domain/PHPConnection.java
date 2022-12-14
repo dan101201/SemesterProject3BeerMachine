@@ -18,6 +18,14 @@ public class PHPConnection {
 			
 		});
 
+		options("/", (request, response) -> {
+			response.header("Access-Control-Allow-Origin", "*");
+			response.header("Access-Control-Allow-Methods", "POST, GET");
+			response.header("Access-Control-Allow-Credentials", "TRUE");
+			response.header("Access-Control-Allow-Headers", "origin, authorization, accept");
+			return response;
+		});
+
 		get("/machine/", (request, response) -> {
 			try {
 				return backend.getMachines();
@@ -98,15 +106,15 @@ public class PHPConnection {
 		
 		post("/hello", (request, response) -> "Hello World!");
 		
-		post("/machine/:id/command/reset", (request, response) -> {
+		get("/machine/:id/command/reset", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 1);
 			backend.confirmCommand(machineId);
 			return "reset machine: " + machineId;
 		});
-		
-		post("/machine/:id/command/start/", (request, response) -> {
+
+		get("/machine/:id/command/start/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 2);
@@ -115,23 +123,23 @@ public class PHPConnection {
 			return "start machine: " + machineId;
 		});
 
-		post("/machine/:id/command/stop", (request, response) -> {
+		get("/machine/:id/command/stop", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 3);
 			backend.confirmCommand(machineId);
 			return "stop machine: " + machineId;
 		});
-		
-		post("/machine/:id/command/abort", (request, response) -> {
+
+		get("/machine/:id/command/abort", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 4);
 			backend.confirmCommand(machineId);
 			return "abort machine: " + machineId;
 		});
-		
-		post("/machine/:id/command/clear", (request, response) -> {
+
+		get("/machine/:id/command/clear", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 5);
@@ -139,7 +147,7 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
-		post("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
+		get("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			int batch = Integer.parseInt(request.params("batch"));
