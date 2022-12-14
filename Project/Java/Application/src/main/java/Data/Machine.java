@@ -141,7 +141,7 @@ public class Machine {
     }
 
     public void confirmCommand() {
-        client.writeValue(new NodeId(6, " ::Program:Cube.Command.CmdChangeRequest"), DataValue.valueOnly(new Variant(true)));
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.CmdChangeRequest"), DataValue.valueOnly(new Variant(true)));
     }
 
     public float getTemperature() {

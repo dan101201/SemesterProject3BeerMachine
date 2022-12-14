@@ -15,6 +15,7 @@
     <script src="../js/inventoryRequest.js"></script>
     <script src="../js/alert.js" defer></script>
     <script src="../js/notification.js"></script>
+    <script src="../js/commandbuttons.js"></script>
     <title>Start</title>
 </head>
 
@@ -23,17 +24,18 @@
 
     </div>
     <script>
-        $(function () {
+        $(function() {
             $("#navbar").load("navbar.html");
         });
     </script>
 
     <main class="sections">
         <div id="button_group">
-            <button id="StartButton" type="submit">Start</button><br>
-            <button>Stop</button> <br>
-            <button>Abort</button><br>
-            <button>Clear</button><br>
+            <button onclick="commandStart()">Start</button><br>
+            <button onclick="commandStop()">Stop</button><br>
+            <button onclick="commandAbort()">Abort</button><br>
+            <button onclick="commandClear()">Clear</button><br>
+            <button onclick="commandReset()">Reset</button><br>
         </div>
         <div id="inventory">
             <div id="sensors">
