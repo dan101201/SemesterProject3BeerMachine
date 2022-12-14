@@ -25,19 +25,19 @@ public class Backend {
 		machines.get(0).setMachineSpeed(i, j);
 	}
 
-	public int getBad(int machineId) {
+	public Short getBad(int machineId) {
 		return machines.get(machineId).getBad();
 	}
 
-	public int getGood(int machineId) {
+	public Short getGood(int machineId) {
 		return machines.get(machineId).getGood();
 	}
 
-	public int getProduced(int machineId) {
+	public Short getProduced(int machineId) {
 		return machines.get(machineId).getProduced();
 	}
 
-	public int getProduceAmount(int machineId) {
+	public Short getProduceAmount(int machineId) {
 		return machines.get(machineId).getProduceAmount();
 	}
 

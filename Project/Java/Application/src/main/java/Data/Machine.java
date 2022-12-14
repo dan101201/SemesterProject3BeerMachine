@@ -6,6 +6,7 @@ import org.eclipse.milo.opcua.stack.client.DiscoveryClient;
 import org.eclipse.milo.opcua.stack.core.types.builtin.DataValue;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
 import org.eclipse.milo.opcua.stack.core.types.builtin.Variant;
+import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UShort;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 import org.eclipse.milo.opcua.stack.core.types.structured.EndpointDescription;
 import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
@@ -149,24 +150,24 @@ public class Machine {
         return (float) getValue(nodeId);
     }
 
-    public int getBad() {
+    public Short getBad() {
         NodeId nodeId = new NodeId(6, "::Program:product.bad");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getGood() {
+    public Short getGood() {
         NodeId nodeId = new NodeId(6, "::Program:product.good");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getProduced() {
+    public Short getProduced() {
         NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getProduceAmount() {
+    public Short getProduceAmount() {
         NodeId nodeId = new NodeId(6, "::Program:product.produced");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
     public Short getHumidity() {

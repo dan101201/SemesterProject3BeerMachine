@@ -42,7 +42,6 @@ public class PHPConnection {
 		get("/machine/:id/inventory", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-
 			return gsonBuilder.toJson(backend.getInventory(machineId));
 		});
 
@@ -81,14 +80,12 @@ public class PHPConnection {
 
 		get("/machine/:id/batch/produced", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getProduced(machineId);
 		});
 
 		get("/machine/:id/batch/produce_amount", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getProduceAmount(machineId);
 		});
