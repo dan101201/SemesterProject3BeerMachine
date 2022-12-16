@@ -17,6 +17,8 @@
     <script src="../js/commandbuttons.js"></script>
     <script src="../js/HTTPConnection.js"></script>
     <script src="../js/popup.js" defer></script>
+    <script src="../js/speedLimit.js" defer></script>
+    <script src="../js/commandbuttons.js"></script>
     <title>Start</title>
 </head>
 
@@ -27,23 +29,35 @@
             $("#navbar").load("navbar.html");
         });
     </script>
-
-    <button data-popup-target="#popup">Open popup</button>
     <div class="popup" id="popup">
         <div class="popup-header">
-            <div class="title">Config batch</div>
+            <div class="title">Configure batch</div>
             <button data-close-button class="closebutton">&times;</button>
         </div>
         <div class="popup-body">
             <!-- Insert config window-->
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere possimus, ipsa sit voluptate ratione similique numquam cum sed odit blanditiis quis ab voluptatibus dolores quos nemo dolore natus quod in, nam consequatur. Sunt necessitatibus magnam officia repellat aspernatur aliquid perspiciatis ducimus quam quasi pariatur voluptatum consectetur veniam quae repudiandae, sapiente repellendus, quibusdam, praesentium facilis! Expedita cum quaerat, consequuntur temporibus non inventore voluptas perferendis ipsam. Quo fugiat alias voluptate officia odio facilis architecto voluptates quaerat velit numquam, officiis blanditiis aspernatur molestias!
+            <label for="recipeChanger">Pick a Recipe*</label><br>
+            <select onchange="maxLimit()" id="recipeChanger">
+                <option value=0 >Pilsner</option>  
+                <option value=1>Wheat</option>  
+                <option value=2>IPA</option>  
+                <option value=3>Stout</option>
+                <option value=4>Ale</option>
+                <option value=5>Alcohol Free</option>
+            </select><br>    
+            <Label for="speed"> Pick speed*</label><br>
+                <input id="speed" type="number" min="0" max="600" value="0" onchange="maxLimit()"/>
+                <button>Choose max limit</button><br>
+                <Label for="delay"> Choose Delay if needed</label><br>
+                <input id="delay" type="number" min="0" value="0" /><br><br>
+                <button onclick="commandStop">Confirm Configuration Options</button>
         </div>
     </div>
     <div id="overlay"></div>
 
     <main class="sections">
         <div id="button_group">
-            <button onclick="commandStart()">Start</button><br>
+            <button data-popup-target="#popup">Start</button><br>
             <button onclick="commandStop()">Stop</button><br>
             <button onclick="commandAbort()">Abort</button><br>
             <button onclick="commandClear()">Clear</button><br>
