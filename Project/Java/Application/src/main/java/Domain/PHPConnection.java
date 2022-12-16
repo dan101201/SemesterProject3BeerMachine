@@ -17,7 +17,7 @@ public class PHPConnection {
 
 	static Gson gsonBuilder = new Gson();
 
-	public static void main(String args[]) throws Exception {
+	public static void main(String[] args){
 
 		get("/machine/", (request, response) -> {
 			try {
@@ -42,7 +42,6 @@ public class PHPConnection {
 		get("/machine/:id/inventory", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-
 			return gsonBuilder.toJson(backend.getInventory(machineId));
 		});
 
@@ -81,19 +80,17 @@ public class PHPConnection {
 
 		get("/machine/:id/batch/produced", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getProduced(machineId);
 		});
 
 		get("/machine/:id/batch/produce_amount", (request, response) -> {
 			String res = request.params("id");
-			System.out.println(res);
 			int machineId = Integer.parseInt(res);
 			return backend.getProduceAmount(machineId);
 		});
 		
-		post("/hello", (request, response) -> "Hello World!");
+		get("/hello", (request, response) -> "Hello World!");
 		
 		get("/machine/:id/command/reset/", (request, response) -> {
 			String res = request.params("id");
@@ -140,14 +137,18 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
-		get("/machine/:id/command/speed/:batch/:speed", (request, response) -> {
+		get("/machine/:id/command/speed/:recipe/:speed/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			int batch = Integer.parseInt(request.params("batch"));
+			int recipe = Integer.parseInt(request.params("recipe"));
 			float speed = Float.parseFloat(request.params("speed"));
-			backend.writeCommand(machineId, 5);
-			backend.confirmCommand(machineId);
-			return "changed machine " + machineId + "batch " + batch+ " to speed " + speed;
+			try {
+				backend.setMachineSpeed(recipe, speed);
+			} catch (IllegalArgumentException e) {
+				response.status(400);
+				return "Speed value out of range for this recipe";
+			}
+			return "changed machine " + machineId + " recipe " + recipe + " to speed " + speed;
 		});
 
 		after((Filter) (request, response) -> {
