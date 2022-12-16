@@ -10,6 +10,7 @@
     <script src="../js/jquery.js"></script>
     <script src="../js/alert.js" defer></script>
     <script src="../js/commandbuttons.js"></script>
+    <script defer src="../js/popup.js"></script>
 
     <script type="text/javascript">
         jQuery(function($) {
@@ -29,7 +30,19 @@
         });
     </script>
 
-
+    <button data-popup-target="#popup">Open popup</button>
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <div class="title">Config batch</div>
+            <button data-close-button class="closebutton">&times;</button>
+        </div>
+        <div class="popup-body">
+            <!-- Insert config window-->
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere possimus, ipsa sit voluptate ratione similique numquam cum sed odit blanditiis quis ab voluptatibus dolores quos nemo dolore natus quod in, nam consequatur. Sunt necessitatibus magnam officia repellat aspernatur aliquid perspiciatis ducimus quam quasi pariatur voluptatum consectetur veniam quae repudiandae, sapiente repellendus, quibusdam, praesentium facilis! Expedita cum quaerat, consequuntur temporibus non inventore voluptas perferendis ipsam. Quo fugiat alias voluptate officia odio facilis architecto voluptates quaerat velit numquam, officiis blanditiis aspernatur molestias!
+        </div>
+    </div>
+    <div id="overlay"></div>
+<!--
     <main class="ConfigurationTab">
         <div id="inputValues">
 
@@ -61,7 +74,7 @@
         </div>
 
         <div id="inventory"> </div>
-    </main>
+    </main> -->
 
 </body>
 

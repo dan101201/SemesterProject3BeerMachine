@@ -40,3 +40,7 @@ function maintainanceAlert(){
     }
     return true;
 }
+
+function testAlrt(){
+    alert()
+}
