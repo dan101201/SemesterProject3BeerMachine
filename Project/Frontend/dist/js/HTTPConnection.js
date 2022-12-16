@@ -32,8 +32,8 @@ async function inventoryStatus(){
     updateInventoryStatus(response[4], "yeast");
 }
 
-function updateInventoryStatus(item, ingredienceName){
-    var invItem = document.getElementById(ingredienceName)
+function updateInventoryStatus(item, ingredientName){
+    var invItem = document.getElementById(ingredientName)
     invItem.style.height = 35000/item*100+"%"
     console.log(getDate());
 }
