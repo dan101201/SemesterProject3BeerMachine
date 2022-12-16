@@ -21,6 +21,15 @@ public class Backend {
 		return strings.toArray(new String[0]);
 	}
 
+	/* public float getOEE(int machineId) { //guess we aint doing this
+		private float myOEE;
+		private float goodBeers = new float (machines.get(machineId).getGood()); //converting getGood to float
+		private float cycleTime = new float (machines.get(machineId).getCycleTime()); //these methods shall be made
+		private float plannedTime = new float (machines.get(machineId).getPannedTime());
+		myOEE = goodBeers * cycleTime / plannedTime
+				return myOEE;
+	} */
+
 	public void setMachineSpeed(int i, float j) {
 		machines.get(0).setMachineSpeed(i, j);
 	}
