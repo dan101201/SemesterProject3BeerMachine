@@ -6,6 +6,7 @@ import org.eclipse.milo.opcua.stack.client.DiscoveryClient;
 import org.eclipse.milo.opcua.stack.core.types.builtin.DataValue;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
 import org.eclipse.milo.opcua.stack.core.types.builtin.Variant;
+import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UShort;
 import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 import org.eclipse.milo.opcua.stack.core.types.structured.EndpointDescription;
 import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
@@ -95,37 +96,32 @@ public class Machine {
 
     public void setMachineSpeed(int i, float f) {
         switch (i) {
-            case 0:
+            case 0 -> {
                 if (f < 0 || f > 600)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
-            case 1:
+            }
+            case 1 -> {
                 if (f < 0 || f > 300)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
-            case 2:
+            }
+            case 2 -> {
                 if (f < 0 || f > 150)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
-            case 3:
+            }
+            case 3 -> {
                 if (f < 0 || f > 200)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
-            case 4:
+            }
+            case 4 -> {
                 if (f < 0 || f > 100)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
-            case 5:
+            }
+            case 5 -> {
                 if (f < 0 || f > 125)
                     throw new IllegalArgumentException();
-                client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
-                break;
+            }
         }
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
     }
 
     public void setNumberOfProducedProduct(int i) {
@@ -149,24 +145,24 @@ public class Machine {
         return (float) getValue(nodeId);
     }
 
-    public int getBad() {
+    public Short getBad() {
         NodeId nodeId = new NodeId(6, "::Program:product.bad");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getGood() {
+    public Short getGood() {
         NodeId nodeId = new NodeId(6, "::Program:product.good");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getProduced() {
+    public Short getProduced() {
         NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
-    public int getProduceAmount() {
+    public Short getProduceAmount() {
         NodeId nodeId = new NodeId(6, "::Program:product.produced");
-        return (int) getValue(nodeId);
+        return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
     public Short getHumidity() {

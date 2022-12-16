@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/primary_design.css" />
     <link rel="stylesheet" href="../css/config_design.css" />
-    <script src="../js/speedLimit.js" defer></script> 
+    <script src="../js/speedLimit.js" defer></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/alert.js" defer></script>
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="../js/commandbuttons.js"></script>
+
     <script type="text/javascript">
-    jQuery(function($){
-	$('#inventory').load('index.html #inventory');
-    });
+        jQuery(function($) {
+            $('#inventory').load('index.html #inventory');
+        });
     </script>
     <title>Config</title>
 </head>
+
 <body>
 
     <div id="navbar">
     </div>
     <script>
-        $(function(){
-          $("#navbar").load("navbar.html");
+        $(function() {
+            $("#navbar").load("navbar.html");
         });
     </script>
 
 
     <main class="ConfigurationTab">
-    <div id="inputValues">  
- 
- <label for="recipeChanger">Pick a Recipe</label>  
+        <div id="inputValues">
 
- <select onchange="maxLimit()" id="recipeChanger">  
-     <option value="pilsner" >Pilsner</option>  
-     <option value="wheat">Wheat</option>  
-     <option value="ipa">IPA</option>  
-     <option value="stout">Stout</option>
-     <option value="ale">Ale</option>
-     <option value="alcoholFree">Alcohol Free</option>
- </select>
+            <label for="recipeChanger">Pick a Recipe</label>
 
-    <Label for="speed"> Pick speed</label> 
-    <input id="speed" type="number" min="0" max="600" value="0"/>
+            <select onchange="maxLimit()" id="recipeChanger">  
+                <option value=0 >Pilsner</option>  
+                <option value=1>Wheat</option>  
+                <option value=2>IPA</option>  
+                <option value=3>Stout</option>
+                <option value=4>Ale</option>
+                <option value=5>Alcohol Free</option>
+            </select>
 
-    <Label for="delay"> Choose Delay if needed</label> 
-    <input id="delay" type="number" min="0" value="0"/>
-    
-    <div id="button_group">
-        <button id="StartButton" >Start</button><br>
-        <button>Stop</button> <br>
-        <button>Abort</button><br>
-        <button>Clear</button><br>
-    </div>
+            <Label for="speed"> Pick speed</label>
+            <input id="speed" type="number" min="0" max="600" value="0" onchange="maxLimit()"/>
 
-</div>  
+            <Label for="delay"> Choose Delay if needed</label>
+            <input id="delay" type="number" min="0" value="0" />
 
-<div id="inventory"> </div>
-</main>
+            <div id="button_group">
+                <button onclick="commandStart()">Start</button><br>
+                <button onclick="commandStop()">Stop</button><br>
+                <button onclick="commandAbort()">Abort</button><br>
+                <button onclick="commandClear()">Clear</button><br>
+                <button onclick="commandReset()">Reset</button><br>
+            </div>
+
+        </div>
+
+        <div id="inventory"> </div>
+    </main>
 
 </body>
+
 </html>
