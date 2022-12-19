@@ -90,6 +90,7 @@ thead td {
 
 #info_table #current_table table tbody td {
     border: 1px solid black;
+    background-color: white;
 }
 
 #info_table #old_table table
