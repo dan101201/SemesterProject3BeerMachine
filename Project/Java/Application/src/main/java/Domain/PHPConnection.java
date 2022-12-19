@@ -137,6 +137,19 @@ public class PHPConnection {
 			return "clear machine: " + machineId;
 		});
 
+		get("/machine/:id/command/setproducedamount/:amount/", (request, response) -> {
+			String res = request.params("id");
+			int machineId = Integer.parseInt(res);
+			int amount = Integer.parseInt(request.params("amount"));
+			try {
+				backend.setProduceAmount(machineId, amount);
+			} catch (IllegalArgumentException e) {
+				response.status(400);
+				return "Speed value out of range for this recipe";
+			}
+			return "changed machine " + machineId + " amount to " + amount;
+		});
+
 		get("/machine/:id/command/speed/:recipe/:speed/", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
