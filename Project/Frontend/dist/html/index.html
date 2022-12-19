@@ -35,7 +35,6 @@
             <button data-close-button class="closebutton">&times;</button>
         </div>
         <div class="popup-body">
-            <!-- Insert config window-->
             <label for="recipeChanger">Pick a Recipe*</label><br>
             <select onchange="maxLimit()" id="recipeChanger">
                 <option value=0 >Pilsner</option>  
@@ -50,7 +49,7 @@
                 <button>Choose max limit</button><br>
                 <Label for="delay"> Choose Delay if needed</label><br>
                 <input id="delay" type="number" min="0" value="0" /><br><br>
-                <button onclick="commandStop">Confirm Configuration Options</button>
+                <button id="StartButton">Confirm Configuration Options</button>
         </div>
     </div>
     <div id="overlay"></div>
