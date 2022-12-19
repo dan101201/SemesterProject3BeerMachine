@@ -30,63 +30,70 @@ public class PHPConnection {
 		get("/machine/:id", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent id for machine: " + machineId);
 			return "machine: " + machineId;
 		});
 
 		get("/machine/:id/data", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent data for machine: " + machineId);
 			return "machine: " + machineId;
 		});
 		
 		get("/machine/:id/inventory", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent inventory for machine: " + machineId);
 			return gsonBuilder.toJson(backend.getInventory(machineId));
 		});
 
 		get("/machine/:id/temperature", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("received temperature");
+			System.out.println("sent temperature");
 			return backend.getTemperature(machineId);
 		});
 
 		get("/machine/:id/vibration", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("received vibration");
+			System.out.println("sent vibration");
 			return backend.getVibration(machineId);
 		});
 
 		get("/machine/:id/humidity", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("received humidity");
+			System.out.println("sent humidity");
 			return backend.getHumidity(machineId);
 		});
 
 		get("/machine/:id/batch/good", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent good");
 			return backend.getGood(machineId);
 		});
 
 		get("/machine/:id/batch/bad", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent bad");
 			return backend.getBad(machineId);
 		});
 
 		get("/machine/:id/batch/produced", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent produced");
 			return backend.getProduced(machineId);
 		});
 
 		get("/machine/:id/batch/produce_amount", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
+			System.out.println("sent produce_amount");
 			return backend.getProduceAmount(machineId);
 		});
 		
@@ -145,8 +152,10 @@ public class PHPConnection {
 				backend.setProduceAmount(machineId, amount);
 			} catch (IllegalArgumentException e) {
 				response.status(400);
-				return "Speed value out of range for this recipe";
+				System.out.println("Amount out of range");
+				return "Amount out of range";
 			}
+			System.out.println("changed machine " + machineId + " amount to " + amount);
 			return "changed machine " + machineId + " amount to " + amount;
 		});
 
@@ -159,8 +168,10 @@ public class PHPConnection {
 				backend.setMachineSpeed(recipe, speed);
 			} catch (IllegalArgumentException e) {
 				response.status(400);
+				System.out.println("Speed value out of range for this recipe");
 				return "Speed value out of range for this recipe";
 			}
+			System.out.println("changed machine " + machineId + " recipe " + recipe + " to speed " + speed);
 			return "changed machine " + machineId + " recipe " + recipe + " to speed " + speed;
 		});
 
