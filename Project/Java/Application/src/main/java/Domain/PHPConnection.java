@@ -42,7 +42,9 @@ public class PHPConnection {
 		get("/machine/:id/inventory", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			return gsonBuilder.toJson(backend.getInventory(machineId));
+			var shizzle = gsonBuilder.toJson(backend.getInventory(machineId));
+			System.out.println("inventory: " + shizzle);
+			return shizzle;
 		});
 
 		get("/machine/:id/temperature", (request, response) -> {
@@ -69,7 +71,7 @@ public class PHPConnection {
 		get("/machine/:id/batch/good", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			return backend.getGood(machineId);
+			return gsonBuilder.toJson(backend.getGood(machineId));
 		});
 
 		get("/machine/:id/batch/bad", (request, response) -> {
@@ -81,7 +83,9 @@ public class PHPConnection {
 		get("/machine/:id/batch/produced", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			return backend.getProduced(machineId);
+			var b = gsonBuilder.toJson(backend.getProduced(machineId));
+			System.out.println("Produced amount: " + b);
+			return b;
 		});
 
 		get("/machine/:id/batch/produce_amount", (request, response) -> {
