@@ -43,14 +43,14 @@
                 <option value=4>Ale</option>
                 <option value=5>Alcohol Free</option>
             </select><br>
-                <Label for="batch_size">Batch size:</Label><br>
-                <input id="batch_size" type="number" min="1" max="65000" value="0"><br>
-                <Label for="speed"> Pick speed*</label><br>
-                <input id="speed" type="number" min="0" max="600" value="0" onchange="maxLimit()"/>
-                <button>Choose max limit</button><br>
-                <Label for="delay"> Choose Delay if needed</label><br>
-                <input id="delay" type="number" min="0" value="0" /><br><br>
-                <button id="StartButton">Confirm Configuration Options</button>
+            <Label for="batch_size">Batch size:</Label><br>
+            <input id="batch_size" type="number" min="1" max="65000" value="0"><br>
+            <Label for="speed"> Pick speed*</label><br>
+            <input id="speed" type="number" min="0" max="600" value="0" onchange="maxLimit()" />
+            <button>Choose max limit</button><br>
+            <Label for="delay"> Choose Delay if needed</label><br>
+            <input id="delay" type="number" min="0" value="0" /><br><br>
+            <button onclick="commandStart()" id="StartButton">Confirm Configuration Options</button>
         </div>
     </div>
     <div id="overlay"></div>
@@ -63,7 +63,7 @@
             <button onclick="commandClear()">Clear</button><br>
             <button onclick="commandReset()">Reset</button><br>
         </div>
-        
+
         <div id="inventory">
             <div id="sensors">
                 <div class="barcontainer">
