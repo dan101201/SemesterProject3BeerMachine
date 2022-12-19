@@ -1,5 +1,5 @@
 // INVENTORY:
-async function inventoryStatus(){
+async function inventoryStatus() {
     const response = await fetch('http://localhost:4567/machine/0/inventory').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
@@ -10,13 +10,13 @@ async function inventoryStatus(){
     updateInventoryStatus(response[4], "yeast");
 }
 
-function updateInventoryStatus(item, ingredientName){
+function updateInventoryStatus(item, ingredientName) {
     var invItem = document.getElementById(ingredientName)
     invItem.style.height = 35000/item*100+"%"
 }
 
 // CURRENT BATCHES:
-async function updateCurrentBatch(){
+async function updateCurrentBatch() {
     const responseGood = await fetch('http://localhost:4567/machine/0/batch/good').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
@@ -26,7 +26,7 @@ async function updateCurrentBatch(){
     const responseProduced = await fetch('http://localhost:4567/machine/0/batch/produced').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
-    const responseAmount= await fetch('http://localhost:4567/machine/0/batch/produce_amount').then((res) => res.json()).catch((err) => {
+    const responseAmount = await fetch('http://localhost:4567/machine/0/batch/produce_amount').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
     updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount, getDate());
@@ -35,5 +35,3 @@ async function updateCurrentBatch(){
 
 setInterval(async() => updateCurrentBatch(), 3000)
 setInterval(async() => inventoryStatus(), 3000)
-
-

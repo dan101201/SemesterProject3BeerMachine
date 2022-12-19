@@ -94,7 +94,6 @@ public class PHPConnection {
 		get("/machine/:id/batch/produce_amount", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent produce_amount");
 			return backend.getProduceAmount(machineId);
 		});
 		
@@ -144,6 +143,8 @@ public class PHPConnection {
 			System.out.println("Stop Command Received");
 			return "clear machine: " + machineId;
 		});
+
+
 
 		get("/machine/:id/command/setproducedamount/:amount/", (request, response) -> {
 			String res = request.params("id");
