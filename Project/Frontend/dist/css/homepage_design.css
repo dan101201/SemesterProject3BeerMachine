@@ -75,3 +75,31 @@ main {
 }
 
 /*  Progressbar css SLUT*/
+
+/*  Batch Table css START*/
+#info_table table {
+    min-width: 100%;
+}
+
+#info_table #current_table table
+thead td {
+    border: 1px solid black;
+    background-color: lightgrey;
+    width: auto;
+}
+
+#info_table #current_table table tbody td {
+    border: 1px solid black;
+}
+
+#info_table #old_table table
+thead td {
+    border: 1px solid black;
+    background-color: lightgrey;
+    width: auto;
+}
+
+#info_table #old_table table tbody td {
+    border: 1px solid black;
+}
+/*  Batch Table css SLUT */

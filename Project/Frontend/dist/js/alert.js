@@ -13,8 +13,10 @@ button.addEventListener('click', () => {
         console.log("Jeg fandt en fejl"); // Hvis den finder mindst en fejl, så lader den være med at køre. (Her kører vi så "printer logik" altså¨det kan godt var den givne opskrift ikke bruger en bestemt ingredient som er ved at løbe tør, men programmet vil stadig ikke starte uden)
     } else {
         console.log("Ingen fejl her makker :)"); // Hvis ingen fejl, så er det her den så sender request'en om at lave et batch videre til maskinen.
-        commandStart
+        commandStart();
     }
+
+    maintainanceAlert()
 })
 
 
