@@ -26,34 +26,37 @@ var timestampCell;
 var currentId = 0;
 var startTimestamp
 
-function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
+function resetCurrentBatchTable(){
+    document.getElementById("currentTable").deleteRow(1);
+    currentId = 0;
+    
+}
+
+function updateCurrentBatchTable(processed, accepted, declined) {
     var table = document.getElementById("currentTable")
     currentId++
-
-    console.log(timestamp)
-
-    if (table.rows.length < 2) {
-        row = table.insertRow(1);
-        idCell = row.insertCell(0);
-        recipeCell = row.insertCell(1);
-        speedCell = row.insertCell(2)
-        processedCell = row.insertCell(3);
-        acceptedCell = row.insertCell(4);
-        declinedCell = row.insertCell(5);
-        machineCell = row.insertCell(6);
-        timestampCell = row.insertCell(7);
-        startTimestamp = row.insertCell(8);
-        startTimestamp.innerHTML = getDate();
-    }    
-
-
-    idCell.innerHTML = currentId;
-    recipeCell.innerHTML = "RecipeCell"
-    speedCell.innerHTML = "SpeedCell";
-    processedCell.innerHTML = processed
-    acceptedCell.innerHTML = accepted
-    declinedCell.innerHTML = declined
-    machineCell.innerHTML = "0"
-    timestampCell.innerHTML = timestamp
-
+    if(getSpeed() != 0) {
+        if (table.rows.length < 2) {
+            row = table.insertRow(1);
+            idCell = row.insertCell(0);
+            recipeCell = row.insertCell(1);
+            speedCell = row.insertCell(2)
+            processedCell = row.insertCell(3);
+            acceptedCell = row.insertCell(4);
+            declinedCell = row.insertCell(5);
+            machineCell = row.insertCell(6);
+            timestampCell = row.insertCell(7);
+            startTimestamp = row.insertCell(8);
+            startTimestamp.innerHTML = getDate();
+            recipeCell.innerHTML = getRecipe();
+            speedCell.innerHTML = getSpeed();
+        }    
+    
+        idCell.innerHTML = currentId;
+        processedCell.innerHTML = processed
+        acceptedCell.innerHTML = accepted
+        declinedCell.innerHTML = declined
+        machineCell.innerHTML = "0"
+        timestampCell.innerHTML = getDate()
+    }
 }
