@@ -1,4 +1,5 @@
 function commandStart() {
+    console.log("start")
     fetch("http://localhost:4567/machine/0/command/start/");
 }
 
