@@ -30,6 +30,10 @@ public class Backend {
 				return myOEE;
 	} */
 
+	public void setProduceAmount(int id, int num) {
+		machines.get(id).setNumberOfProducedProduct(num);
+	}
+
 	public void setMachineSpeed(int i, float j) {
 		machines.get(0).setMachineSpeed(i, j);
 	}
