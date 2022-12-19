@@ -25,13 +25,12 @@ var machineCell;
 var timestampCell;
 var currentId = 0;
 
-function updateCurrentBatch(processed, accepted, declined, timestamp) {
+function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
     var table = document.getElementById("currentTable")
     currentId++
 
     if (table.rows.length < 2) {
         row = table.insertRow(1);
-        console.log(table.rows.length)
         idCell = row.insertCell(0);
         recipeCell = row.insertCell(1);
         speedCell = row.insertCell(2)
