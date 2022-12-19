@@ -2,7 +2,7 @@
 MAX_DATA_POINTS = 20;
 
 function addDataH(chart, data) {
-    document.getElementById('currentValHumid').innerHTML = ""+data+" °%"
+    document.getElementById('currentValHumid').innerHTML = ""+data+" %"
     if(data > 50 || data < 20){
         alert("Humidity out of threshold!");
     

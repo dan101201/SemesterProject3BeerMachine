@@ -24,14 +24,16 @@ var declinedCell;
 var machineCell;
 var timestampCell;
 var currentId = 0;
+var startTimestamp
 
-function updateCurrentBatch(processed, accepted, declined, timestamp) {
+function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
     var table = document.getElementById("currentTable")
     currentId++
 
+    console.log(timestamp)
+
     if (table.rows.length < 2) {
         row = table.insertRow(1);
-        console.log(table.rows.length)
         idCell = row.insertCell(0);
         recipeCell = row.insertCell(1);
         speedCell = row.insertCell(2)
@@ -40,7 +42,10 @@ function updateCurrentBatch(processed, accepted, declined, timestamp) {
         declinedCell = row.insertCell(5);
         machineCell = row.insertCell(6);
         timestampCell = row.insertCell(7);
+        startTimestamp = row.insertCell(8);
+        startTimestamp.innerHTML = getDate();
     }    
+
 
     idCell.innerHTML = currentId;
     recipeCell.innerHTML = "RecipeCell"
