@@ -127,7 +127,7 @@ public class Machine {
     public void setNumberOfProducedProduct(int i) {
         if (i < 0 || i > 65535)
             throw new IllegalArgumentException();
-        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[2]"), DataValue.valueOnly(new Variant(i)));
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[2].Value"), DataValue.valueOnly(new Variant(i)));
     }
 
     public void writeCommand(int i) {
