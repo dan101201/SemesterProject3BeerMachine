@@ -1,5 +1,4 @@
 // setup 
-counterV = 0
 MAX_DATA_POINTS = 20;
 
 function addDataV(chart, data) {
@@ -11,7 +10,7 @@ function addDataV(chart, data) {
     }
     dataset.data.push(data);
   });
-  chart.data.labels.push(++counterV);
+  chart.data.labels.push(getTime());
 
   chart.update();
 }   

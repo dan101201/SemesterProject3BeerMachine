@@ -1,5 +1,4 @@
 // setup 
-counterT = 0
 MAX_DATA_POINTS = 20;
 
 function addDataT(chart, data) {
@@ -15,7 +14,7 @@ function addDataT(chart, data) {
     }
     dataset.data.push(data);
   });
-  chart.data.labels.push(++counterT);
+  chart.data.labels.push(getTime());
 
   chart.update();
   }
