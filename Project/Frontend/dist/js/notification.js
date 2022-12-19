@@ -23,9 +23,10 @@ var acceptedCell;
 var declinedCell;
 var machineCell;
 var timestampCell;
+var timestampStartCell;
 var currentId = 0;
 
-function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
+function updateCurrentBatchTable(processed, accepted, declined) {
     var table = document.getElementById("currentTable")
     currentId++
 
@@ -39,6 +40,8 @@ function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
         declinedCell = row.insertCell(5);
         machineCell = row.insertCell(6);
         timestampCell = row.insertCell(7);
+        timestampStartCell = row.insertCell(8);
+        timestampStartCell.innerHTML = getDate();
     }    
 
     idCell.innerHTML = currentId;
@@ -48,6 +51,6 @@ function updateCurrentBatchTable(processed, accepted, declined, timestamp) {
     acceptedCell.innerHTML = accepted
     declinedCell.innerHTML = declined
     machineCell.innerHTML = "0"
-    timestampCell.innerHTML = timestamp
+    timestampCell.innerHTML = getDate()
 
 }

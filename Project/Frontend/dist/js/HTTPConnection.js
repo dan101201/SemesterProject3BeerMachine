@@ -31,7 +31,7 @@ async function updateCurrentBatch(){
         console.error(err);
     });
 
-    updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount, getDate());
+    updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount);
 }
 
 
