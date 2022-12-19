@@ -12,8 +12,7 @@ async function inventoryStatus() {
 
 function updateInventoryStatus(item, ingredientName) {
     var invItem = document.getElementById(ingredientName)
-    invItem.style.height = 35000 / item * 100 + "%"
-        //console.log(getDate());
+    invItem.style.height = 35000/item*100+"%"
 }
 
 // CURRENT BATCHES:
@@ -30,17 +29,8 @@ async function updateCurrentBatch() {
     const responseAmount = await fetch('http://localhost:4567/machine/0/batch/produce_amount').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
-
-    console.log(responseProduced)
-
     updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount, getDate());
 }
-
-
-
-
-
-
 
 
 setInterval(async() => updateCurrentBatch(), 3000)

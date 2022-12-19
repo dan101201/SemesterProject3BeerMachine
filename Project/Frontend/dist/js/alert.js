@@ -15,7 +15,6 @@ button.addEventListener('click', () => {
         console.log("Ingen fejl her makker :)"); // Hvis ingen fejl, så er det her den så sender request'en om at lave et batch videre til maskinen.
         commandStart();
     }
-
     maintainanceAlert()
 })
 
