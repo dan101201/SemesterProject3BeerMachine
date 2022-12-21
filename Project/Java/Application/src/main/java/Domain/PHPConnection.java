@@ -30,14 +30,14 @@ public class PHPConnection {
 		get("/machine/:id", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent id for machine: " + machineId);
+			//System.out.println("sent id for machine: " + machineId);
 			return "machine: " + machineId;
 		});
 
 		get("/machine/:id/data", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent data for machine: " + machineId);
+			//System.out.println("sent data for machine: " + machineId);
 			return "machine: " + machineId;
 		});
 		
@@ -45,28 +45,28 @@ public class PHPConnection {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			var shizzle = gsonBuilder.toJson(backend.getInventory(machineId));
-			System.out.println("inventory: " + shizzle);
+			//System.out.println("inventory: " + shizzle);
 			return shizzle;
 		});
 
 		get("/machine/:id/temperature", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent temperature");
+			//System.out.println("sent temperature");
 			return backend.getTemperature(machineId);
 		});
 
 		get("/machine/:id/vibration", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent vibration");
+			//System.out.println("sent vibration");
 			return backend.getVibration(machineId);
 		});
 
 		get("/machine/:id/humidity", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent humidity");
+			//System.out.println("sent humidity");
 			return backend.getHumidity(machineId);
 		});
 
@@ -79,7 +79,7 @@ public class PHPConnection {
 		get("/machine/:id/batch/bad", (request, response) -> {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
-			System.out.println("sent bad");
+			//System.out.println("sent bad");
 			return backend.getBad(machineId);
 		});
 
@@ -87,7 +87,7 @@ public class PHPConnection {
 			String res = request.params("id");
 			int machineId = Integer.parseInt(res);
 			var b = gsonBuilder.toJson(backend.getProduced(machineId));
-			System.out.println("Produced amount: " + b);
+			//System.out.println("Produced amount: " + b);
 			return b;
 		});
 
@@ -104,7 +104,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 1);
 			backend.confirmCommand(machineId);
-			System.out.println("Reset Command Received");
+			//System.out.println("Reset Command Received");
 			return "reset machine: " + machineId;
 		});
 
@@ -122,7 +122,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 3);
 			backend.confirmCommand(machineId);
-			System.out.println("Stop Command Received");
+			//System.out.println("Stop Command Received");
 			return "stop machine: " + machineId;
 		});
 
@@ -131,7 +131,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 4);
 			backend.confirmCommand(machineId);
-			System.out.println("Stop Command Received");
+			//System.out.println("Stop Command Received");
 			return "abort machine: " + machineId;
 		});
 
@@ -140,7 +140,7 @@ public class PHPConnection {
 			int machineId = Integer.parseInt(res);
 			backend.writeCommand(machineId, 5);
 			backend.confirmCommand(machineId);
-			System.out.println("Stop Command Received");
+			//System.out.println("Stop Command Received");
 			return "clear machine: " + machineId;
 		});
 
@@ -157,7 +157,6 @@ public class PHPConnection {
 				System.out.println("Amount out of range");
 				return "Amount out of range";
 			}
-			System.out.println("changed machine " + machineId + " amount to " + amount);
 			return "changed machine " + machineId + " amount to " + amount;
 		});
 
