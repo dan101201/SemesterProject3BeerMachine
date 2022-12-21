@@ -29,9 +29,12 @@ function resetCurrentBatchTable() {
     document.getElementById("currentTable").deleteRow(1);
 }
 
-function updateCurrentBatchTable(processed, accepted, declined) {
+function updateCurrentBatchTable(processing, accepted, declined, produced) {
     var table = document.getElementById("currentTable");
 
+    if(processing == produced){
+        updateLastBatchTable();
+    }
     if (getSpeed() != 0) {
         if (table.rows.length < 2) {
             row = table.insertRow(1);
@@ -47,7 +50,7 @@ function updateCurrentBatchTable(processed, accepted, declined) {
         }
 
         table.rows[1].cells[0].innerHTML = currentId;
-        table.rows[1].cells[3].innerHTML = processed;
+        table.rows[1].cells[3].innerHTML = processing;
         table.rows[1].cells[4].innerHTML = accepted;
         table.rows[1].cells[5].innerHTML = declined;
         table.rows[1].cells[6].innerHTML = "0";
