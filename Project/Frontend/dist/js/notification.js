@@ -78,7 +78,7 @@ function updateLastBatchTable() {
         machineCell = row.insertCell(6);
         timestampCell = row.insertCell(7);
         startTimestamp = row.insertCell(8);
-        oeeCell = row.insertCell(8);
+        oeeCell = row.insertCell(9);
         oeeCell.innerHTML = getOee(acceptedCell, idealCycle, plannedTime);
 
 }
