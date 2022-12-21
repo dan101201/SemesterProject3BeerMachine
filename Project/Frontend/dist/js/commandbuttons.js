@@ -1,5 +1,7 @@
 function commandStart() {
-    resetCurrentBatchTable()
+    resetCurrentBatchTable();
+    maxLimit();
+    setBatchSize();
     fetch("http://localhost:4567/machine/0/command/start/");
 }
 

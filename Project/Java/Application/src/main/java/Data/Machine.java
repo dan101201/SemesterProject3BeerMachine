@@ -160,12 +160,12 @@ public class Machine {
     }
 
     public Short getProduced() {
-        NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
+        NodeId nodeId = new NodeId(6, "::Program:product.produced");
         return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 
     public Short getProduceAmount() {
-        NodeId nodeId = new NodeId(6, "::Program:product.produced");
+        NodeId nodeId = new NodeId(6, "::Program:product.produce_amount");
         return Short.parseShort(((UShort)getValue(nodeId)).toString());
     }
 

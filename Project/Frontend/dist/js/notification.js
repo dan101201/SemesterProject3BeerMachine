@@ -15,8 +15,8 @@ function addToWarningTable(warning, timestamp, mNumber) {
 
 }
 var row;
-var cTable
-var cell
+var cTable;
+var cell;
 var currentId = 0;
 var oeeCell;
 
@@ -33,7 +33,11 @@ function updateCurrentBatchTable(processing, accepted, declined, produced) {
     var table = document.getElementById("currentTable");
 
     if(processing == produced){
-        updateLastBatchTable();
+        try{
+            updateLastBatchTable();
+        } catch (e) {
+            console.log(e);
+        }
     }
     if (getSpeed() != 0) {
         if (table.rows.length < 2) {
@@ -56,7 +60,7 @@ function updateCurrentBatchTable(processing, accepted, declined, produced) {
         table.rows[1].cells[6].innerHTML = "0";
         table.rows[1].cells[8].innerHTML = getDate();
     }
-    cTable = table
+    cTable = table;
 }
 var pTable
 function updateLastBatchTable() {
@@ -65,9 +69,9 @@ function updateLastBatchTable() {
     row = table.insertRow(1);
     for (var c = 0; c < pTable.rows[1].cells.length - 1; c++) {
         cell = row.insertCell(c);
-        cell.innerHTML = pTable.rows[1].cells[c].innerHTML
+        cell.innerHTML = pTable.rows[1].cells[c].innerHTML;
     }
     cell = row.insertCell(c);
     cell.innerHTML = getDate();
-    resetCurrentBatchTable()
+    resetCurrentBatchTable();
 }
