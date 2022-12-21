@@ -32,6 +32,12 @@ async function updateCurrentBatch() {
     updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount, getDate());
 }
 
+//LAST BATCHES:
+async function updateLastBatch() {
+    updateLastBatchTable();
+}
+
 
 setInterval(async() => updateCurrentBatch(), 3000)
 setInterval(async() => inventoryStatus(), 3000)
+setInterval(async() => updateLastBatch(), 3000)
