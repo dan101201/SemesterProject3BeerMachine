@@ -29,12 +29,12 @@ async function updateCurrentBatch() {
     const responseAmount = await fetch('http://localhost:4567/machine/0/batch/produce_amount').then((res) => res.json()).catch((err) => {
         console.error(err);
     });
-    updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount, getDate());
+    updateCurrentBatchTable(responseProduced, responseGood, responseBad, responseAmount);
 }
 
 //LAST BATCHES:
 async function updateLastBatch() {
-    updateLastBatchTable();
+    //updateLastBatchTable();
 }
 
 

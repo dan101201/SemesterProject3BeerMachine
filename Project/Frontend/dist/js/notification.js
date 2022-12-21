@@ -15,70 +15,56 @@ function addToWarningTable(warning, timestamp, mNumber) {
 
 }
 var row;
-var idCell;
-var recipeCell;
-var speedCell
-var processedCell;
-var acceptedCell;
-var declinedCell;
-var machineCell;
-var timestampCell;
+var cTable
+var cell
 var currentId = 0;
-var startTimestamp;
 var oeeCell;
 
+
 function getOee(accepted, idealCycle, plannedTime) {
-    return accepted*idealCycle/plannedTime;
+    return accepted * idealCycle / plannedTime;
 }
 
-function resetCurrentBatchTable(){
+function resetCurrentBatchTable() {
     document.getElementById("currentTable").deleteRow(1);
-    currentId = 0;
-    
 }
 
 function updateCurrentBatchTable(processed, accepted, declined) {
     var table = document.getElementById("currentTable");
-    currentId++;
-    if(getSpeed() != 0) {
+
+    if (getSpeed() != 0) {
         if (table.rows.length < 2) {
             row = table.insertRow(1);
-            idCell = row.insertCell(0);
-            recipeCell = row.insertCell(1);
-            speedCell = row.insertCell(2)
-            processedCell = row.insertCell(3);
-            acceptedCell = row.insertCell(4);
-            declinedCell = row.insertCell(5);
-            machineCell = row.insertCell(6);
-            timestampCell = row.insertCell(7);
-            startTimestamp = row.insertCell(8);
-            startTimestamp.innerHTML = getDate();
-            recipeCell.innerHTML = getRecipe();
-            speedCell.innerHTML = getSpeed();
-        }
-    
-        idCell.innerHTML = currentId;
-        processedCell.innerHTML = processed;
-        acceptedCell.innerHTML = accepted;
-        declinedCell.innerHTML = declined;
-        machineCell.innerHTML = "0";
-        timestampCell.innerHTML = getDate();
-    }
-}
 
+            for (var c = 0; c < 9; c++) {
+                cell = row.insertCell(c);
+            }
+
+            table.rows[1].cells[7].innerHTML = getDate()
+            table.rows[1].cells[1].innerHTML = getRecipe()
+            table.rows[1].cells[2].innerHTML = getSpeed()
+            currentId++;
+        }
+
+        table.rows[1].cells[0].innerHTML = currentId;
+        table.rows[1].cells[3].innerHTML = processed;
+        table.rows[1].cells[4].innerHTML = accepted;
+        table.rows[1].cells[5].innerHTML = declined;
+        table.rows[1].cells[6].innerHTML = "0";
+        table.rows[1].cells[8].innerHTML = getDate();
+    }
+    cTable = table
+}
+var pTable
 function updateLastBatchTable() {
     var table = document.getElementById("oldTable");
-        row = table.insertRow(currentId+1);
-        idCell = row.insertCell(0);
-        recipeCell = row.insertCell(1);
-        speedCell = row.insertCell(2)
-        processedCell = row.insertCell(3);
-        acceptedCell = row.insertCell(4);
-        declinedCell = row.insertCell(5);
-        machineCell = row.insertCell(6);
-        timestampCell = row.insertCell(7);
-        startTimestamp = row.insertCell(8);
-        oeeCell = row.insertCell(9);
-        oeeCell.innerHTML = getOee(acceptedCell, idealCycle, plannedTime);
-
+    pTable = cTable
+    row = table.insertRow(1);
+    for (var c = 0; c < pTable.rows[1].cells.length - 1; c++) {
+        cell = row.insertCell(c);
+        cell.innerHTML = pTable.rows[1].cells[c].innerHTML
+    }
+    cell = row.insertCell(c);
+    cell.innerHTML = getDate();
+    resetCurrentBatchTable()
 }

@@ -27,6 +27,7 @@
             $("#navbar").load("navbar.html");
         });
     </script>
+
     <div class="popup" id="popup">
         <div class="popup-header">
             <div class="title">Configure batch</div>
@@ -102,7 +103,6 @@
                     </tbody>
                 </table>
             </div>
-            <!--<button onclick="addToWarningTable('test', getDate(), 0)">click</button>-->
         </div>
     </main>
     <div id="info_table">
@@ -118,16 +118,19 @@
                         <td>Amount Accepted</td>
                         <td>Amount Declined</td>
                         <td>Machine number</td>
-                        <td>Timestamp</td>
                         <td>Started</td>
+                        <td>Timestamp</td>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr></tr>
                 </tbody>
             </table>
         </div>
     </div>
+
     <br><br>
+
     <div id="info_table">
         <Label for="old_table"> Previous Batch</Label>
         <div id="old_table">
@@ -141,22 +144,13 @@
                         <td>Amount Accepted</td>
                         <td>Amount Declined</td>
                         <td>Machine number</td>
-                        <td>Timestamp</td>
+                        <td>Started</td>
+                        <td>Finished</td>
                         <td>OEE</td>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>Barley</td>
-                        <td>420</td>
-                        <td>100</td>
-                        <td>69</td>
-                        <td>31</td>
-                        <td>1</td>
-                        <td>14-11-2022</td>
-                        <td>911</td>
-                    </tr>
+                    <tr></tr>
                 </tbody>
             </table>
         </div>
