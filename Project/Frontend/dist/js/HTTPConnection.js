@@ -15,6 +15,11 @@ function updateInventoryStatus(item, ingredientName) {
     invItem.style.height = 35000/item*100+"%"
 }
 
+function setBatchSize() {
+    let num = document.getElementById('batch_size').value;
+    fetch("http://localhost:4567/machine/0/command/setproducedamount/" +num+"/");
+}
+
 // CURRENT BATCHES:
 async function updateCurrentBatch() {
     const responseGood = await fetch('http://localhost:4567/machine/0/batch/good').then((res) => res.json()).catch((err) => {

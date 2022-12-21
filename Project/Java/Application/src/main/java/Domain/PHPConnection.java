@@ -157,6 +157,7 @@ public class PHPConnection {
 				System.out.println("Amount out of range");
 				return "Amount out of range";
 			}
+			System.out.println("Changed produce amount");
 			return "changed machine " + machineId + " amount to " + amount;
 		});
 
