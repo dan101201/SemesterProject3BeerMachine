@@ -93,7 +93,7 @@ public class Machine {
     public void setProductID(int i) {
         if (i < 0 || i > 5)
             throw new IllegalArgumentException();
-        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[1]"), DataValue.valueOnly(new Variant(i)));
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[1].Value"), DataValue.valueOnly(new Variant(Float.valueOf(i))));
     }
 
     public void setMachineSpeed(int i, float f) {
@@ -123,13 +123,15 @@ public class Machine {
                     throw new IllegalArgumentException();
             }
         }
+        System.out.println("Macinhe speed to " + f);
         client.writeValue(new NodeId(6, "::Program:Cube.Command.MachSpeed"), DataValue.valueOnly(new Variant(f)));
     }
 
-    public void setNumberOfProducedProduct(int i) {
+    public void setNumberOfProducedProduct(float i) {
         if (i < 0 || i > 65535)
             throw new IllegalArgumentException();
-        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[2].Value"), DataValue.valueOnly(new Variant(i)));
+        System.out.println("Setting produce amount to " + i);
+        client.writeValue(new NodeId(6, "::Program:Cube.Command.Parameter[2].Value"), DataValue.valueOnly(new Variant(Float.valueOf(i))));
     }
 
     public void writeCommand(int i) {
